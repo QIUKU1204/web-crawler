@@ -16,6 +16,8 @@
 
 3. 糗事百科爬虫
 
+4. 微信文章爬虫(多线程版本)
+
 ### Note
 
 1. 关于`findall`函数返回结果列表中每个元素包含的信息:
@@ -42,3 +44,5 @@
    - `UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f602' in position 39: illegal multibyte sequence`
    - 触发该异常的原因是：在windows下面, 新文件的默认编码是 gbk , 而写入数据的编码则是 utf-8 , 因此导致无法解析;
    - 解决方法: `open('wiki.txt', 'w', encoding='utf-8')`
+
+2. 搜狗防爬机制较为严格，国内的免费代理IP一般均无效
