@@ -9,8 +9,8 @@ import urllib.error
 
 def crawl_img(url, page_index):
 	# bytes data
-	html_origin = urllib.request.urlopen(url, timeout=5).read()
-	html_origin = str(html_origin)  # bytes -> str
+	html_origin = urllib.request.urlopen(url, timeout=5).read().decode('utf-8')
+	# html_origin = str(html_origin)  # bytes -> str
 
 	pat1 = '<div id="plist".+?<div class="page clearfix">'
 	html_filter = re.compile(pat1).findall(html_origin)
