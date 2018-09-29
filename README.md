@@ -2,7 +2,7 @@
 
 #### 描述
 常见的网络爬虫: 图片爬虫、链接爬虫、糗事百科爬虫、微信爬虫、多线程爬虫
-
+Scrapy框架爬虫: scrapy.Spider, XMLFeedSpider, CSVFeedSpider
 
 #### TODO
 
@@ -17,6 +17,18 @@
 3. 糗事百科爬虫
 
 4. 微信文章爬虫(多线程版本)
+
+5. 腾讯视频评论爬虫
+
+6. XMLFeedSpider
+
+7. CSVFeedSpider
+
+8. 自动化爬虫autospider
+
+9. 基于MySQL数据库与IP代理池的自动化爬虫
+
+10. 博客爬虫
 
 ### Note
 
@@ -34,15 +46,32 @@
 5. 关于 exec 函数的使用: 
    - exec 执行储存在字符串中的 Python 语句
    - `exec('print("Hello World")')` -> Hello World
+   
+6. Scrapy架构中的调度器(Scheduler)是一个存储待爬取网址的优先队列，存在URL的出队(dequeued)和入队(enqueued);   
+   
+7. Scrapy提供一个内建的重复请求过滤器(duplicate-request filter)，它基于URL过滤重复的请求;
+
+8. scrapy-deltafetch去重
+
+9. scrapy-redis去重
+
+10. MongoDB是一个基于分布式文件存储的数据库，是非关系型数据库;
 
 ### Issues
 
 1. 使用 wiki 爬虫爬取 糗事百科 内容时出现以下异常
    - `UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 81654: invalid continuation byte`
-   - 触发该异常的原因是：出现了无法进行转换的 二进制数据 ;
+   - 触发该异常的原因是：出现了无法进行转换的二进制数据;
    - 解决方法: `decode('utf-8', 'ignore')`
    - `UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f602' in position 39: illegal multibyte sequence`
    - 触发该异常的原因是：在windows下面, 新文件的默认编码是 gbk , 而写入数据的编码则是 utf-8 , 因此导致无法解析;
    - 解决方法: `open('wiki.txt', 'w', encoding='utf-8')`
 
-2. 搜狗防爬机制较为严格，国内的免费代理IP一般均无效
+2. 搜狗防爬机制较为严格，国内的免费代理IP一般均无效;
+
+3. 评论爬虫存在的问题:
+   - 正则表达式不能够准确匹配(因为评论内容中也可能出现 " 和 , )，需要设计更优的正则表达式;
+   - 无法确定起始评论ID，不容易确定评论ID的有效性;
+   - 匹配精度越高，匹配容错率越低; 
+   - 匹配容错率越高，匹配精度越低;
+   

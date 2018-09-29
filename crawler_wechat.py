@@ -15,7 +15,7 @@ from gener_func import use_proxy, no_proxy
 url_queue = queue.Queue()
 url_list = []
 
-# 爬虫伪装为浏览器
+# 爬虫伪装成浏览器
 headers = ('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.3.2000')
 opener = urllib.request.build_opener()
 opener.addheaders = [headers]
@@ -28,7 +28,7 @@ class GETURL(threading.Thread):
 		self.key = key
 		self.page_start = page_start
 		self.page_end = page_end
-		self.proxy_addr = random.choice(self.IP_pool)
+		self.proxy_addr = random.choice(self.IP_proxy_pool)
 		self.url_queue = url_queue
 
 	# IP代理池
@@ -145,7 +145,7 @@ class CONTROL(threading.Thread):
 
 
 if __name__ == '__main__':
-	key = '人工智能'
+	key = '苏联'
 	page_start = 1
 	page_end = 2
 	# TODO: 待完善，使用IP代理池，自动更换代理IP

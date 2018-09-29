@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script nonce="1877000442" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="1877000442" type="text/javascript">
+    var biz = ""||"MzI0NzQzMjU3Ng==";
+    var sn = "" || ""|| "";
+    var mid = "" || ""|| "2247483733";
+    var idx = "" || "" || "1";
+    window.__allowLoadResFromMp = true; 
+    
+        
+</script>
+<script nonce="1877000442" type="text/javascript">
+var page_begintime=+new Date,is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&biz&&mid&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect"));
+</script>
+<script nonce="1877000442" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="1877000442" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var tmp = url.split('?'),
+            query = (tmp[1] || "").split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || "" || '';
+        window.key = params['key'] || "" || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+        window.appmsg_token = "";
+    })();
+
+    function wx_loaderror() {
+        if (location.pathname === '/bizmall/reward') {
+            new Image().src = '/mp/jsreport?key=96&content=reward_res_load_err&r=' + Math.random();
+        }
+    }
+
+</script>
+
+<script nonce="1877000442" type="text/javascript">
+        window.__moon_report_uin = "0";
+            window.no_moon_ls = 0;
+    </script>
+        <title>
+ 陈经：这一次中国真的不一样（2005年预言中国终结全球化）
+</title>
+        
+<style>.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.rich_media_inner{word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{padding:20px 16px 12px;background-color:#fafafa}.rich_media_area_primary.voice{padding-top:66px}.rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips{color:rgba(0,0,0,0.3);background-color:#fafafa}.rich_media_area_extra{padding:0 16px 24px}.rich_media_extra{padding-top:30px}.mpda_bottom_container .rich_media_extra{padding-top:24px}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;color:#333;background-color:#f2f2f2;letter-spacing:.034em}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#576b95;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.rich_media_title{font-size:22px;line-height:1.4;margin-bottom:14px}@supports(-webkit-overflow-scrolling:touch){.rich_media_title{font-weight:700}}.rich_media_meta_list{margin-bottom:22px;line-height:20px;font-size:0;word-wrap:break-word;word-break:break-all}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin:0 10px 10px 0;font-size:15px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.rich_media_meta.icon_appmsg_tag{margin-right:4px}.rich_media_meta.meta_tag_text{margin-right:0}.rich_media_meta_primary{display:block;margin-bottom:10px;font-size:15px}.meta_original_tag{padding:0 .5em;font-size:12px;line-height:1.4;background-color:#f2f2f2;color:#888}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_link{color:#576b95}.rich_media_meta_text{color:rgba(0,0,0,0.3)}.rich_media_meta_text.rich_media_meta_split{padding-left:10px}.rich_media_meta_text.rich_media_meta_split:before{position:absolute;top:50%;left:0;margin-top:-6px;content:' ';display:block;border-left:1px solid #888;width:200%;height:130%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0}.rich_media_meta_text.article_modify_tag{position:relative}.rich_media_meta_nickname{position:relative}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#333;font-size:17px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;text-align:justify}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:2.2em}.rich_media_content .list-paddingleft-2 .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}.weui-mask{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.6)}.weui-dialog{position:fixed;z-index:5000;width:80%;max-width:300px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#fff;text-align:center;border-radius:3px;overflow:hidden}.weui-dialog__hd{padding:1.3em 1.6em .5em}.weui-dialog__title{font-weight:400;font-size:18px}.weui-dialog__bd{padding:0 1.6em .8em;min-height:40px;font-size:15px;line-height:1.3;word-wrap:break-word;word-break:break-all;color:#999}.weui-dialog__bd:first-child{padding:2.7em 20px 1.7em;color:#353535}.weui-dialog__ft{position:relative;line-height:48px;font-size:18px;display:-webkit-box;display:-webkit-flex;display:flex}.weui-dialog__ft:after{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.weui-dialog__btn{display:block;-webkit-box-flex:1;-webkit-flex:1;flex:1;color:#3cc51f;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);position:relative}.weui-dialog__btn:active{background-color:#eee}.weui-dialog__btn:after{content:" ";position:absolute;left:0;top:0;width:1px;bottom:0;border-left:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleX(0.5);transform:scaleX(0.5)}.weui-dialog__btn:first-child:after{display:none}.weui-dialog__btn_default{color:#353535}.weui-dialog__btn_primary{color:#0bb20c}img{height:auto!important}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait){.rich_media_area_extra{padding-bottom:34px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape){.rich_media_area_primary{padding:20px 60px 15px 60px}.rich_media_area_extra{padding:0 60px 21px 60px}}@media screen and (min-width:1024px){.rich_media_area_primary_inner,.rich_media_area_extra_inner{max-width:677px;margin-left:auto;margin-right:auto}.rich_media_area_primary{padding-top:32px}}.appmsg_share_notice{font-size:16px;color:#888;position:relative;padding:1.25em 0;margin-bottom:1.75em}.appmsg_share_notice:before{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #dfdfdf;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.appmsg_share_notice:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dfdfdf;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.appmsg_share_notice_hd{font-weight:700;padding-bottom:.2em}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#333;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#888;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:.85em 35px .85em 15px;z-index:2;background-color:#c6e0f8;color:#888;font-size:12px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x2eb52b.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.rich_media_global_msg.voice{color:#1aad19;background-color:#e8f6e8;padding-left:43.3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rich_media_global_msg.voice .ic_voice{position:absolute;top:50%;margin-top:-10px;left:15px;display:inline-block;width:13.3px;height:18.3px;background:url(data:image/png;base64,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) no-repeat center;background-size:contain}.rich_media_global_msg.voice .icon_more{position:absolute;right:15px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAAAXNSR0IArs4c6QAAA49JREFUSA2tVk1IVFEUPveOmhQk1ibfvLFZSJtACqJIIpCIoB+imcFV2Z9ZUVnRomgRGFn2i6mFf5XVotCZMYmgIMhlq6BFENFiwjfPAosgFzXOvNu5o3fmeue98Y16F3PP+c453/fu/xCQmvZSWwwJaC0G6P8WND9IoTmbVFRycpqAdgBWkwRo94V960RsPn1aoPpN9RI6CR0WsDWcjAErtUiqTR/S18+HnNcSTv5zYrwDSatVMgLkH6aciwfj79WYW5+OT4xfsyPnBIgvwt872qBW45ZQzaMlJXCfMPJbDQgfRUoIhduVUW2TwArpaWyX+bnYU9JAAH44FaJIccqCW76Ib7NTjhOOvFPN/8q/IvE3cR+npFJgao9rkiSUXjD2GCNqzMnPbNPYjth3mqINlJAvTsk4kiJmWa3eQe8WpxwVzwjwgFFn/CorL29EkY9qovC5CFDrKq7JVoHl6zNTJCf53/lLk78SN/FcbJRx2cZCixC4ZATGXsu4as8YgQjGamN/q5atOotn4K3A1J4BUMbgsh7Wt6sx2bcV4AkjtSPJxkDjRQL0hVwg21zEglSzN+rdKeOybTtFcgK39ajWZDFWr+IZHxfGQ8mV0YA5nMGmDVcCPNcb8R5gYJ1UCWQfp6PFCI4NyZhrAV6EIiHGrPOAB0ImkW2c0la8u8ICc0wUCWrvC1dsw+3TnN6uanDaJ4zeiIfiA9wtWIAX8XspxeA6iuBlaN88hNzCNXk+JwFOuXJYW5tMQmc+EcqgzXGb2n9XFk1NstX5yKczl89JAF+6vRaBM1m5XAu//qkRGrtb8BThTtqH2/V0LmUWwbvsiREw8X0vcJHxxNbjNm3KUuVaMjmPFuWm2CPesHc/kp+yj06hFMhj/PIOOcfVFLk6xZT0G3vMTpmc27MusityZk/OBfKOwA05MPLIDJn3OJldcxTQotpBYOyEXVEWIw/NoInvuHOznSJfVDs0GzneNw9mI+eyOSPQI9phfCqPO38TFhHaFw/Eu/LliNiMESB5w6zkzD05F8mMYJr8mFC263Fa+vAadvXloj4toEcrjlgMjgrQrseHpBcfkm67WD6M6MN6lTWZeoZjyYxGLcB57MGnsEfF3fjU2G189QBpcUqmBLrnSs4504s8GjLxrwm5qYrg3dKFf6x6VbwQ3yOS/wz8+bS0ruwfELaBY2nyoNkn4gvW65GKRn4WForwP+dONHDaOHeZAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.preview_appmsg .rich_media_title{margin-top:2.3em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin-bottom:32px}.preview_appmsg .rich_media_title.rich_media_title{margin-top:0}}.pages_reset{color:#333;line-height:1.6;font-size:16px;font-weight:400;font-style:normal;text-indent:0;letter-spacing:normal;text-align:left;text-decoration:none;white-space:normal}.weapp_element,.weapp_display_element,.mp-miniprogram{display:block;margin:1em 0}.share_audio_context{margin:16px 0}.weapp_text_link{font-size:17px}.weapp_text_link:before{content:'';display:inline-block;line-height:1;background-size:contain;background-repeat:no-repeat;background-image:url('data:image/png;base64,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');vertical-align:middle;font-size:11px;color:#888;margin-right:6px;margin-top:-3px;background-position:center;height:20px;width:20px}.flex_context{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}.flex_bd{-webkit-box-flex:1;-webkit-flex:1;flex:1;word-wrap:break-word;word-break:break-all}.original_page{background-color:#fff;font-size:16px}.account_info{padding:0 0 20px}.account_info .flex_bd{padding-left:.85em}.radius_avatar.account_avatar{width:40px;height:40px;padding:0}.account_nickname{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;line-height:1.2;color:#576b95;font-size:14px}.account_nickname_inner{font-weight:400;vertical-align:top}.account_desc{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;color:#b2b2b2;font-size:13px;line-height:1.2;padding-top:.3em}.account_desc_inner{display:inline;vertical-align:top}.share_notice{margin-bottom:20px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.share_media{padding-bottom:18px}.original_panel{padding:20px;background-color:#fcfcfc;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;overflow:hidden;position:relative}.original_panel:after{content:" ";border:1px solid #d8d8d8;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;position:absolute;top:0;left:0;width:200%;height:200%;-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}.original_panel .original_account{margin-bottom:18px;position:relative;z-index:1}.original_panel .original_account_avatar{width:28px;height:28px;padding:0}.original_panel .original_account_nickname{padding-left:.85em;font-size:15px;color:#576b95}.original_panel_title{font-size:23px;color:#000;margin:0 0 16px}.original_panel_content{color:#333}.original_panel_tool{padding-top:20px;position:relative;z-index:1}.original_cell_nickname{display:inline-block;vertical-align:middle;font-weight:400;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;max-width:8em;color:#000}.original_tool_area{padding:1.17em 0;border-width:0;position:relative}.original_tool_area:before{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #dfdfdf;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dfdfdf;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:20px;height:20px;margin-right:.2em}.original_tool_area .flex_cell{padding:0;font-size:14px}.original_tool_area .icon_access:after{margin-right:4px;top:0}.preview_appmsg .rich_media_title{margin-top:1.5em}.preview_appmsg .account_info{padding-top:3em}.original_page{background-color:transparent}.account_info{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:0;padding-bottom:20px;font-size:14px}.account_info.appmsg_account_info{padding-bottom:32px}.account_info .radius_avatar img{background-color:transparent}.share_notice{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.original_panel{background-color:#fafafa}.original_panel:after{border-color:#e6e6e6}.original_panel .original_account_avatar{width:30px;height:30px}.original_panel_tool{font-size:14px}.original_panel_tool a{color:#576b95}.original_panel_content{font-size:17px}.share_media{padding-bottom:30px}.icon_appmsg_tag{display:inline-block;vertical-align:middle;padding:0 .5em;font-size:12px;line-height:1.5;background-color:#c3c3c3;color:#fff;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;max-width:70%}.icon_appmsg_tag.primary{color:#3bb638;padding:4px .78em;background-color:rgba(9,187,7,0.08);font-size:12px;border-top-left-radius:.95em 50%;-moz-border-radius-topleft:.95em 50%;-webkit-border-top-left-radius:.95em 50%;border-top-right-radius:.95em 50%;-moz-border-radius-topright:.95em 50%;-webkit-border-top-right-radius:.95em 50%;border-bottom-left-radius:.95em 50%;-moz-border-radius-bottomleft:.95em 50%;-webkit-border-bottom-left-radius:.95em 50%;border-bottom-right-radius:.95em 50%;-moz-border-radius-bottomright:.95em 50%;-webkit-border-bottom-right-radius:.95em 50%}.icon_appmsg_tag.default{border:1px solid rgba(0,0,0,0.1);color:rgba(0,0,0,0.3);background-color:transparent;padding:0 .54em;font-size:15px;line-height:1.3;border-top-left-radius:.67em 50%;-moz-border-radius-topleft:.67em 50%;-webkit-border-top-left-radius:.67em 50%;border-top-right-radius:.67em 50%;-moz-border-radius-topright:.67em 50%;-webkit-border-top-right-radius:.67em 50%;border-bottom-left-radius:.67em 50%;-moz-border-radius-bottomleft:.67em 50%;-webkit-border-bottom-left-radius:.67em 50%;border-bottom-right-radius:.67em 50%;-moz-border-radius-bottomright:.67em 50%;-webkit-border-bottom-right-radius:.67em 50%}.rich_media_meta_list .icon_appmsg_tag.default{margin-top:-1px}.icon_appmsg_tag.title_tag{background-color:#d04b4e}.icon_global_tag_wrp{text-align:right;padding-bottom:12px}.icon_global_tag{background-color:rgba(118,118,118,0.16);color:rgba(0,0,0,0.41);line-height:2.2;border-top-left-radius:1em 50%;-moz-border-radius-topleft:1em 50%;-webkit-border-top-left-radius:1em 50%;border-bottom-left-radius:1em 50%;-moz-border-radius-bottomleft:1em 50%;-webkit-border-bottom-left-radius:1em 50%;padding:0 1.8em 0 1.34em;font-size:12px;margin-right:-24px;display:inline-block;vertical-align:top}.global_plain_btn{display:inline-block;vertical-align:middle;padding:0 1em;line-height:2;font-size:14px;-webkit-tap-highlight-color:rgba(0,0,0,0);border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}.global_plain_btn.primary{color:#1aad19;border:1px solid currentColor}.global_plain_btn.primary:active{color:rgba(26,173,25,0.6)}.rich_media_empty_extra{background-color:#fafafa}.appmsg_skin_default.rich_media_empty_extra{background-color:#fff}.appmsg_skin_default .rich_media_area_primary{background-color:#fff}.appmsg_skin_default .rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips{background-color:#fff}.appmsg_style_default .rich_media_tool{padding-top:15px}.rich_media_title_ios{font-weight:700}</style>
+<style>
+        </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/pc3ec991.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN sougou_body  appmsg_skin_default appmsg_style_default">
+        
+<script nonce="1877000442" type="text/javascript">
+    var write_sceen_time = (+new Date());
+</script>
+
+<div id="js_article" class="rich_media">
+    
+    <div id="js_top_ad_area" class="top_banner"></div>
+    
+    <div class="rich_media_inner">
+
+        
+        
+        <div id="page-content" class="rich_media_area_primary">
+          <div class="rich_media_area_primary_inner">
+
+                                    
+                        
+
+            <div id="img-content">
+
+                
+                <h2 class="rich_media_title" id="activity-name">
+                    陈经：这一次中国真的不一样（2005年预言中国终结全球化）
+
+                                                                                </h2>
+                <div id="meta_content" class="rich_media_meta_list">
+                                                                                <span class="rich_media_meta rich_media_meta_text">
+                                                陈经
+                                            </span>
+                                        
+                                        <span class="rich_media_meta rich_media_meta_nickname" id="profileBt">
+                      <a href="javascript:void(0);" id="js_name">
+                        风云之声                      </a>
+                      <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                          <div class="profile_inner">
+                              <strong class="profile_nickname">风云之声</strong>
+                              <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                              <p class="profile_meta">
+                              <label class="profile_meta_label">微信号</label>
+                              <span class="profile_meta_value">fyvoice</span>
+                              </p>
+
+                              <p class="profile_meta">
+                              <label class="profile_meta_label">功能介绍</label>
+                              <span class="profile_meta_value">科技与战略风云学会，科学素养，家国情怀，横跨文理，纵览风云。《周易·文言》：“九五曰：飞龙在天，利见大人，何谓也？子曰，同声相应，同气相求。水流湿，火就燥。云从龙，风从虎。圣人作而万物覩。”</span>
+                              </p>
+                              
+                          </div>
+                          <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                              <i class="profile_arrow arrow_out"></i>
+                              <i class="profile_arrow arrow_in"></i>
+                          </span>
+                      </div>
+                    </span>
+
+
+                    <em id="publish_time" class="rich_media_meta rich_media_meta_text"></em>
+
+
+
+
+
+                </div>
+                
+                
+                
+                
+                                                
+                                                                
+                                
+                
+                <div class="rich_media_content " id="js_content">
+                    
+
+                    
+
+                    
+                    
+                    <p style="text-align:center;text-indent:37px;text-autospace:none"><strong><span style="font-size:19px;font-family:宋体">陈经：这一次中国真的不一样（</span></strong><strong><span style="font-size:19px">2005</span></strong><strong><span style="font-size:19px;font-family:宋体">年预言中国终结全球化）</span></strong></p><p style="text-indent: 32px"><span style="font-size:16px">&nbsp;</span></p><p style="text-align:center;text-indent:32px;text-autospace:none"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/7RTibXBgZTTu3gicZl57jyb7lGYtUmbSKFlbtcIGIqITC4dh7xoAXdHNmAXUTYJZb6qHSyjQPHc4tLDs8IOY0QnQ/0?wx_fmt=jpeg" data-ratio="1" data-w=""  /><br  /></p><p style="text-indent: 32px"><span style="font-size:16px">&nbsp;</span></p><blockquote><p style="text-indent: 32px"><strong><span style="font-size:16px;font-family:宋体">作者简介</span></strong><span style="font-size:16px;font-family:宋体">：笔名陈经，香港科技大学计算机科学硕士，中国科学技术大学科技与战略风云学会研究员，微博</span><span style="font-size:16px">@</span><span style="font-size:16px;font-family:宋体">风云学会陈经</span><span style="font-size:16px;font-family:宋体">。二十一世纪初开始有独特原创性的经济研究，启发了大批读者。</span><span style="font-size:16px">2003</span><span style="font-size:16px;font-family:宋体">年的《经济版图中的发展中国家》预言中国将不断产业升级，挑战发达国家。</span><span style="font-size:16px">2006</span><span style="font-size:16px;font-family:宋体">年的《中国的官办经济》系列文章对中国的经济奇迹做出了深入、系统的解读。</span></p></blockquote><p style="text-indent: 32px"><span style="font-size:16px">&nbsp;</span></p><p style="text-indent:32px"><span style="font-size: 16px;font-family: 宋体">【</span><span style="font-size:16px;font-family:宋体">中国科学技术大学科技与战略风云学会会长袁岚峰博士（微博</span><span style="font-size:16px">@</span><span style="font-size:16px;font-family:宋体">中科大胡不归</span><span style="font-size:16px;font-family:宋体">）</span><span style="font-size: 16px;font-family: 宋体">按：</span><span style="font-size: 16px">2005</span><span style="font-size: 16px;font-family: 宋体">年时，中国的</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">数值还不及意大利，崩溃论和悲观论调仍然是舆论场的主流。但陈经指出这个“最大的发展中国家”已经改变得太多，真的不一样了。发达国家对发展中国家经济向来是居高临下得“象研究试管中的虫子一样”，但对账面数值还很低的中国，它们却发现自己已经受到了面对面的挑战。中国按比较优势逐步发展各级产业，先发展初级的，再逐渐往上吃中级高级的，占住了就不放弃。中国直奔全球生产基地的方向而去，断了其它发展中地区的工业化机会，所以是“全球化的终结者”。以后不仅是中国去改革开放适应这个世界，世界也得调整改变去适应中国。历史事实完全证实了陈经的预测！此文可以参照陈经</span><span style="font-size: 16px">2003</span><span style="font-size: 16px;font-family: 宋体">年的文章《经济版图中的发展中国家》（</span><span style="font-size:16px">http://mp.weixin.qq.com/s?__biz=MzI0NzQzMjU3Ng==&amp;mid=2247483712&amp;idx=1&amp;sn=1902a3fb6dc256bd5da7ff4f2143c7af</span><span style="font-size: 16px;font-family: 宋体">）。】</span></p><p style="text-align: center; text-indent: 32px;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/7RTibXBgZTTvy1ufC8JjUXQKvWsenYOShnYKCxFfE4ZCZzrK2bphtuMqwM2qAnk7DFIHgxYfT52Sgs6iaWqh6PqA/0?wx_fmt=jpeg" data-ratio="0.6936936936936937" data-w=""  /><br  /><span style="font-size: 16px"></span></p><p style="text-align:center;text-indent:32px"><em><span style="font-size: 16px">1999</span></em><em><span style="font-size: 16px;font-family: 宋体">年</span></em><em><span style="font-size: 16px">11</span></em><em><span style="font-size: 16px;font-family: 宋体">月</span></em><em><span style="font-size: 16px">15</span></em><em><span style="font-size: 16px;font-family: 宋体">日中美就中国入世达成协议</span></em></p><p style="text-indent: 32px"><span style="font-size: 16px">&nbsp;</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">在替中国吹牛之前，先自吹一下。这些年我坚定的看好并鼓吹中国的发展，属于“觉醒”得比较早的。中国政府很给面子，各种坚挺的经济数据陆续出来，国际上也是四面出击，动静越整越大。如果照老一套把中国当一般发展中国家进行危机分析，不管是“正义人士”的悲天悯人与愤怒指控，还是敌对势力的幸灾乐祸，“中国崩溃论”好象说不太通了：越来越多的证据表明，中国与发展中国家有很大区别。一些人“预料”中的</span><strong><span style="font-size:16px;font-family:宋体;color:red">加入</span></strong><strong><span style="font-size:16px;color:red">WTO</span></strong><strong><span style="font-size:16px;font-family:宋体;color:red">后农业、汽车业、零售业破产</span></strong><span style="font-size: 16px;font-family: 宋体">没有出现，倒是这些悲观预期一一破产。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">“崩溃论”人士很大程度上受政治倾向的影响，本来就没多大市场，其预言不符现实，并不奇怪。但中国对发达国家摆出的挑战姿态实在是让很多人意外。</span><span style="font-size: 16px;font-family: 宋体">我对此是有预期的，但也没想到中国的挑战“来得那么快，来得那么直接”。不久前还是一些人拿“</span><strong><span style="font-size:16px;font-family:宋体;color:red">万亿美元资本外逃</span></strong><span style="font-size: 16px;font-family: 宋体">”吓人，转眼就是“热钱”大举，外汇储备连续翻番，就快世界第一了。几年前没几个人注意到中国政府偷偷搞海外资产，短短两年内中国政府中国企业已象暴发户一样大搞全球收购，火得让人眼珠都掉下来。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">“中国是发展中国家”说了多少年，也必将一直说下去。但是这个“最大的发展中国家”已经改变得太多，真的不一样了。四小龙这样已经爬上岸的经济体的巨大发展，改变的只是它们自身；</span><strong><span style="font-size:16px;font-family:宋体;color:red">中国的发展仅仅只是一个开端，就足以改变整个世界了</span></strong><span style="font-size: 16px;font-family: 宋体">。发达国家对发展中国家经济向来是居高临下地象研究试管中的虫子一样，但面对现在的中国，它们不得不把自己也拉扯进去。许多发展中国家被长期经济封锁一片萧条，却毫无办法只能看着发达国家政客们大放强盗逻辑的厥词；而中国仅仅是加个息，就闹得全球股市剧烈波动。也就是几年前，发达国家的经济新闻里一年也没中国多少条消息，现在恨不得每小时都把中国拿出来说几次。发达国家以前封锁中国几十年，不久前还在对“中国崩溃论”乐此不疲出钱出力，正纳闷咋老不兑现，忽然就发现中国成全球经济引擎了，周边国家经济增长就指望中国了，连中国不继续买美国国债都会出大问题，搞得格林斯潘不得不小心向美国愤青议员解释。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">当然，中国的问题仍然多得很，一时没什么办法的大问题都好几个。所以，崩溃论虽然不断改头换面，仍然会继续存在。就算是对中国有信心的，对人口资源环境技术这些因素的制约也头疼得很，预期总是偏于低调，不敢太过乐观。但无论是好是坏，都</span><strong><span style="font-size:16px;font-family:宋体;color:red">应该把眼光投向全世界，想想中国会怎样改变这个世界，而不是研究试管中的中国经济会长大还是死去</span></strong><span style="font-size: 16px;font-family: 宋体">。现在我们可以肯定的是，没有人，即使是美国，可以置身事外好整以暇地去做这个思想试验。</span></p><p style="text-indent: 32px"><span style="font-size: 16px">&nbsp;</span><span style="font-size: 16px;font-family: 宋体">“发展经济学”研究发展中国家经济，一大块是发达国家经济学家居高临下观察评论，另一大块是发展中国家经济学家椎心泣血恨铁不成钢。把这一套理论用到中国来，历史证明那基本就是“全瞎”，各种预言破产无数次，可笑的说法不少，传统理论无法解释的现象层出不穷。现在外国经济学家们已经学得比较小心了，来中国的好几个经济学诺奖得主都比较客气，明显不象过去那样气盛。而中国经济研究，也成了一门显学，中国经济学家混得如鱼得水。美国内部有非常强大的势力需要树立敌人，另一方面又要维持民主价值观的正确性需要贬低中国的发展，所以就是威胁论崩溃论轮着来，搞来搞去自己不少人都糊涂了，谈到中国可以直接把“</span><span style="font-size: 16px">SB</span><span style="font-size: 16px;font-family: 宋体">”二字贴脑门上。所以，无论是经济学理论，还是国际媒体宣传，都不会有太多助益，对中国的事情还得靠自己推想。我发现中国的一些经济类媒体（如</span><span style="font-size: 16px"> 21</span><span style="font-size: 16px;font-family: 宋体">世纪经济报道）已经有相当好的独立观察思考能力，早已突破经济理论与传统宣传的限制，当然也有不少我这样的业余有兴趣的人在瞎想。经济学家们也没闲着，但他们是专业的，以前的理论学得太多受影响，还要搞数学背景，瞎说如果错了也影响声誉，所以说起话来就比较小心些，也比较注意论证。也有张五常那样彻底的大侃或者在当局说不上话着急上火的左派经济学家发些吓死人的惊人之语，那不是主流。还好我是业余的，大胆说说错了也不要紧，蒙上了正好吹吹牛。</span></p><p style="text-indent: 32px"><strong><span style="font-size:16px;font-family:宋体;color:red">中国人喜欢忧国忧民，重点在一个“忧”字上。什么情况不对劲，马上就炒大了，上升到文明灭亡程度的不少。</span></strong><span style="font-size: 16px;font-family: 宋体">看到工人农民受苦了，就骂贪官骂精英骂政府骂改革开放。看到官员腐败了，就说国将不国，没希望了，大家出国混吧。看见妓女窃贼抢劫犯，就觉得中国道德完了，没法住了。看见哪里有民众聚集，就想象中国遍地干柴烈火，阶级矛盾不可调和，等着革命拉清单吧。看见台湾闹事，就想象美国日本有什么天大阴谋要打仗阻止中国现代化进程。看见石油涨价管线计划或收购受阻，就想象中国被人逼得掏大钱买油还不一定买得到。看见进口原材料涨价出口产品降价，就想象中国搞进出口无利可图，工厂纷纷倒闭。看见纺织品鞋类等贸易争端，就说</span><span style="font-size: 16px">WTO</span><span style="font-size: 16px;font-family: 宋体">白入了，让了利却没收到好处，尽受气了。看见一些领域技术不行要依赖进口先进设备部件，就说光给别人打工了，越生产越吃亏，再搞下去就经济危机了。看见银行坏账几万亿，就想象外资银行一来，老百姓就挤提，要崩溃了。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">这样一种思维倾向，再加上正义与爱国感情支持的愤怒情绪，就这么年年一边“忧”一边“骂”的过来了。老问题解决了，新问题出来更多，程度还更厉害了，永远可以“忧”下去。这当然无可指责，一般来说，只要不是那种社会大乱时期，“忧”多一些甚至主动去闹些事，可以保持道德压力，有助于社会进步。但</span><strong><span style="font-size:16px;font-family:宋体;color:red">这种思维倾向并不因其道德优势具有先天的正确性，真要正儿八经搞起预测，多半不如多方平衡考虑的预测准确</span></strong><span style="font-size: 16px;font-family: 宋体">。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">如果有人觉得只有“忧国忧民”才是有价值的思维方式，那么我建议不要看其它类型文章了，也不必看我写什么了，甚至反过头来攻击我不忧国忧民，那也是正常行为，这道德水准，一个字：高！跟我学坏了就可惜了。但我相信有不少人其实没那么正派，就喜欢起哄吹个牛什么的，也喜欢没心没肺地自己过着好日子不顾受苦的工农听些中国的好事，畅想一下未来，那我乐观的歪理邪说可算是有用场了。道德正义人士不待见我也有道理，我一人瞎说不要紧，影响到意志不坚定的读者也道德沦丧了，危害就大了。不过学坏容易学好难，又不能把我专政了，正义人士在华岳轮流批我只怕事倍功半。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">其实要按照乐观的路子来想中国，那简直就能把事情全翻过来，开出一片有意思的新天。</span></p><p style="text-indent: 32px"><span style="font-size: 16px">&nbsp;</span></p><p style="text-indent: 32px"><strong><span style="font-size: 16px;font-family: 宋体">先看看拉美的情况</span></strong></p><p style="text-indent: 32px"><span style="font-size: 16px">&nbsp;</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">发展中国家真不是什么好词。一提就是贫富分化、贪污腐败、债务危机、经济危机、政权更迭、环境污染、贫民窟、人道灾难。世界人民其实挺有斗争精神的，象印度人民那样乐天知命的是少数。出了坏事找根源，发达国家帝国主义从殖民时代开始就坏得毛孔里流脓，后来也是通过不平等贸易巧取豪夺证据确凿，不光是中国，穷国们提起来都是苦大仇深的。主席借此大势划分三个世界的阵营，是好招。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">除了闹共产的一大帮，拉美国家也是不甘心的主，也上升到了经济理论高度。这两伙从结果看，都遭到了巨大挫折，说得不客气点，是失败了。中国比较特立独行，先是和别的共产党国家基本闹崩，被全球主要大国封锁，自己硬来了二十多年，再后来忽然又搞起改革开放，有许多没有先例的创新。现在看来，如果说发展中国家还有希望，那么也只能指望中国搞出点什么东西了。印度我原来以为还有戏，后来了解多了，觉得比拉美国家都差远了，贫富分化程度超过人的想象，特别是可总结的经验不多，好的是靠运气，坏的就没边了。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">拉美国家和美帝国主义经济上打交道时间很长，纠缠很深，其经济理论看上去还挺现代的，象那么回事。它们的“发展主义”理论，特别是“进口替代”政策写出来，保管很多人喜欢。根本目标是要工业化，打破发达国家支配的不平等的“中心——外围”国际经济结构。工业化靠三大手段，进行大量的投资，实施保护主义政策和严格的外汇管制，调整在税收工资利润就业方面的政策，以鼓励本国企业的发展。工业化过程中要搞“进口替代”，摆脱对国际市场，特别是对发达国家的产品依赖，形成自己的生产能力，实现经济上的独立。这里要说明一下，拉美从</span><span style="font-size: 16px">1930</span><span style="font-size: 16px;font-family: 宋体">年代陆续开始搞进口替代时，由于历史的原因，外资占支配地位，并不象中国那样一革命全跑了。所以中国是从头开始学习制造业，开始没外资什么事，拉美是替代，针对的就是外资。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">至少从表面上看，这个经济政策太正确了，拉美经济学家也不是吃素的。而实际上，进口替代政策也取得了很大成果。拉美代表国家巴西、阿根廷、墨西哥等在发展中国家里算是不错的，现在人均</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">比中国还高不少。它们</span><span style="font-size: 16px">1950</span><span style="font-size: 16px;font-family: 宋体">年代就实现了轻工业产品基本自给，</span><span style="font-size: 16px">1960</span><span style="font-size: 16px;font-family: 宋体">年代末工业品自给率</span><span style="font-size: 16px">80%</span><span style="font-size: 16px;font-family: 宋体">以上。经济实力、人民生活水平都有不小提高。墨西哥还办上了奥运会，没点子本事搞不来的。那个时候，是发展经济学的好时光。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">这看上去和中国现在的局面倒有些类似，也是外资一大片，好多先进设备部件靠进口。很多左派要求的经济政策也是要保护，要赶走外资，要自主生产技术进步。可人们知道后来拉美出事了，连串经济危机，到底怎么回事？</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">拉美出事，是两个阶段。第一阶段是进口替代战略失败发生危机，不得不搞新自由主义市场开放结构调整全球化那一套。第二阶段是新自由主义全球化的危害，连东南亚一起出事了。这第二阶段的危害人们一般比较熟，二十多年造成许多巨大灾难，引发全球声讨浪潮，连发达国家经济学家也不好意思，说要重新认识了。就是外资在资本市场任意进出，外储不够，货币贬值这一套，我以前也说过。但进口替代怎么就能出事哩？看上去真挺不错的。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">这就跟王安石变法似的，看上去是好好的政策，实行起来就满不是那么回事，最后走向了政策的反面。拉美国家搞进口替代工业化，本意是要摆脱对发达国家的依赖，搞了三四十年，结果反而是更依赖发达国家。</span></p><p style="text-indent: 32px"><strong><span style="font-size:16px;font-family:宋体;color:red">进口替代战略最根本的缺陷，是封闭。</span></strong><span style="font-size: 16px;font-family: 宋体">搞了几十年保护，本国的工业能力增强了，但是忘了世界市场。暂时减弱了国际市场的控制，却牺牲了本国经济对国际竞争的适应力。拉美国家实际上不知道在国际市场上该干什么，卖原材料吧，这有点子不上路，卖工业品吧，又没竞争力。就这么犹豫着，到要钱用的时候，到底卖上了原材料，和前苏联差不多。开始阶段取得工业化初级成果的时候，还不是太要紧，各方面都比较顺。等到了工业化的深入阶段，问题来了。出大事了：对外贸易和国际收支状况恶化！消费品自己生产了，算是替代成功了。可是工业化越搞越复杂，生产消费品的机器设备并不简单，自己硬搞不知什么时候搞出来，总要进口。加上生产所需部件、一些关键原材料，这进口的花费断乎少不了。发达国家还趁机涨价。另外，拉美把外资国有化，得靠赎买，</span><span style="font-size: 16px">60</span><span style="font-size: 16px;font-family: 宋体">年代后收了</span><span style="font-size: 16px">200</span><span style="font-size: 16px;font-family: 宋体">多家，花费了巨额外汇。富人们崇洋媚外，大量进口奢侈品也要用外汇。国际上自家产品没什么竞争力，</span><strong><span style="font-size:16px;font-family:宋体;color:red">没有靠得住的来钱的路数</span></strong><span style="font-size: 16px;font-family: 宋体">，连年外贸逆差。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">另外一个是社会问题。搞了工业，农业没搞好，土改不彻底，大量农民失业半失业，涌入城市建贫民窟。本来工业该吸收农业人口，结果搞的进口替代工业多半是资本与技术密集型，收不了多少人。社会分配社会公平没搞好，贫富分化极端化。社会问题搞不好，就动荡，上层搞军事政变，下层游击队，举毛主席大旗武装反抗。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">本国人民靠不上，国际收支又恶化，拉美统治集团就剩一条路了：找发达国家帝国主义解决问题。借债当然是免不了的。既然这样了，发达国家不是善男信女，开出条件来不怕你不答应，那还不是越来越依赖发达国家？就这么走上了全球化的道路，连前面进口替代工业化的成果也毁了不少。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">全球化也不解决问题，因为全球化竞争太残酷了，连发达国家部分人都害怕，更别提拉美国家了。生产聚集到中国来了，拉美国家产品仍然是没有竞争力，如果过小日子倒还可以混，想上档次花外汇搞大事，国际收支就会恶化，实在绕不过去。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">其实从拉美的经验教训来看，中国改革开放中的很多做法就容易理解了。</span><span style="font-size: 16px"> </span></p><p style="text-indent: 32px"><span style="font-size: 16px">&nbsp;</span></p><p style="text-indent: 32px"><strong><span style="font-size: 16px;font-family: 宋体">发展中国家大救星？</span></strong></p><p style="text-indent: 32px"><span style="font-size: 16px">&nbsp;</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">拉美完蛋了，经验教训还是比较清楚的。“拉美化”这词也很热，不少文章在炒，说中国已经拉美化唱衰或者要防拉美化搞和谐社会。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">对照上面的分析，把中国的情况过一遍。中国不是进口替代战略，而是先封闭发展搞了一段自主工业化，这一阶段犯过很多错误，但也有一些问题解决了。因为犯错误，所以发展速度不尽如人意，大起大落，平均下来</span><span style="font-size: 16px">7%</span><span style="font-size: 16px;font-family: 宋体">的样子，本来可以高得多的。农业也没搞好，农民没多少进城工业化的。结果</span><span style="font-size: 16px">1970</span><span style="font-size: 16px;font-family: 宋体">年代末期一看，生活水平基础设施混得和坏典型印度差不多，实际上比很多发展中国家都差，比拉美国家也差不少。和发达国家那就拉开了很大差距，出去访问的人十分震惊。原因很多，封闭发展、政治运动、左倾实践失误等等。但也不是表面上看那么差，成就还是有的，</span><strong><span style="font-size:16px;font-family:宋体;color:red">与发展中国家实质已经不一样了</span></strong><span style="font-size: 16px;font-family: 宋体">。有一个执行能力十分强大的领导政党，做错了会错得特别大，可要做对了，那也不同凡响。政权独立自主，改革方向可以自己定。土改搞成了，土地国有，后来建开发区三通一平，政府炒地皮大捞靠的就是这个。没有外资，也没内外债，搞改革可以重新设计，负担小。有相当的自主工业能力，工业化上层次基本属于一点就通，事半功倍，工业能力发展瓶颈比一般发展中国家高。社会稳定，劳动力勤劳肯干肯学习。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">这说明中国要搞改革开放追赶生活与基础设施水平，条件要好不少。但也得去做，还不能乱来。</span><strong><span style="font-size:16px;font-family:宋体;color:red">改革开放最根本的一点我认为是优势产业搞得不错，从而国际贸易有稳定的来钱的办法。</span></strong><span style="font-size: 16px;font-family: 宋体">老老实实</span><strong><span style="font-size:16px;font-family:宋体;color:red">按比较优势逐步发展各级产业，先发展初级的，再慢慢往上吃中级高级的</span></strong><span style="font-size: 16px;font-family: 宋体">。发展产业以产业竞争力为中心，决心发展的产业不靠保护，而是</span><strong><span style="font-size:16px;font-family:宋体;color:red">开放与保护平衡，引进与自研结合</span></strong><span style="font-size: 16px;font-family: 宋体">。到时候放开竞争，国企民营外企一齐混战残酷竞争，胜利者一定是国际上也有竞争力。这样，一些产业在国际上有大竞争力，是较为稳定的来钱办法。以前主要靠纺织品，后来又搞出了机电产品，都是很大块的产业，一小部分就够一小国混的，中国不客气把产业机会全捞过来。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">从这时起就和拉美等一般发展中国家不一样了。它们找不着优势产业，忙于应付各种危机，稍有风吹草动就大事不好。而中国有优势产业，</span><strong><span style="font-size:16px;font-family:宋体;color:red">以优势产业为依托解决各种问题不断前进</span></strong><span style="font-size: 16px;font-family: 宋体">，年年都是高速发展。这与四小龙的路数相近些，是比较优势论，而不是拉美发展经济学。要论问题，其实不比拉美少。贫富分化、腐败等等也是比较严重的，人多地少资源少，要就业的人口实在太多，条件还不如拉美。但因为有靠得住的产业，解决问题的希望比拉美大得多。找不着优势产业，一般就靠卖原材料了。除非是天生好运在家里一铲子下去挖出的不是石油就是钻石的国家，卖原材料受价格影响很大，易受制于人，一般解决不了问题，从经济原理上不如搞工业生产的国家出路多。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">中国与四小龙一样注重产业，但路数也有根本不同。四小龙搞一阵子就要升级，原有产业要转移，这边炒第三产业关起门来搞高物价内部通货膨胀，外部货币升值，虚拟经济超前消费，是一个炒作的路数，是往发达国家靠。中国是产业一级级往上吃，占住了就不放弃，不怎么炒作，而是长期低物价体系。这是一个</span><strong><span style="font-size:16px;font-family:宋体;color:red">注重生产能力的策略</span></strong><span style="font-size: 16px;font-family: 宋体">，而不是急功近利炒高名义</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">。这样一来，就断了其它地区竞争的念想，朝着全球生产基地的方向发展。本来说中国改革开放经济增长这么猛，人民工资该高上去了吧？结果中国是把消费工业品的价格降下来，人民工资增长不多，加几次薪比起别的国家其实不算什么，但实质生活水平有很大提高。房子炒了一下子，连忙刹车，因为与国家战略不符合。真要炒，各种物价一通涨，加人民币升值，</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">早上天了。但就不炒不升值，就老实生产工业品自用，还大量出口，进口外国的大头是原材料与先进设备，在中国经过数道加工，原理上有增值，国际收支不会成问题，倒是顺差越来越多要想办法。这是世界上从来没有过的经济现象。看上去与四小龙有些象，与发展中国家有些象，国际贸易行为模式甚至与发达国家有些象，又好象都有点区别。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">发展中国家忽然发现国际经济环境中出了中国这么个国家，连发达国家在内，实在是没什么准备。中国</span><span style="font-size: 16px">93</span><span style="font-size: 16px;font-family: 宋体">与</span><span style="font-size: 16px">94</span><span style="font-size: 16px;font-family: 宋体">年搞人民币贬值的时候，国际上没什么声音，以为没什么大不了的。其实是很黑的，一家伙贬了那么多，算偷袭成功了。要搁现在，不升值都有人跳脚，要那样贬值，得搞疯一堆人。东南亚拉美在内，都发现搞生产搞不过中国了，外资转到中国去了，</span><strong><span style="font-size:16px;font-family:宋体;color:red">基础设施越来越好，产业聚集了</span></strong><span style="font-size: 16px;font-family: 宋体">，以战养战了。时间一长，一段正反馈过后，就根本没法争了。这中国政府为此是无所不用其极，别的国家差的不是一点半点，是真的没法争了。得建高档次基础设施，得相关厂家一起来，得有大群高素质低工资劳力，这哪条都是不太可能实现的。墨西哥就很受伤，拖着不让中国进</span><span style="font-size: 16px">WTO</span><span style="font-size: 16px;font-family: 宋体">。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">但其实真的绝了搞生产和中国争的念想，会发现其实也不算个坏事，甚至是挺美好的事。这样想，中国简直可以算是发展中国家大救星了。首先，不折腾搞生产了，世界各发展中国家争来争去，任外资评估，任它们搬来搬去造成许多灾难。干脆断了这个念想，也就不会有这种祸事了。算是世界范围内避免了重复建设。再一个，中国生产搞得好，又是低价策略，各种工业品价格比过去便宜太多了，不用几个钱就能买很多中国商品，老百姓也高兴。从各种工业品的产出消费来看，世界各发展中国家的</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">虽然没怎么大增长，生活水平其实提高了不少。最后，中国对原材料的需求急剧增加，对农副旅游等特色产品需求也是大幅增加，原材料价格普遍上升并且难以回调，发展中国家卖资源卖特产也可以搞成顺差，经济明显比过去稳定了，甚至全民小康也可以幻想一下了。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">当然，如果对中国不服气，那么是不乐意的。凭什么你生产我卖原材料？但其实很容易想通。现在也就是印度不太服气。东南亚原先想不通，后来想通了。经过中国劝说，并且和中国贸易实践尝到了甜头，和中国的十加一自贸区已经搞起来了正式实施了，转眼就是世界人口最多的自贸区。我估计会成为发展中国家自贸区的典范。印度也慢慢想通了，和中国发展经贸往来不抵触，它还顺差，在惊叹中国制造业之强大之余，觉得它和中国往来也挺不错的。胡温到各资源国去访问，那简直就是众星捧月大财主一般倍儿有面子。中国也的确不亏待它们。它们和发达国家搞来搞去搞到了什么？那真叫不等价交换。中国高价买原材料低价卖工业品，就够意思了，还要怎么样？当然也不是说中国就亏了，实在是以前发达国家卖工业品价太黑。华为中兴把国际电信设备价格打低了多少？发展中国家能不看在眼里？人心都是肉长的，中国威胁论再怎么炒人发展中国家自己有看法。你发达国家投资善款作秀搞再多，我们发展中国家再也不想被骗了！日本和韩国也惦记着和东南亚国家搞自贸区，那是假心假意的，先被中国搞成了，它们还不一定加得进十加一里来。加进来干么？日本韩国人不多又不开放农产品市场，小气得紧。有什么产品早通过在中国的合资厂卖过来了，自贸减关税也没什么意思。哪象中国，说开放，就是真开放，全国每人二两龙眼就够泰国生产一阵子的了。中国和东南亚十国，那是真的合作前景大好。两方面都是越消费越有消费能力，你买我的家用电器我买你的原材料与水果，经济增长还在话下？</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">发展中国家想通了，剩发达国家想不通了。这中国不是才千把块美元的人均</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">，总值还没超过意大利么，不是说好长时间就要崩溃了么，怎么就能闹成这样了？实在是想不通。</span><span style="font-size: 16px"> </span></p><p style="text-indent: 32px"><span style="font-size: 16px">&nbsp;</span></p><p style="text-indent: 32px"><strong><span style="font-size: 16px;font-family: 宋体">全球化终结者？</span></strong></p><p style="text-indent: 32px"><span style="font-size: 16px">&nbsp;</span></p><p style="text-indent: 32px"><strong><span style="font-size:16px;font-family:宋体;color:red">发达国家心目中理想的中国，是一个分裂的中国。</span></strong><span style="font-size: 16px;font-family: 宋体">苏联、南斯拉夫解体之后，这样一种狂想走到了它的顶峰。当然，民主也在计划之中，有了民主，分裂就好办了。长期以来，它们对中国关注重点就在于此。民运喇嘛东突就是希望之星，风光了好一阵子。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">而中国经济，是民主分裂大计划中的一个环节。中国发展经济，是值得鼓励的事，按照某种奇怪的理论，经济发展会导致民主。本来已经快成功了，可惜中共有够狠，居然敢开枪。不过这下中共可失尽民心了，中国人民该觉醒了，与这个反动政权作坚决斗争，成功应该不远了。</span></p><p style="text-indent: 32px"><strong><span style="font-size:16px;font-family:宋体;color:red">这样一种幻想，支配了发达国家对中国的观察。</span></strong><span style="font-size: 16px;font-family: 宋体">然而，这是一种严重的渎职，不客气的说，所谓的中国问题专家们都在吃干饭。发达国家实际上不了解中国发生的事情，对中国的国情民情民心把握得十分离谱，居然把工作重点放到了毫无指望的民主分裂上。每年拿些人权民主的事给中国添堵，仿佛就有了工作成果。这样一种攻势，十分好应付。中国政府搞宣传其实很差，但还知道把闹民主的往美国送。中国舆论思想界自发地搞了一场研讨辩论，用美帝国主义提供的武器把民主彻底送回了老家。还有些脑子过于简单或者过于复杂的西方民主论痴迷者，但中国这样历史积累深厚的国家，思想传承有根基，思辩层次很深，势头变了就转不过来。西方国家在思想战线上，遭受了重大挫折，还不愿意承认，用各种希奇古怪的说法自欺欺人。流风余韵至今，提到中国仍然是言必天安门，写出来文章和八股似的，与中宣部有一拼。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">西方国家的注意力集中在中国民主政治微不足道的星星之火的同时，中国政府悄然发动了一场全球经济大发击。中国政府</span><span style="font-size: 16px">1993</span><span style="font-size: 16px;font-family: 宋体">年把人民币一家伙贬到八点几的时候，引起的关注也许还不如哈利吴【袁岚峰按：吴弘达】胡编乱造骗钱的劳改报告多——拿钱不干活的民主人士们在走向终点之前，还是很好地完成了</span><strong><span style="font-size:16px;font-family:宋体;color:red">蒋干盗书</span></strong><span style="font-size: 16px;font-family: 宋体">式的历史任务。也许有人注意到了中国政府不寻常的举动，然后轻轻一笑：中国政府终于撑不住人民币那扭曲高估的官方汇率，回归到了它应有的位置。黑市兑换价仍然高过官方汇率不少，有人说中国以美元计的</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">高估了，骗人的，拿人民币换不到那么多美元。种种奇谈怪论中，几乎没有人注意到汇率政策背后中国政府重大的战略转向。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">现在当然很清楚了。从那时起，外资大增，中国开始疯狂大搞基础设施建设，各地政府疯了一样地招商引资，向着全球生产基地狂奔而去。进出口贸易额短短十年就从</span><span style="font-size: 16px">1993</span><span style="font-size: 16px;font-family: 宋体">年的不到</span><span style="font-size: 16px">2000</span><span style="font-size: 16px;font-family: 宋体">亿搞到了上万亿美元。进出口贸易的疯狂增长期是</span><span style="font-size: 16px">2000</span><span style="font-size: 16px;font-family: 宋体">年后的五年，那么大的基数翻了三倍，但原因要追溯到更早的产业布局中去。外汇储备的增长更加惊人，</span><span style="font-size: 16px">2005</span><span style="font-size: 16px;font-family: 宋体">年</span><span style="font-size: 16px">6</span><span style="font-size: 16px;font-family: 宋体">月底估计已经突破</span><span style="font-size: 16px">7000</span><span style="font-size: 16px;font-family: 宋体">亿，年内突破</span><span style="font-size: 16px">8000</span><span style="font-size: 16px;font-family: 宋体">亿很有可能，十年增长二十多倍。这一阶段偷袭战式的疯狂增长，使中国与一般发展中国家彻底区分开来，许多发展经济学中新的现象不断出现，人们终于认识到，对中国要重新认识。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">中国加入</span><span style="font-size: 16px">WTO</span><span style="font-size: 16px;font-family: 宋体">的谈判很有意思。与美国签完协议后，双方代表都笑得嘴合不上。但至少从表面上看，美国女代表更象个胜利者，笑得更欢畅。她当然有足够的理由去笑，我可以断定，美国榨出了不少超出他们预期的条款。但沾沾自喜的同时，把中国政府看成不知世事上当受骗的冤大头，就隐含着犯错误的危险。后来几年国际贸易的发展证明，中国政府更知道自己在干什么，对于自己在国际贸易中的优势所在更清楚，以至于谈判中让了一些也不在乎。如果知道中国从</span><span style="font-size: 16px">WTO</span><span style="font-size: 16px;font-family: 宋体">中可以捞到这么大好处，我相信美国不会这样轻易放中国进去。当然，这也许对美国人要求太高了，加入</span><span style="font-size: 16px">WTO</span><span style="font-size: 16px;font-family: 宋体">后贸易额三年就翻番的事，对人们的想象力是一种挑战。但没有后悔药了，现在美国再来要求人民币升值，温家宝还不是理直气壮的顶回去？</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">中国政府十多年前说要韬光养晦，是明着说的。这是个很无厘头的事，明着说要不出头隐藏实力自己偷偷发展，有用么？敌对势力能信么？你说不出头，人家还不是围你堵你逼你？然而奇妙的是，等中国政府干脆结束韬晦偏向有所作为的时候，这</span><strong><span style="font-size:16px;font-family:宋体;color:red">韬光养晦居然可以算是很成功的一个中长期战略了</span></strong><span style="font-size: 16px;font-family: 宋体">。这只能说是人类的社会科学经济学还处于比较原始的状态，以致于美国对中国的了解偏差了很多，对中国搞了十多年既没有意思也没有成果的民主斗争。美国对自己的和平演变以及全球化那一套太有信心了。这也正常，刚把苏联东欧整趴下，东南亚小小的来一下就腥风血雨，怎么能没信心？</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">但是面对中国的情况，美国人的信心在减退，不耐烦的情绪在增长。全球化到底还管不管用？拉美东南亚苏联东欧都攻城略地搞出巨大成果了，中国又加入</span><span style="font-size: 16px"> WTO</span><span style="font-size: 16px;font-family: 宋体">自投罗网了，还榨出了比预想更好的条款，怎么会这样？这</span><span style="font-size: 16px">WTO</span><span style="font-size: 16px;font-family: 宋体">是为美国开的还是为中国开的？看看中美进出口产品结构，美国出口农产品矿产品，进口各种高中低级消费品，这美国不活脱脱就是搞“进口替代”前的拉美么？实在是有点搞笑。这美元是一年上千亿地往中国逆差，还好是自己印的。但也不是没问题，对中国的经济斗争能力减弱了。以前中国镇压民主可以动真格经济封锁中国，后来也可以年年最惠国审查，人权报告满天飞。现在搞个人民币升值几年搞不定，中国政府连句好话都不肯给，面子上都下不来。自己的议员还照过去那样搞提案经济威胁，实际上中国政府不威胁美国就不错了，格林斯潘得小心解释：美国经济这个啊，不比从前了，这个内外债都不少啊，这个美国国债啊，这个中国政府不买的话啊……</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">中国政府不韬了，拿着美元上全球横着走了，收购到美国老家了。明明一堆大问题，却好似没什么影响继续高速增长，什么时候增长的气势下来，各方面也不太敢放话了。这还有没有天理？没天理，有硬道理，事实就是硬道理。中国政府真金白银捞到手了，你那民主分裂经济崩溃的道理就得改。你管我是不是发展中国家，我在国际贸易中是捞到了，我资源也买了，顺差还越来越多，还巨额外储。我年年上许多大项目，我军舰象下饺子一样造出来。我年年增长接近</span><span style="font-size: 16px">10%</span><span style="font-size: 16px;font-family: 宋体">，要只有</span><span style="font-size: 16px">7%</span><span style="font-size: 16px;font-family: 宋体">都直叹气发生危机了，而你</span><span style="font-size: 16px">6%</span><span style="font-size: 16px;font-family: 宋体">就烧高香了。我人均</span><span style="font-size: 16px">1000</span><span style="font-size: 16px;font-family: 宋体">的，可以拿美元砸得你人均</span><span style="font-size: 16px">5000</span><span style="font-size: 16px;font-family: 宋体">美元的不敢吭气。我</span><span style="font-size: 16px">2008</span><span style="font-size: 16px;font-family: 宋体">年办奥运的，可以比你</span><span style="font-size: 16px">2004</span><span style="font-size: 16px;font-family: 宋体">年办的先准备好场馆。我的优势产业优势很大，我逼得你出阴招搞配额搞特别条款搞环保标准，你们国家劳工游行反全球化。你的优势产业就说不好能优多少时间了，你台湾政府式地戒急用忍，关联厂子仍然会转移到中国，不然混不好。我还往科技里砸大钱，</span><span style="font-size: 16px">R&amp;D</span><span style="font-size: 16px;font-family: 宋体">经费三年就翻倍，排世界第三，就不信砸不出个响儿来。不就是钱么？我国际贸易收支情况这么好，我怕谁？我国内坏账就算几万亿，比你们国债比例还要少，你还想我崩溃？不服气我再发多些国债，多搞出些坏账来，我还增长得好好的，气死你。我是国家，钱就是我印的，</span><strong><span style="font-size:16px;font-family:宋体;color:red">我造出的基础设施与工厂是真的，你没基础设施没工厂再怎么财政健康都是空的，要饭的财政最健康了</span></strong><span style="font-size: 16px;font-family: 宋体">。你要有技术，我敬你一尺，转移给我大家好说，要多少银子好商量，管够。你技术封锁，我还就不信了，主席说，一万年也要搞出来。</span></p><p style="text-indent: 32px"><strong><span style="font-size:16px;font-family:宋体;color:red">全球化，到中国这，就终结了。大小通吃，产业聚集。</span></strong><span style="font-size: 16px;font-family: 宋体">人傻钱多速来，几亿农民，几十家地方政府等着哪。搞资源那得靠老天，搞生产我们就不客气了。其实不用劝，你自己就来了不是？想投机，您上别地儿去，我们这政府严打得厉害，套在上海的房地产上了吧？你全球化再玩不出什么花样了，到中国这就是终极形式了。你内部怎么炒高第三产业虚拟经济</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">上天我管不着，你要是搞高科技</span><span style="font-size: 16px">NB</span><span style="font-size: 16px;font-family: 宋体">到再创个</span><span style="font-size: 16px">IT</span><span style="font-size: 16px;font-family: 宋体">业出来那我也佩服你。可你搞不下去了吧？撞慧星也撞不出什么钱景吧？你要全球化搞生产，我</span><span style="font-size: 16px">GDP</span><span style="font-size: 16px;font-family: 宋体">总额比不上意大利，你也得天天关注中国在搞什么。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">发展中国家想通了，和中国自贸区贸易协定串着来。发达国家没想通，但也是迟早的事。不然和中国打核战争？人澳大利亚不就想通了么？其实也就是美国日本没想通，管线收购石油争端到处使坏。可是既然放出了全球化这个东西，又让中国挺了过来，那你再使坏就没用了。</span></p><p style="text-indent: 32px"><span style="font-size: 16px;font-family: 宋体">以后不仅是中国去改革开放适应这个世界，世界也得调整改变去适应中国。不服气就斗，谁怕谁！</span></p><p style="text-indent: 32px"><span style="font-size:16px">&nbsp;</span></p><p style="text-indent:32px"><span style="font-size:16px">&nbsp;</span></p><p style="text-indent: 32px"><span style="font-size:16px;font-family:宋体">中国科学技术大学科技与战略风云学会，受过科学训练的理性爱国者们组建的智库。科学素养，家国情怀，横跨文理，纵览风云。《周易·文言》：“九五曰：飞龙在天，利见大人，何谓也？子曰，同声相应，同气相求。水流湿，火就燥。云从龙，风从虎。圣人作而万物覩。”（</span><span style="font-size:16px">http://mp.weixin.qq.com/s?__biz=MzI0NzQzMjU3Ng==&amp;mid=2247483652&amp;idx=1&amp;sn=d1e87f74efa09aae6a71bb825bf1acda</span><span style="font-size:16px;font-family:宋体">）</span></p><p style="text-indent: 32px"><span style="font-size:16px">&nbsp;</span></p><p style="text-indent: 32px"><span style="font-size:16px;font-family:宋体">微信公众平台“风云之声”</span><span style="font-size:16px"> </span></p><p style="text-align: center; text-indent: 32px;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/7RTibXBgZTTtA6fugsJmSQJtuErIoeAibtrRJrngEC1drR0KkMm94p7t9rCUs9fAfM3ibO2Bo50IHC2mLonqQQdHw/0?wx_fmt=jpeg" data-ratio="1" data-w="430"  /><br  /><span style="font-size:16px"></span></p><p style="text-indent: 32px"><span style="font-size:16px;font-family:宋体">知乎专栏：</span><span style="font-size:16px">http://zhuanlan.zhihu.com/fengyun</span></p><p style="text-indent: 32px"><span style="font-size:16px;font-family:宋体">一点资讯：</span><span style="font-size:16px">http://www.yidianzixun.com/home?page=channel&amp;id=m107089</span></p><p style="text-indent: 32px"><span style="font-size:16px;font-family:宋体">今日头条：</span><span style="font-size:16px">http://toutiao.com/m6256575842</span></p><p style="text-indent: 32px"><span style="font-size:16px">&nbsp;</span></p><p><br  /></p>
+                </div>
+                <script nonce="1877000442" type="text/javascript">
+                    var first_sceen__time = (+new Date());
+
+                    if ("" == 1 && document.getElementById('js_content')) {
+                        document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+                    }
+
+                    
+                    (function(){
+                        if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                            var link = document.createElement('link');
+                            var head = document.getElementsByTagName('head')[0];
+                            link.rel = 'stylesheet';
+                            link.type = 'text/css';
+                            link.href = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/winwx3ec991.css";
+                            head.appendChild(link);
+                        }
+                    })();
+                </script>
+
+                
+                <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;"></div>
+
+                
+                                <div class="reward_area tc reward_area_primary" id="js_preview_reward_author" style="display:none;">
+                    <div class="reward-avatar" style="display: none;" id="js_preview_reward_author_avatar">
+                        <img src="" alt="" id="js_preview_reward_author_head">
+                    </div>
+                    
+                                        <div class="reward-author" id="js_preview_reward_author_name">陈经</div>
+                                        <p class="reward_tips" id="js_preview_reward_author_wording" style="display:none;"></p>
+                    <p>
+                        <a class="reward_button" id='js_preview_reward_author_link' href="##"><span id="js_preview_reward_link_text">赞赏</span></a>
+                    </p>
+                </div>
+
+                <div class="reward_qrcode_area reward_area tc" id="js_preview_reward_qrcode" style="display:none;">
+                    <p class="tips_global">长按二维码向我转账</p>
+                    <p id="js_preview_reward_ios_wording" class="reward_tips" style="display:none;"></p>
+                    <span class="reward_qrcode_img_wrp"><img class="reward_qrcode_img" src="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_reward_qrcode.2x3534dd.png"></span>
+                    <p class="tips_global">受苹果公司新规定影响，微信 iOS 版的赞赏功能被关闭，可通过二维码转账支持公众号。</p>
+                </div>
+                                
+                
+                            </div>
+                                    
+                        
+
+
+                        
+            <ul id="js_hotspot_area" class="article_extend_area"></ul>
+
+
+            
+                        <div class="rich_media_tool" id="js_toobar3">
+
+                                            <a class="media_tool_meta meta_primary" id="js_view_source" href="##">阅读原文</a>
+                                <div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                <span style="display:none;" class="media_tool_meta meta_extra meta_praise" id="like3">
+                    <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                </span>
+
+                
+
+            </div>
+
+
+                        <div class="rich_media_tool" id="js_sg_bar">
+
+                                <a class="media_tool_meta meta_primary"  href="https://zhuanlan.zhihu.com/p/20761878" target="_blank">阅读原文</a>
+                                
+            </div>
+                      </div>
+        </div>
+
+        <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none"></div>
+
+
+        
+        <div class="rich_media_area_extra">
+          <div class="rich_media_area_extra_inner">
+              
+              <div id="js_share_appmsg">
+              </div>
+
+              
+                            <div class="mpda_bottom_container" id="js_bottom_ad_area"></div>
+                            
+              <div id="js_iframetest" style="display:none;"></div>
+                            
+                            
+              <div class="rich_media_extra rich_media_extra_discuss" id="js_cmt_container" style="display:none">
+                
+
+                
+                <div class="discuss_mod" id="js_friend_cmt_area" style="display:none">
+                  
+                  
+                  
+                </div>
+
+                                <div class="discuss_mod" id="js_preview_cmt" style="display:none">
+                  <div class="discuss_container">
+                    <div class="mod_title_context">
+                        <p class="discuss_icon_tips tc">
+                            <a href="javascript:;" id="js_preview_cmt_write">留言</a>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                              </div>
+          </div>
+        </div>
+
+        
+        <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+            <div class="qr_code_pc_inner">
+                <div class="qr_code_pc">
+                    <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                    <p>微信扫一扫<br>关注该公众号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="js_pc_weapp_code" class="weui-desktop-popover weui-desktop-popover_pos-up-center weui-desktop-popover_img-text" style="display: none;">
+    <div class="weui-desktop-popover__content">
+        <div class="weui-desktop-popover__desc">
+            <img id="js_pc_weapp_code_img">
+            微信扫一扫<br>使用小程序<span id="js_pc_weapp_code_des"></span>        </div>
+    </div>
+</div>
+<div id="js_minipro_dialog" style="display:none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__bd">即将打开"<span id="js_minipro_dialog_name"></span>"小程序</div>
+        <div class="weui-dialog__ft">
+            <a id="js_minipro_dialog_cancel" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+            <a id="js_minipro_dialog_ok" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_primary">打开</a>
+        </div>
+    </div>
+</div>
+
+        
+        <script nonce="1877000442">
+    var __DEBUGINFO = {
+        debug_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console34c264.js",
+        safe_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe34c264.js",
+        res_list: []
+    };
+</script>
+
+<script nonce="1877000442" type="text/javascript">
+(function() {
+	var totalCount = 0,
+			finishCount = 0;
+
+	function _loadVConsolePlugin() {
+		window.vConsole = new window.VConsole();
+		while (window.vConsolePlugins.length > 0) {
+			var p = window.vConsolePlugins.shift();
+			window.vConsole.addPlugin(p);
+		}
+	}
+	
+	function _addVConsole(uri, cb) {
+		totalCount++;
+		var url = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/' + uri;
+		var node = document.createElement('SCRIPT');
+		node.type = 'text/javascript';
+		node.src = url;
+		node.setAttribute('nonce', '1877000442');
+		if (cb) {
+			node.onload = cb;
+		}
+		document.getElementsByTagName('head')[0].appendChild(node);
+	}
+	if (
+		(document.cookie && document.cookie.indexOf('vconsole_open=1') > -1)
+		|| location.href.indexOf('vconsole=1') > -1
+	) {
+		window.vConsolePlugins = [];
+		_addVConsole('3.0.0/vconsole.min.js', function() {
+			
+			_addVConsole('plugin/vconsole-mpopt/1.0.1/vconsole-mpopt.js', _loadVConsolePlugin);
+		});
+	}
+})();
+</script>
+        
+<script nonce="1877000442" type="text/javascript">
+if (location.href.match(/fontScale=\d+/) && /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+
+    var m=location.href.match(/fontScale=(\d*)/);
+    var map={
+        "94":1,
+        "100":2,
+        "109":3,
+        "119":4,
+        "131":5,
+    }
+    if(m&&m[1]&&map[m[1]]){
+        document.getElementsByTagName("body")[0].className+=" appmsg_skin_fontscale_"+map[m[1]];
+        console.log("appmsg_skin_fontscale_:"+map[m[1]])
+    }
+}
+
+
+(function(){
+    
+
+    var first_js_time = +new Date();
+    console&&console.log("first js excute:"+(first_js_time-write_sceen_time));
+    var showDate="";
+    var svrDate=new Date("1533631940"*1000);
+    var createDate=new Date("1466554435"*1000);
+    var ct="1466554435"*1;
+    var publish_time = "2016-06-22" || "";
+    var cD={
+      year:createDate.getYear(),
+      month:createDate.getMonth()+1,
+      date:createDate.getDate()
+    };
+    
+    svrDate.setHours(0);
+    svrDate.setMinutes(0);
+    svrDate.setSeconds(0);
+    var todayDate=svrDate.getTime()/1000;
+    svrDate.setDate(1);
+    svrDate.setMonth(0);
+    var yearDate=svrDate.getTime()/1000;
+    
+    if(ct>=todayDate){
+      showDate="今天";
+    
+    }else if(ct>=todayDate-60*60*24){
+       showDate="昨天";
+    
+    }else if(ct>=todayDate-2*60*60*24){
+      showDate="前天";
+    }else if(ct>=todayDate-3*60*60*24){
+      showDate="3天前";
+    }else if(ct>=todayDate-4*60*60*24){
+      showDate="4天前";
+    }else if(ct>=todayDate-5*60*60*24){
+      showDate="5天前";
+    }else if(ct>=todayDate-6*60*60*24){
+      showDate="6天前";
+    }else if(ct>=todayDate-2*7*60*60*24){
+      showDate="1周前";
+    }else if(ct>=yearDate){
+      var tmp = publish_time.split('-');
+      showDate = parseInt(tmp[1]) + '月' + parseInt(tmp[2]) + '日';
+      
+      
+      
+    }else{
+      showDate=publish_time;
+    };
+    if(document.getElementById("publish_time")){
+      document.getElementById("publish_time").innerText=showDate;
+    }
+})();
+</script>
+<script nonce="1877000442" type="text/javascript">
+
+if (!window.console) window.console = { log: function() {} };
+
+if (typeof getComputedStyle == 'undefined') {
+    if (document.body.currentStyle) {
+        window.getComputedStyle = function(el) {
+            return el.currentStyle;
+        }
+    } else {
+        window.getComputedStyle = {};
+    }
+}
+(function(){
+    window.__zoom = 1;
+    
+    (function(){
+        var validArr = ","+([0.875, 1, 1.125, 1.25, 1.375]).join(",")+",";
+        var match = window.location.href.match(/winzoom=(\d+(?:\.\d+)?)/);
+        if (match && match[1]) {
+            var winzoom = parseFloat(match[1]);
+            if (validArr.indexOf(","+winzoom+",")>=0) {
+                window.__zoom = winzoom;
+            }
+        }
+    })();
+
+    var isIE = false;
+    if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+        isIE = true;
+    }
+    var getMaxWith=function(){
+        var container = document.getElementById('img-content');
+        var max_width = container.offsetWidth;
+        var container_padding = 0;
+        var container_style = getComputedStyle(container);
+        container_padding = parseFloat(container_style.paddingLeft) + parseFloat(container_style.paddingRight);
+        max_width -= container_padding;
+        var ua = navigator.userAgent.toLowerCase();
+        var re = new RegExp("msie ([0-9]+[\.0-9]*)");
+        var version;
+        if (re.exec(ua) != null) {
+            version = parseInt(RegExp.$1);
+        }
+        var isIE = false;
+        if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+            isIE = true;
+        }
+        if (!max_width) {
+            max_width = window.innerWidth - 30;      
+        }
+        return max_width;
+    };
+    var getParentWidth = function(dom){
+        var parent_width = 0;
+        var parent = dom.parentNode;
+        var outerWidth = 0;
+        while (true) {
+            if(!parent||parent.nodeType!=1) break;
+            var parent_style = getComputedStyle(parent);
+            if (!parent_style) break;
+            parent_width = parent.clientWidth - parseFloat(parent_style.paddingLeft) - parseFloat(parent_style.paddingRight) - outerWidth;
+            if (parent_width > 0) break;
+            outerWidth += parseFloat(parent_style.paddingLeft) + parseFloat(parent_style.paddingRight) + parseFloat(parent_style.marginLeft) + parseFloat(parent_style.marginRight) + parseFloat(parent_style.borderLeftWidth) + parseFloat(parent_style.borderRightWidth);
+            parent = parent.parentNode;
+        }
+        return parent_width;
+    }
+    var getOuterW=function(dom){
+        var style=getComputedStyle(dom),
+            w=0;
+        if(!!style){
+            w = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight) + parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
+        }
+        return w;
+    };
+    var getOuterH =function(dom){
+        var style=getComputedStyle(dom),
+            h=0;
+        if(!!style){
+            h = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
+        }
+        return h;
+    };
+    var insertAfter = function(dom,afterDom){
+        var _p = afterDom.parentNode;
+        if(!_p){
+            return;
+        }
+        if(_p.lastChild === afterDom){
+            _p.appendChild(dom);
+        }else{
+            _p.insertBefore(dom,afterDom.nextSibling);
+        }
+    };
+    var getQuery = function(name,url){
+        
+        var u  = arguments[1] || window.location.search,
+            reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"),
+            r = u.substr(u.indexOf("\?")+1).match(reg);
+        return r!=null?r[2]:"";
+    };
+
+    
+    function setImgSize(item, widthNum, widthUnit, ratio, breakParentWidth) {
+        setTimeout(function () {
+            console.log(getParentWidth(item))
+            var img_padding_border = getOuterW(item) || 0;
+            var img_padding_border_top_bottom = getOuterH(item) || 0;
+            
+            if (widthNum > getParentWidth(item) && !breakParentWidth) {
+                widthNum = getParentWidth(item);
+            }
+
+            height = (widthNum - img_padding_border) * ratio + img_padding_border_top_bottom;
+            if (isIE) {
+                var url = item.getAttribute('data-src');
+                item.src = url;
+            } else {
+                if(parseFloat(widthNum, 10) > 40 && height > 40 && breakParentWidth) {
+                    item.className += ' img_loading';
+                }
+                item.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+            }
+            item.style.cssText += ";width: " + widthNum + widthUnit + " !important;";
+            item.style.cssText += ";height: " + height + widthUnit + " !important;";
+        }, 50);
+    }
+
+    (function(){
+        var images = document.getElementsByTagName('img');
+        var length = images.length;
+        var max_width = getMaxWith();
+        for (var i = 0; i < length; ++i) {
+            var imageItem = images[i];
+            var src_ = imageItem.getAttribute('data-src');
+            var realSrc = imageItem.getAttribute('src');
+            if (!src_ || realSrc) continue;
+            
+            var originWidth = imageItem.getAttribute('data-w');
+            var ratio_ = 1 * imageItem.getAttribute('data-ratio');
+            var height = 100;
+            if (ratio_ && ratio_ > 0) {
+                var parent_width = getParentWidth(imageItem) || max_width;
+                var initWidth = imageItem.style.width || imageItem.getAttribute('width') || originWidth || parent_width;
+                initWidth = parseFloat(initWidth, 10) > max_width ? max_width : initWidth;
+                
+                if (initWidth) {
+                    imageItem.setAttribute('_width', !isNaN(initWidth * 1) ? initWidth + 'px' : initWidth);
+                }
+                
+                if (typeof initWidth === 'string' && initWidth.indexOf('%') !== -1) {
+                    initWidth = parseFloat(initWidth.replace('%', ''), 10) / 100 * parent_width;
+                }
+                
+                if (initWidth === 'auto') {
+                    initWidth = originWidth;
+                }
+
+                var res = /^(\d+(?:\.\d+)?)([a-zA-Z%]+)?$/.exec(initWidth);
+                var widthNum = res && res.length >= 2 ? res[1] : 0;
+                var widthUnit = res && res.length >= 3 && res[2] ? res[2] : 'px';
+
+                
+                setImgSize(imageItem, widthNum, widthUnit, ratio_, true);
+                
+                (function (item, widthNumber, unit, ratio) {
+                    setTimeout(function () {
+                        setImgSize(item, widthNumber, unit, ratio, false);
+                    });
+                })(imageItem, widthNum, widthUnit, ratio_);
+            } else {
+                imageItem.style.cssText += ";visibility: hidden !important;";
+            }
+
+        }
+    })();
+    window.__videoDefaultRatio=16/9;
+    window.__getVideoWh = function(dom){
+        var max_width = getMaxWith(),
+            width = max_width,
+            ratio_ = dom.getAttribute('data-ratio')*1||(4/3),
+            arr = [4/3, 16/9],
+            ret = arr[0],
+            abs = Math.abs(ret - ratio_);
+        for(var j=1,jl=arr.length;j<jl;j++){
+            var _abs = Math.abs(arr[j] - ratio_);
+            if(_abs<abs){
+                abs = _abs;
+                ret = arr[j];
+            }
+        }
+        ratio_ = ret;
+        var parent_width = getParentWidth(dom)||max_width,
+            width = width > parent_width ? parent_width : width,
+            outerW = getOuterW(dom)||0,
+            outerH = getOuterH(dom)||0,
+            videoW = width - outerW,
+            videoH = videoW/ratio_,
+            height = videoH + outerH;
+        return {w:width,h:height,vh:videoH,vw:videoW,ratio:ratio_};
+    };
+
+    (function(){
+        var iframe = document.getElementsByTagName('iframe');
+        for (var i=0,il=iframe.length;i<il;i++) {
+            var a = iframe[i];
+            var src_ = a.getAttribute('src')||a.getAttribute('data-src')||"";
+            if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                continue;
+            }
+            var vid = getQuery("vid",src_);
+            if(!vid){
+                continue;
+            }
+            vid=vid.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"");
+            a.removeAttribute('src');
+            a.style.display = "none";
+            var obj = window.__getVideoWh(a),
+                mydiv = document.createElement('img');
+            mydiv.className = "img_loading";
+            mydiv.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+            mydiv.setAttribute("data-vid",vid);
+            mydiv.style.cssText = "width: " + obj.w + "px !important;";
+            insertAfter(mydiv,a);
+            a.style.cssText += ";width: " + obj.w + "px !important;";
+            a.setAttribute("width",obj.w);
+            if(window.__zoom!=1){
+                a.style.display = "block";
+                mydiv.style.display = "none";
+                a.setAttribute("_ratio",obj.ratio);
+                a.setAttribute("_vid",vid);
+            }else{
+                mydiv.style.cssText += "height: " + obj.h + "px !important;";
+                a.style.cssText += "height: " + obj.h + "px !important;";
+                a.setAttribute("height",obj.h);
+            }
+            a.setAttribute("data-vh",obj.vh);
+            a.setAttribute("data-vw",obj.vw);
+            a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+obj.vw+"&height="+obj.vh+"&auto=0");
+        }
+    })();
+
+    (function(){
+        if(window.__zoom!=1){
+            document.getElementById('page-content').style.zoom = window.__zoom;
+            var a = document.getElementById('activity-name');
+            var b = document.getElementById('meta_content');
+            if(!!a){
+                a.style.zoom = 1/window.__zoom;
+            }
+            if(!!b){
+                b.style.zoom = 1/window.__zoom;
+            }
+            var images = document.getElementsByTagName('img');
+            for (var i = 0,il=images.length;i<il;i++) {
+                images[i].style.zoom = 1/window.__zoom;
+            }
+            var iframe = document.getElementsByTagName('iframe');
+            for (var i = 0,il=iframe.length;i<il;i++) {
+                var a = iframe[i];
+                a.style.zoom = 1/window.__zoom;
+                var src_ = a.getAttribute('data-src')||"";
+                if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                    continue;
+                }
+                var ratio = a.getAttribute("_ratio");
+                var vid = a.getAttribute("_vid");
+                a.removeAttribute("_ratio");
+                a.removeAttribute("_vid");
+                var vw = a.offsetWidth - (getOuterW(a)||0);
+                var vh = vw/ratio;
+                var h = vh + (getOuterH(a)||0)
+                a.style.cssText += "height: " + h + "px !important;"
+                a.setAttribute("height",h);
+                a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+vw+"&height="+vh+"&auto=0");
+                a.style.display = "none";
+                var parent = a.parentNode;
+                if(!parent){
+                    continue;
+                }
+                for(var j=0,jl=parent.children.length;j<jl;j++){
+                    var child = parent.children[j];
+                    if(child.className.indexOf("img_loading")>=0 && child.getAttribute("data-vid")==vid){
+                        child.style.cssText += "height: " + h + "px !important;";
+                        child.style.display = "";
+                    }
+                }
+            }
+        }
+    })();
+})();
+</script>
+<script nonce="1877000442" type="text/javascript">
+    var new_appmsg = 1;
+    var item_show_type = "0";
+    var can_see_complaint = "0";
+    var not_in_mm_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/not_in_mm3ec991.css";
+    var windowwx_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/winwx3ec991.css";
+    var article_improve_combo_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/combo3f87f1.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = ""||"MzI0NzQzMjU3Ng==";
+
+    var source = "";
+    var ascene = "";
+    var subscene = "";
+    var abtest_cookie = "";
+
+    var scene = 75;
+
+    var itemidx = "";
+    var appmsg_token   = "";
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var is_follow = "";
+    var nickname = "风云之声";
+    var appmsg_type = "9";
+    var ct = "1466554435";
+    var publish_time = "2016-06-22" || "";
+    var user_name = "gh_a690241ce755";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/7RTibXBgZTTte8g5Q1GWtu6s2tF8aQIFiczprxydnRbJndG3TNnGEqIb7cwds1aUDMYKGyrgz0rMLqLgThKiamwog/0?wx_fmt=png";
+    var ori_head_img_url = "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5Jtm7SW2hChnKhx8zNK3XYnkotiaM4nHp3tvNiakWjcqLQ/132";
+    var msg_title = "陈经：这一次中国真的不一样（2005年预言中国终结全球化）";
+    var msg_desc = "2005年，中国的GDP还低于意大利，但陈经指出，发达国家已经感到了面对面的挑战。中国按比较优势逐步发展各级产业，从初级的逐渐往上吃中级高级的，占住了就不放弃。中国直奔全球生产基地而去，断了其它地区的工业化机会，所以是“全球化的终结者”。";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/7RTibXBgZTTvy1ufC8JjUXQKvWsenYOShnYKCxFfE4ZCZzrK2bphtuMqwM2qAnk7DFIHgxYfT52Sgs6iaWqh6PqA/0?wx_fmt=jpeg";
+    var msg_link = "";
+    var user_uin = "0"*1;
+    var msg_source_url = 'https://zhuanlan.zhihu.com/p/20761878';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '0716lTDShjQzfNHU3YzyIVwJ';
+    var networkType;
+    var appmsgid = '' || ''|| "2247483733";
+    var comment_id = "0" || "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+    var msg_daily_idx = "0" || "";
+    var profileReportInfo = "" || "";
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    var source_username = "";
+    
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+    var source_biz = "";
+    var author_id = "";
+
+    
+    var optimizing_flag = "0" * 1;
+    var ad_abtest_padding = "0" * 1;
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        wxa_product : ""*1,
+        wxa_cps : ""*1,
+        show_msg_voice: "0"*1,
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5Jtm7SW2hChnKhx8zNK3XYnkotiaM4nHp3tvNiakWjcqLQ/0"||(window.location.protocol+"//"+window.location.host + "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+    var appmsg_fe_filter = "contenteditable";
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "" * 1;
+    var like_num = "" * 1;
+    var liked = "" == 'true' ? true : false;
+    var is_temp_url = "" ? 1 : 0;
+    var send_time = "";
+    var icon_emotion_switch = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+    var icon_emotion_switch_active = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+    var icon_loading_white = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+    var icon_audio_unread = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+    var icon_qqmusic_default = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+    var icon_qqmusic_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source393e3a.png";
+    var icon_kugou_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/kugou/icon_kugou_source393e3a.png";
+
+    var topic_default_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+    var comment_edit_icon = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg_new/icon_edit36906d.png';
+    var comment_loading_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif';
+
+    var voice_in_appmsg = {
+        "1":"1"
+            };
+
+    var reprint_style = ''*1;
+    var wxa_img_alert = "" != 'false';
+
+    
+    
+    
+    
+
+    
+    var weapp_sn_arr_json = "" || "";
+
+    
+    var ban_scene = "0" * 1;
+
+    var svr_time = "1533631940" * 1;
+    
+    var is_transfer_msg = ""*1||0;
+
+    var malicious_title_reason_id = "0" * 1; 
+    var malicious_content_type = "0" * 1; 
+
+    
+    var modify_time = "";
+
+    
+    var hotspotInfoList = [
+                    ];
+
+        window.wxtoken = "777";
+        
+    
+    
+    
+    
+    window.is_login = '0' * 1; 
+
+    window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27611+2,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01,    
+                    badjs_rate: 0.1 
+                }
+            });
+        }
+    }
+            window.isSg=true;
+        window.sg_qr_code="/rr?timestamp=1533631940\x26amp;src=3\x26amp;ver=1\x26amp;signature=bT1fNko76FzSgmdvP*YRy1OoXq-IK*QRNDVyIlym55jBwmhYlaX59nuQrtDjy-c*RTWO6vC5HZSfBUifzburUMnXHH2Ok7GfjFDrzYixOiE=";
+        window.sg_data={
+            src:"3",
+            ver:"1",
+            timestamp:"1533631893",
+            signature:"YRcGgHDbEM37V8BQDP3Gr77OZHCvPIQmNEUbpra0I**q8XQl20tIcSk2*4IVK6OAa00CTXA3VWphOURdT2glx*rMB3CFdzhOAaw-OtVcxAxQ-8ZLVLhSRNFY3I3ACW3Me4kStRkbj6C2LSkglycfE8hV-MItYN3*gadd-3iRvsk="
+        }
+        window.__moon_initcallback = function(){
+            if(!!window.__initCatch){
+                window.__initCatch({
+                    idkey : 29711,
+                    startKey : 120,
+                    badjsId: 63,
+                    reportOpt : {
+                        uin : uin,
+                        biz : biz,
+                        mid : mid,
+                        idx : idx,
+                        sn  : sn
+                    },
+                    extInfo : {
+                        network_rate : 0.01    
+                    }
+                });
+            }
+        }
+
+        
+    var title ="风云之声";
+
+
+    var is_new_msg=true;
+</script>
+
+        <script nonce="1877000442">window.__moon_host = 'res.wx.qq.com';window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"new_video/player.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player.html3dd294.js","biz_wap/zepto/touch.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch34c264.js","biz_wap/zepto/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event34c264.js","biz_wap/zepto/zepto.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto34c264.js","page/pages/video.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/pages/video.css3de35e.js","a/appdialog_confirm.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm.html34f0d8.js","widget/wx_profile_dialog_primary.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/widget/wx_profile_dialog_primary.css3de35e.js","a/tpl/new_cpc_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/tpl/new_cpc_tpl.html3f87f1.js","appmsg/emotion/caret.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","new_video/player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player3f44c2.js","a/appdialog_confirm.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm34c32a.js","a/tpl/crt_size_map.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/tpl/crt_size_map3f87f1.js","biz_wap/jsapi/cardticket.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket34c264.js","biz_common/jquery.md5.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/jquery.md53518c6.js","biz_wap/utils/localstorage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage36c4f2.js","appmsg/friend_comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/friend_comment_tpl.html3de35e.js","appmsg/comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_tpl.html3de35e.js","biz_wap/utils/fakehash.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/fakehash38c7af.js","appmsg/comment_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_report3d5603.js","biz_common/utils/emoji_panel_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_panel_data3518c6.js","biz_common/utils/emoji_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_data3518c6.js","appmsg/emotion/textarea.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea3d171e.js","appmsg/emotion/nav.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common3518c6.js","appmsg/emotion/slide.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","appmsg/emotion/dom.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom31ff31.js","biz_common/utils/wxgspeedsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/wxgspeedsdk3518c6.js","pages/music_report_conf.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_report_conf3c6d6e.js","pages/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report3d3b85.js","pages/player_adaptor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/player_adaptor39d6ee.js","pages/music_player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player3d3b85.js","a/video.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/video3ebd5e.js","a/sponsor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor3ec2ed.js","a/ios.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios393966.js","a/android.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android393966.js","a/profile.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile3f3f8a.js","a/app_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/app_card3f87f1.js","a/tpl/cpc_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/tpl/cpc_tpl.html3f87f1.js","a/tpl/crt_tpl_manager.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/tpl/crt_tpl_manager3f87f1.js","a/cpc_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/cpc_a_tpl.html3e57e7.js","a/sponsor_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor_a_tpl.html3ec2ed.js","a/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_tpl.html3ec2ed.js","a/mpshop.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop311179.js","a/wxopen_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/wxopen_card3e0b1d.js","a/card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card311179.js","biz_wap/utils/position.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position34c264.js","a/a_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_report3eeb33.js","a/a_sign.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_sign3f87f1.js","pages/loadscript.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript3d3b85.js","biz_wap/utils/ajax_load_js.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax_load_js3d3b85.js","appmsg/comment.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment3e3c6f.js","appmsg/my_comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html3ec991.js","appmsg/cmt_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html3de35e.js","sougou/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion3f5bf4.js","biz_wap/utils/wapsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/wapsdk34c264.js","biz_common/utils/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report3518c6.js","appmsg/open_url_with_webview.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/open_url_with_webview3d3b85.js","appmsg/articleReport.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/articleReport3de35e.js","biz_wap/utils/hand_up_state.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hand_up_state3e72f4.js","biz_common/utils/http.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/http3518c6.js","biz_common/utils/cookie.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie3518c6.js","appmsg/topic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html31ff31.js","pages/weapp_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/weapp_tpl.html36906d.js","biz_common/utils/monitor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor3518c6.js","pages/voice_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html38518d.js","pages/kugoumusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/kugoumusic_ctrl3d171e.js","pages/qqmusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_ctrl3d171e.js","pages/voice_component.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component3d3efa.js","pages/qqmusic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html393e3a.js","new_video/ctl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl3f44c2.js","a/testdata.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/testdata3bb523.js","appmsg/reward_entry.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry3ebded.js","appmsg/like.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like3d171e.js","pages/version4video.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video3de208.js","a/a.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a3f8915.js","rt/appmsg/getappmsgext.rt.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage34c264.js","appmsg/share_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share_tpl.html36906d.js","appmsg/appmsgext.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/appmsgext3f170d.js","appmsg/img_copyright_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","pages/video_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl3d3b85.js","pages/create_txv.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/create_txv3d43f7.js","appmsg/comment_utils.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_utils3d171e.js","biz_common/ui/imgonepx.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx3518c6.js","appmsg/malicious_wording.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/malicious_wording3dd66a.js","biz_common/utils/respTypes.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes3518c6.js","biz_wap/utils/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/log34c264.js","sougou/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index36913b.js","biz_wap/safe/mutation_observer_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report34c264.js","appmsg/fereport.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport3df46f.js","appmsg/fereport_without_localstorage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport_without_localstorage3df46f.js","appmsg/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report3d6a60.js","appmsg/report_and_source.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source3f3254.js","appmsg/page_pos.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos3ecdbc.js","appmsg/cdn_speed_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report3d6a60.js","appmsg/wxtopic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic31a3be.js","appmsg/weapp.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp3f1801.js","appmsg/weproduct.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weproduct3f868a.js","appmsg/voicemsg.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voicemsg3b1748.js","appmsg/autoread.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/autoread3af14e.js","appmsg/voice.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice38518d.js","appmsg/qqmusic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic3d171e.js","appmsg/iframe.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe3d43f7.js","appmsg/product.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/product393966.js","appmsg/review_image.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image3f813c.js","appmsg/outer_link.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link3e0906.js","appmsg/copyright_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/async.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async3ec3b0.js","biz_wap/ui/lazyload_img.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img3af55a.js","biz_common/log/jserr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr3518c6.js","appmsg/share.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share3e25cd.js","appmsg/cdn_img_lib.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib3de0e0.js","page/appmsg/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm.css3ec991.js","page/appmsg_new/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/not_in_mm.css3ec991.js","page/appmsg_new/combo.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/combo.css3f87f1.js","biz_common/utils/url/parse.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse36ebcf.js","appmsg/appmsg_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/appmsg_report3dae33.js","biz_common/moment.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/moment3518c6.js","biz_wap/jsapi/core.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core3d3b85.js","biz_common/dom/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event3a25e9.js","appmsg/test.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/test3d3b85.js","biz_wap/utils/mmversion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion3de208.js","appmsg/max_age.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/max_age3d3b85.js","biz_common/dom/attr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr3518c6.js","biz_wap/utils/ajax.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax3d3b85.js","appmsg/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/log300330.js","biz_common/dom/class.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class3518c6.js","biz_wap/utils/device.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device3e2bd7.js","appmsg/weapp_common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp_common3f868a.js","biz_common/utils/string/html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html3518c6.js","cps/tpl/list_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/cps/tpl/list_tpl.html3f868a.js","cps/tpl/card_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/cps/tpl/card_tpl.html3f868a.js","cps/tpl/banner_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/cps/tpl/banner_tpl.html3f868a.js","biz_common/tmpl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl3518c6.js","appmsg/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index3fa44d.js"};</script><script nonce="1877000442" type="text/javascript" id="moon_inline" > window.__mooninline=1; window.setTimeout(function() {  function __moonf__(){
+if(!window.__moonhasinit){
+window.__moonhasinit=!0,window.__moonclientlog=[],window.__wxgspeeds&&(window.__wxgspeeds.moonloadedtime=+new Date),
+"object"!=typeof JSON&&(window.JSON={
+stringify:function(){
+return"";
+},
+parse:function(){
+return{};
+}
+});
+var e=function(){
+function e(e){
+try{
+var o;
+/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)?o="writeLog":/(Android)/i.test(navigator.userAgent)&&(o="log"),
+o&&t(o,e);
+}catch(n){
+throw console.error(n),n;
+}
+}
+function t(e,o){
+var n,r,i={};
+n=top!=window?top.window:window;
+try{
+r=n.WeixinJSBridge,i=n.document;
+}catch(a){}
+e&&r&&r.invoke?r.invoke(e,{
+level:"info",
+msg:"[WechatFe][moon]"+o
+}):setTimeout(function(){
+i.addEventListener?i.addEventListener("WeixinJSBridgeReady",function(){
+t(e,o);
+},!1):i.attachEvent&&(i.attachEvent("WeixinJSBridgeReady",function(){
+t(e,o);
+}),i.attachEvent("onWeixinJSBridgeReady",function(){
+t(e,o);
+}));
+},0);
+}
+var n;
+localStorage&&JSON.parse(localStorage.getItem("__WXLS__moonarg"))&&"fromls"==JSON.parse(localStorage.getItem("__WXLS__moonarg")).method&&(n=!0),
+e(" moon init, moon_inline:"+window.__mooninline+", moonls:"+n),function(){
+var e={},o={},t={};
+e.COMBO_UNLOAD=0,e.COMBO_LOADING=1,e.COMBO_LOADED=2;
+var n=function(e,t,n){
+if(!o[e]){
+o[e]=n;
+for(var r=3;r--;)try{
+moon.setItem(moon.prefix+e,n.toString()),moon.setItem(moon.prefix+e+"_ver",moon_map[e]);
+break;
+}catch(i){
+moon.clear();
+}
+}
+},r=window.alert;
+window.__alertList=[],window.alert=function(e){
+r(e),window.__alertList.push(e);
+};
+var i=function(e){
+if(!e||!o[e])return null;
+var n=o[e];
+if("function"==typeof n&&!t[e]){
+var a={},s={
+exports:a
+},c=n(i,a,s,r);
+n=o[e]=c||s.exports,t[e]=!0;
+}
+if(".css"===e.substr(-4)){
+var d=document.getElementById(e);
+if(!d){
+d=document.createElement("style"),d.id=e;
+var _=/url\s*\(\s*\/(\"(?:[^\\\"\r\n\f]|\\[\s\S])*\"|'(?:[^\\'\n\r\f]|\\[\s\S])*'|[^)}]+)\s*\)/g,m=window.testenv_reshost||window.__moon_host||"res.wx.qq.com";
+n=n.replace(_,"url(//"+m+"/$1)"),d.innerHTML=n,document.getElementsByTagName("head")[0].appendChild(d);
+}
+}
+return n;
+};
+e.combo_status=e.COMBO_UNLOAD,e.run=function(){
+var o=e.run.info,t=o&&o[0],n=o&&o[1];
+if(t&&e.combo_status==e.COMBO_LOADED){
+var r=i(t);
+n&&n(r);
+}
+},e.use=function(o,t){
+window.__wxgspeeds&&(window.__wxgspeeds.seajs_use_time=+new Date),e.run.info=[o,t],
+e.run();
+},window.define=n,window.seajs=e;
+}(),function(){
+if(window.__nonce_str){
+var e=document.createElement;
+document.createElement=function(o){
+var t=e.apply(this,arguments);
+return"object"==typeof o&&(o=o.toString()),"string"==typeof o&&"script"==o.toLowerCase()&&t.setAttribute("nonce",window.__nonce_str),
+t;
+};
+}
+window.addEventListener&&window.__DEBUGINFO&&Math.random()<.01&&window.addEventListener("load",function(){
+var e=document.createElement("script");
+e.src=__DEBUGINFO.safe_js,e.type="text/javascript",e.async=!0;
+var o=document.head||document.getElementsByTagName("head")[0];
+o.appendChild(e);
+});
+}(),function(){
+function t(e){
+return"[object Array]"===Object.prototype.toString.call(e);
+}
+function n(e){
+return"[object Object]"===Object.prototype.toString.call(e);
+}
+function r(e){
+var t=e.stack+" "+e.toString()||"";
+try{
+if(window.testenv_reshost){
+var n="http(s)?://"+window.testenv_reshost,r=new RegExp(n,"g");
+t=t.replace(r,"");
+}else t=t.replace(/http(s)?:\/\/res\.wx\.qq\.com/g,"");
+for(var r=/\/([^.]+)\/js\/(\S+?)\.js(\,|:)?/g;r.test(t);)t=t.replace(r,function(e,o,t,n){
+return t+n;
+});
+}catch(e){
+t=e.stack?e.stack:"";
+}
+var i=[];
+for(o in u)u.hasOwnProperty(o)&&i.push(o+":"+u[o]);
+return i.push("STK:"+t.replace(/\n/g,"")),i.join("|");
+}
+function i(e){
+if(!e){
+var o=window.onerror;
+window.onerror=function(){},f=setTimeout(function(){
+window.onerror=o,f=null;
+},50);
+}
+}
+function a(e,o,t){
+if(!/^mp\.weixin\.qq\.com$/.test(location.hostname)){
+var n=[];
+t=t.replace(location.href,(location.origin||"")+(location.pathname||"")).replace("#wechat_redirect","").replace("#rd","").split("&");
+for(var r=0,i=t.length;i>r;r++){
+var a=t[r].split("=");
+a[0]&&a[1]&&n.push(a[0]+"="+encodeURIComponent(a[1]));
+}
+var s=new window.Image;
+return void(s.src=(o+n.join("&")).substr(0,1024));
+}
+var c;
+if(window.ActiveXObject)try{
+c=new ActiveXObject("Msxml2.XMLHTTP");
+}catch(d){
+try{
+c=new ActiveXObject("Microsoft.XMLHTTP");
+}catch(_){
+c=!1;
+}
+}else window.XMLHttpRequest&&(c=new XMLHttpRequest);
+c&&(c.open(e,o,!0),c.setRequestHeader("cache-control","no-cache"),c.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),
+c.setRequestHeader("X-Requested-With","XMLHttpRequest"),c.send(t));
+}
+function s(e){
+return function(o,t){
+if("string"==typeof o)try{
+o=new Function(o);
+}catch(n){
+throw n;
+}
+var r=[].slice.call(arguments,2),a=o;
+return o=function(){
+try{
+return a.apply(this,r.length&&r||arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),_&&window.__moon_report&&(window.__moon_report([{
+offset:O,
+log:"timeout_error;host:"+location.host,
+e:e
+}]),i(f)),e;
+}
+},e(o,t);
+};
+}
+function c(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this,a=t||function(){};
+return t=function(){
+try{
+return a.apply(r,arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),_&&window.__moon_report&&(window.__moon_report([{
+offset:y,
+log:"listener_error;type:"+o+";host:"+location.host,
+e:e
+}]),i(f)),e;
+}
+},a.moon_lid=b,D[b]=t,b++,e.call(r,o,t,n);
+};
+}
+function d(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this;
+return t=D[t.moon_lid],e.call(r,o,t,n);
+};
+}
+var _,m,l,w,u,p,f,h=/MicroMessenger/i.test(navigator.userAgent),g=window.define,v=0,y=2,x=4,O=9,j=10;
+if(window.__initCatch=function(e){
+_=e.idkey,m=e.startKey||0,l=e.limit,w=e.badjsId,u=e.reportOpt||"",p=e.extInfo||{},
+p.rate=p.rate||.5;
+},window.__moon_report=function(e,o){
+var i=!1,s="";
+try{
+s=top.location.href;
+}catch(c){
+i=!0;
+}
+var d=.5;
+if(p&&p.rate&&(d=p.rate),o&&"number"==typeof o&&(d=o),!(!/mp\.weixin\.qq\.com/.test(location.href)&&!/payapp\.weixin\.qq\.com/.test(location.href)||Math.random()>d)&&h&&(top==window||i||/mp\.weixin\.qq\.com/.test(s))&&(n(e)&&(e=[e]),
+t(e)&&""!=_)){
+var u="",f=[],g=[],v=[],y=[];
+"number"!=typeof l&&(l=1/0);
+for(var O=0;O<e.length;O++){
+var j=e[O]||{};
+if(!(j.offset>l||"number"!=typeof j.offset||j.offset==x&&p&&p.network_rate&&Math.random()>=p.network_rate)){
+var D=1/0==l?m:m+j.offset;
+f[O]="[moon]"+_+"_"+D+";"+j.log+";"+r(j.e||{})||"",g[O]=D,v[O]=1;
+}
+}
+for(var b=0;b<g.length;b++)y[b]=_+"_"+g[b]+"_"+v[b],u=u+"&log"+b+"="+f[b];
+if(y.length>0){
+a("POST",location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?","idkey="+y.join(";")+"&r="+Math.random()+"&lc="+f.length+u);
+var d=1;
+if(p&&p.badjs_rate&&(d=p.badjs_rate),w&&Math.random()<d){
+u=u.replace(/uin\:(.)*\|biz\:(.)*\|mid\:(.)*\|idx\:(.)*\|sn\:(.)*\|/,"");
+var E=new Image,S="https://badjs.weixinbridge.com/badjs?id="+w+"&level=4&from="+encodeURIComponent(location.host)+"&msg="+encodeURIComponent(u);
+E.src=S.slice(0,1024);
+}
+}
+}
+},window.setTimeout=s(window.setTimeout),window.setInterval=s(window.setInterval),
+Math.random()<.01&&window.Document&&window.HTMLElement){
+var D={},b=0;
+Document.prototype.addEventListener=c(Document.prototype.addEventListener),Document.prototype.removeEventListener=d(Document.prototype.removeEventListener),
+HTMLElement.prototype.addEventListener=c(HTMLElement.prototype.addEventListener),
+HTMLElement.prototype.removeEventListener=d(HTMLElement.prototype.removeEventListener);
+}
+var E=window.navigator.userAgent;
+if((/ip(hone|ad|od)/i.test(E)||/android/i.test(E))&&!/windows phone/i.test(E)&&window.localStorage&&window.localStorage.setItem){
+var S=window.localStorage.setItem,I=0;
+window.localStorage.setItem=function(e,o){
+if(!(I>=10))try{
+S.call(window.localStorage,e,o);
+}catch(t){
+t.stack&&console&&console.error&&console.error("[TryCatch]"+t.stack),window.__moon_report([{
+offset:j,
+log:"localstorage_error;"+t.toString(),
+e:t
+}]),I++,I>=3&&window.moon&&window.moon.clear&&moon.clear();
+}
+};
+}
+window.seajs&&g&&(window.define=function(){
+for(var o,t=[],n=arguments&&arguments[0],a=0,s=arguments.length;s>a;a++){
+var c=o=arguments[a];
+"function"==typeof o&&(o=function(){
+try{
+return c.apply(this,arguments);
+}catch(o){
+throw"string"==typeof n&&console.error("[TryCatch][DefineeErr]id:"+n),o.stack&&console&&console.error&&console.error("[TryCatch]"+o.stack),
+_&&window.__moon_report&&(window.__moon_report([{
+offset:v,
+log:"define_error;id:"+n+";",
+e:o
+}]),i(f)),e(" [define_error]"+JSON.stringify(r(o))),o;
+}
+},o.toString=function(e){
+return function(){
+return e.toString();
+};
+}(arguments[a])),t.push(o);
+}
+return g.apply(this,t);
+});
+}(),function(o){
+function t(e,o,t){
+return window.__DEBUGINFO?(window.__DEBUGINFO.res_list||(window.__DEBUGINFO.res_list=[]),
+window.__DEBUGINFO.res_list[e]?(window.__DEBUGINFO.res_list[e][o]=t,!0):!1):!1;
+}
+function n(e){
+var o=new TextEncoder("utf-8").encode(e),t=crypto.subtle||crypto.webkitSubtle;
+return t.digest("SHA-256",o).then(function(e){
+return r(e);
+});
+}
+function r(e){
+for(var o=[],t=new DataView(e),n=0;n<t.byteLength;n+=4){
+var r=t.getUint32(n),i=r.toString(16),a="00000000",s=(a+i).slice(-a.length);
+o.push(s);
+}
+return o.join("");
+}
+function i(e,o,t){
+if("object"==typeof e){
+var n=Object.prototype.toString.call(e).replace(/^\[object (.+)\]$/,function(e,o){
+return o;
+});
+if(t=t||e,"Array"==n){
+for(var r=0,i=e.length;i>r;++r)if(o.call(t,e[r],r,e)===!1)return;
+}else{
+if("Object"!==n&&a!=e)throw"unsupport type";
+if(a==e){
+for(var r=e.length-1;r>=0;r--){
+var s=a.key(r),c=a.getItem(s);
+if(o.call(t,c,s,e)===!1)return;
+}
+return;
+}
+for(var r in e)if(e.hasOwnProperty(r)&&o.call(t,e[r],r,e)===!1)return;
+}
+}
+}
+var a=o.localStorage,s=document.head||document.getElementsByTagName("head")[0],c=1,d=11,_=12,m=13,l=window.__allowLoadResFromMp?1:2,w=window.__allowLoadResFromMp?1:0,u=l+w,p=window.testenv_reshost||window.__moon_host||"res.wx.qq.com",f=new RegExp("^(http(s)?:)?//"+p);
+window.__loadAllResFromMp&&(p="mp.weixin.qq.com",l=0,u=l+w);
+var h={
+prefix:"__MOON__",
+loaded:[],
+unload:[],
+clearSample:!1,
+hit_num:0,
+mod_num:0,
+version:1003,
+cacheData:{
+js_mod_num:0,
+js_hit_num:0,
+js_not_hit_num:0,
+js_expired_num:0,
+css_mod_num:0,
+css_hit_num:0,
+css_not_hit_num:0,
+css_expired_num:0
+},
+init:function(){
+h.loaded=[],h.unload=[];
+var e,t,r;
+if(window.no_moon_ls&&(h.clearSample=!1),a){
+var s="_moon_ver_key_",c=a.getItem(s);
+c!=h.version&&(h.clear(),a.setItem(s,h.version));
+}
+if((-1!=location.search.indexOf("no_moon1=1")||-1!=location.search.indexOf("no_lshttps=1"))&&h.clear(),
+a){
+var d=1*a.getItem(h.prefix+"clean_time"),_=+new Date;
+if(_-d>=1296e6){
+h.clear();
+try{
+!!a&&a.setItem(h.prefix+"clean_time",+new Date);
+}catch(m){}
+}
+}
+i(moon_map,function(i,s){
+if(t=h.prefix+s,r=!!i&&i.replace(f,""),e=!!a&&a.getItem(t),version=!!a&&(a.getItem(t+"_ver")||"").replace(f,""),
+h.mod_num++,r&&-1!=r.indexOf(".css")?h.cacheData.css_mod_num++:r&&-1!=r.indexOf(".js")&&h.cacheData.js_mod_num++,
+h.clearSample||!e||r!=version)h.unload.push(r.replace(f,"")),r&&-1!=r.indexOf(".css")?e?r!=version&&h.cacheData.css_expired_num++:h.cacheData.css_not_hit_num++:r&&-1!=r.indexOf(".js")&&(e?r!=version&&h.cacheData.js_expired_num++:h.cacheData.js_not_hit_num++);else{
+if("https:"==location.protocol&&window.moon_hash_map&&window.moon_hash_map[s]&&window.crypto)try{
+n(e).then(function(e){
+window.moon_hash_map[s]!=e&&console.log(s);
+});
+}catch(c){}
+try{
+var d="//# sourceURL="+s+"\n//@ sourceURL="+s;
+o.eval.call(o,'define("'+s+'",[],'+e+")"+d),h.hit_num++,r&&-1!=r.indexOf(".css")?h.cacheData.css_hit_num++:r&&-1!=r.indexOf(".js")&&h.cacheData.js_hit_num++;
+}catch(c){
+h.unload.push(r.replace(f,""));
+}
+}
+}),h.load(h.genUrl());
+},
+genUrl:function(){
+var e=h.unload;
+if(!e||e.length<=0)return[];
+var o,t,n="",r=[],i={},a=-1!=location.search.indexOf("no_moon2=1"),s="//"+p;
+-1!=location.href.indexOf("moon_debug2=1")&&(s="//mp.weixin.qq.com");
+for(var c=0,d=e.length;d>c;++c){
+/^\/(.*?)\//.test(e[c]);
+var _=/^\/(.*?)\//.exec(e[c]);
+_.length<2||!_[1]||(t=_[1],n=i[t],n?(o=n+","+e[c],o.length>1e3||a?(r.push(n+"?v="+h.version),
+n=location.protocol+s+e[c],i[t]=n):(n=o,i[t]=n)):(n=location.protocol+s+e[c],i[t]=n));
+}
+for(var m in i)i.hasOwnProperty(m)&&r.push(i[m]);
+return r;
+},
+load:function(e){
+if(window.__wxgspeeds&&(window.__wxgspeeds.mod_num=h.mod_num,window.__wxgspeeds.hit_num=h.hit_num),
+!e||e.length<=0)return seajs.combo_status=seajs.COMBO_LOADED,seajs.run(),console.debug&&console.debug("[moon] load js complete, all in cache, cost time : 0ms, total count : "+h.mod_num+", hit num: "+h.hit_num),
+void window.__moonclientlog.push("[moon] load js complete, all in cache, cost time : 0ms, total count : "+h.mod_num+", hit num: "+h.hit_num);
+seajs.combo_status=seajs.COMBO_LOADING;
+var o=0,t=+new Date;
+window.__wxgspeeds&&(window.__wxgspeeds.combo_times=[],window.__wxgspeeds.combo_times.push(t)),
+i(e,function(n){
+h.request(n,u,function(){
+if(window.__wxgspeeds&&window.__wxgspeeds.combo_times.push(+new Date),o++,o==e.length){
+var n=+new Date-t;
+window.__wxgspeeds&&(window.__wxgspeeds.mod_downloadtime=n),seajs.combo_status=seajs.COMBO_LOADED,
+seajs.run(),console.debug&&console.debug("[moon] load js complete, url num : "+e.length+", total mod count : "+h.mod_num+", hit num: "+h.hit_num+", use time : "+n+"ms"),
+window.__moonclientlog.push("[moon] load js complete, url num : "+e.length+", total mod count : "+h.mod_num+", hit num: "+h.hit_num+", use time : "+n+"ms");
+}
+});
+});
+},
+request:function(o,n,r){
+if(o){
+n=n||0,o.indexOf("mp.weixin.qq.com")>-1&&((new Image).src=location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?idkey=27613_32_1&r="+Math.random(),
+window.__moon_report([{
+offset:_,
+log:"load_script_from_mp: "+o
+}],1));
+var i=-1;
+window.__DEBUGINFO&&(__DEBUGINFO.res_list||(__DEBUGINFO.res_list=[]),__DEBUGINFO.res_list.push({
+type:"js",
+status:"pendding",
+start:+new Date,
+end:0,
+url:o
+}),i=__DEBUGINFO.res_list.length-1),-1!=location.search.indexOf("no_lshttps=1")&&(o=o.replace("http://","https://"));
+var a=document.createElement("script");
+a.src=o,a.type="text/javascript",a.async=!0,a.down_time=+new Date,a.onerror=function(s){
+t(i,"status","error"),t(i,"end",+new Date);
+var _=new Error(s);
+if(n>=0)if(w>n){
+var l=o.replace("res.wx.qq.com","mp.weixin.qq.com");
+h.request(l,n,r);
+}else h.request(o,n,r);else window.__moon_report&&window.__moon_report([{
+offset:c,
+log:"load_script_error: "+o,
+e:_
+}],1);
+if(n==w-1&&window.__moon_report([{
+offset:d,
+log:"load_script_error: "+o,
+e:_
+}],1),-1==n){
+var u="ua: "+window.navigator.userAgent+", time="+(+new Date-a.down_time)+", load_script_error -1 : "+o;
+window.__moon_report([{
+offset:m,
+log:u
+}],1);
+}
+window.__moonclientlog.push("moon load js error : "+o+", error -> "+_.toString()),
+e("moon_request_error url:"+o);
+},"undefined"!=typeof moon_crossorigin&&moon_crossorigin&&a.setAttribute("crossorigin",!0),
+a.onload=a.onreadystatechange=function(){
+t(i,"status","loaded"),t(i,"end",+new Date),!a||a.readyState&&!/loaded|complete/.test(a.readyState)||(t(i,"status","200"),
+a.onload=a.onreadystatechange=null,"function"==typeof r&&r());
+},n--,s.appendChild(a),e("moon_request url:"+o+" retry:"+n);
+}
+},
+setItem:function(e,o){
+!!a&&a.setItem(e,o);
+},
+clear:function(){
+a&&(i(a,function(e,o){
+~o.indexOf(h.prefix)&&a.removeItem(o);
+}),console.debug&&console.debug("[moon] clear"));
+},
+idkeyReport:function(e,o,t){
+t=t||1;
+var n=e+"_"+o+"_"+t;
+(new Image).src="/mp/jsmonitor?idkey="+n+"&r="+Math.random();
+}
+};
+seajs&&seajs.use&&"string"==typeof window.__moon_mainjs&&seajs.use(window.__moon_mainjs),
+window.moon=h;
+}(window),function(){
+try{
+Math.random()<1;
+}catch(e){}
+}(),window.moon.init();
+};
+e(),!!window.__moon_initcallback&&window.__moon_initcallback(),window.__wxgspeeds&&(window.__wxgspeeds.moonendtime=+new Date);
+}
+}
+__moonf__(); }, 25);</script><script nonce="1877000442" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+
+    
+    if(typeof seajs != 'undefined' && seajs.config){
+        try{
+            seajs.config({
+              'map': [
+                [ '.js', '.js?v='+new Date().getTime() ]
+              ]
+            });
+        }catch(e){
+            console.info('not support seajs config');
+        }
+    }
+
+    
+</script>
+
+    </body>
+    <script nonce="1877000442" type="text/javascript">document.addEventListener("touchstart", function() {},false);</script>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+

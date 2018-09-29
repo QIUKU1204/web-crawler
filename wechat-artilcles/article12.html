@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script nonce="1551184023" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="1551184023" type="text/javascript">
+    var biz = ""||"MjM5NDMzNTk2MA==";
+    var sn = "" || ""|| "";
+    var mid = "" || ""|| "202263331";
+    var idx = "" || "" || "1";
+    window.__allowLoadResFromMp = true; 
+    
+        
+</script>
+<script nonce="1551184023" type="text/javascript">
+var page_begintime=+new Date,is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&biz&&mid&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect"));
+</script>
+<script nonce="1551184023" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="1551184023" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var tmp = url.split('?'),
+            query = (tmp[1] || "").split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || "" || '';
+        window.key = params['key'] || "" || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+        window.appmsg_token = "";
+    })();
+
+    function wx_loaderror() {
+        if (location.pathname === '/bizmall/reward') {
+            new Image().src = '/mp/jsreport?key=96&content=reward_res_load_err&r=' + Math.random();
+        }
+    }
+
+</script>
+
+<script nonce="1551184023" type="text/javascript">
+        window.__moon_report_uin = "0";
+            window.no_moon_ls = 0;
+    </script>
+        <title>
+ 【乌克兰研究】​杨恕  朱倍德：后苏联时期俄乌关系中的历史、文化因素
+</title>
+        
+<style>.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.rich_media_inner{word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{padding:20px 16px 12px;background-color:#fafafa}.rich_media_area_primary.voice{padding-top:66px}.rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips{color:rgba(0,0,0,0.3);background-color:#fafafa}.rich_media_area_extra{padding:0 16px 24px}.rich_media_extra{padding-top:30px}.mpda_bottom_container .rich_media_extra{padding-top:24px}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;color:#333;background-color:#f2f2f2;letter-spacing:.034em}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#576b95;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.rich_media_title{font-size:22px;line-height:1.4;margin-bottom:14px}@supports(-webkit-overflow-scrolling:touch){.rich_media_title{font-weight:700}}.rich_media_meta_list{margin-bottom:22px;line-height:20px;font-size:0;word-wrap:break-word;word-break:break-all}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin:0 10px 10px 0;font-size:15px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.rich_media_meta.icon_appmsg_tag{margin-right:4px}.rich_media_meta.meta_tag_text{margin-right:0}.rich_media_meta_primary{display:block;margin-bottom:10px;font-size:15px}.meta_original_tag{padding:0 .5em;font-size:12px;line-height:1.4;background-color:#f2f2f2;color:#888}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_link{color:#576b95}.rich_media_meta_text{color:rgba(0,0,0,0.3)}.rich_media_meta_text.rich_media_meta_split{padding-left:10px}.rich_media_meta_text.rich_media_meta_split:before{position:absolute;top:50%;left:0;margin-top:-6px;content:' ';display:block;border-left:1px solid #888;width:200%;height:130%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0}.rich_media_meta_text.article_modify_tag{position:relative}.rich_media_meta_nickname{position:relative}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#333;font-size:17px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;text-align:justify}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:2.2em}.rich_media_content .list-paddingleft-2 .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}.weui-mask{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.6)}.weui-dialog{position:fixed;z-index:5000;width:80%;max-width:300px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#fff;text-align:center;border-radius:3px;overflow:hidden}.weui-dialog__hd{padding:1.3em 1.6em .5em}.weui-dialog__title{font-weight:400;font-size:18px}.weui-dialog__bd{padding:0 1.6em .8em;min-height:40px;font-size:15px;line-height:1.3;word-wrap:break-word;word-break:break-all;color:#999}.weui-dialog__bd:first-child{padding:2.7em 20px 1.7em;color:#353535}.weui-dialog__ft{position:relative;line-height:48px;font-size:18px;display:-webkit-box;display:-webkit-flex;display:flex}.weui-dialog__ft:after{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.weui-dialog__btn{display:block;-webkit-box-flex:1;-webkit-flex:1;flex:1;color:#3cc51f;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);position:relative}.weui-dialog__btn:active{background-color:#eee}.weui-dialog__btn:after{content:" ";position:absolute;left:0;top:0;width:1px;bottom:0;border-left:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleX(0.5);transform:scaleX(0.5)}.weui-dialog__btn:first-child:after{display:none}.weui-dialog__btn_default{color:#353535}.weui-dialog__btn_primary{color:#0bb20c}img{height:auto!important}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait){.rich_media_area_extra{padding-bottom:34px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape){.rich_media_area_primary{padding:20px 60px 15px 60px}.rich_media_area_extra{padding:0 60px 21px 60px}}@media screen and (min-width:1024px){.rich_media_area_primary_inner,.rich_media_area_extra_inner{max-width:677px;margin-left:auto;margin-right:auto}.rich_media_area_primary{padding-top:32px}}.appmsg_share_notice{font-size:16px;color:#888;position:relative;padding:1.25em 0;margin-bottom:1.75em}.appmsg_share_notice:before{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #dfdfdf;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.appmsg_share_notice:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dfdfdf;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.appmsg_share_notice_hd{font-weight:700;padding-bottom:.2em}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#333;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#888;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:.85em 35px .85em 15px;z-index:2;background-color:#c6e0f8;color:#888;font-size:12px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x2eb52b.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.rich_media_global_msg.voice{color:#1aad19;background-color:#e8f6e8;padding-left:43.3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rich_media_global_msg.voice .ic_voice{position:absolute;top:50%;margin-top:-10px;left:15px;display:inline-block;width:13.3px;height:18.3px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA3CAYAAAB+fggjAAAAAXNSR0IArs4c6QAACb9JREFUaAW9WX9wVMUd3917d5cf/Agp1OTuQgIlQqUoI1JI1Noojg2I+VU7hVrtDDpadRypgzKjU52x09KOdsS20ypSO/WPWttcAqhTOlSoU4FIoRUn0wEZIMndBUkwGEhyv97bfvaS97L77t3lHYUuc+z3935397vf/e4LJZfQnuPPsW0d25ZQzr9mELKSUnIVzHxB/Dh+lBOKf4OEk0FOyQAl/CyltIt5tL29d/V2FzIkLUQ4FA7dwon+KCF0Fee8rBBdS5aSs/D+PUrYbyKtkb9b9BzAlA7CERrqDN1DOH8C8HU57FwSGat6kBGypbcluhMwFj+75XWwemf1vHQqtZ0T3pCtelkp73uJ79s9bT39dqs5HQyFK79jcPIKFErtSgLHjPvQHQB0EFt2hDE2QHU6RMvpkODrw3o50Uk5p3w2N/SlUKhHTNZjskHBz2pi6ylbH22J/k3mOToYCAceIYT/AgYVPhxJQTkMQ792Ez/yQCY8d0fgRl0nj8J2G5z1mvSJ3qCMrYOTb5l0xQFBDIUDjxmcbzUFJnu621/kf/DUmlM9k7RLh4LtwRChxquck0bFCqWjxENuijXF/iXoioNVnZU36wZ5D7PTTCWsWhyp4uFYa+x1k3Y5ezj6oNgtdTVpL0Lo+mhr9BwO0Xib+/bcWYZB35Sdg/sXsOSNV8o5MXK0LfoKYXQDxpJOMZ8L1g8E33JQT6aeQRoJCOJEMxjxfCvSEtlnEq5Uj5h7Ayv2I8U+5w9du/va0oyD896ZV004RQKebIzQ53EQ/jJJubJQhUa2YBXPmqNgy8vPjZ67N+NgMh6/HwSfyURgniwqLvmJif8/+sNrY6O4XV5WxjKMuvHDQOl9uCksHmX0xydWn0hYBJfAgncXzBhNjjZSnX8Fq3ENdmWWUMUhS2Ebv5HrtjDNg/+B5IY4wos0cVukUskqUwj9xfKS2W9GSEwi5QdxFS5BMn54dGzkHkhOy0x18j9COY1O5VxmhGJylIxMjgUTC7WUkfrqJAkQpfuP3nFUElO4WUgwHHza0HU1wG1SGOi0jeSI+kf92hgZlXg0yajBV0gUwri4vqZud/O7PbhxkGiNvM5NWHKV3NN8LGQbuVdDsYIVzOzHOI+ygzYhR/RAxwdbELcPZDEp+Q+2YQcS2L+Zwc4gdSUQS7Oz5BwIKUqWyq5ApEdDsVmhBKaHnHDQVUg1uwKLkkm+USEScsbjId/ra+7fbaMThMHVdpoTjuyxXloqcUg+Eqe4WBb26/5hGXeCkynyfdA9Fo/SQeZlN/StjUQtmgQUFxVnKhyJlAUGOgP13OC3ygxGWZhhSYtkYqIicUHGnWCUluoFz8mzkRzOCf14Wfyikx2ThvQ0B6XZdvhi1QaoAfZHmiMf40xMJmih4BvxWQnbNCD3i/cunoYab4FMQwr5o4zb4Uh9ZMxOM3Fsf91YfPQfOAeLTJrouYc8K3rEII0ikBcKRLTEhUQNuo8E7NSGh4dnyDOFzIioOpxkZdqyXYGSAV2rMYjhIUamkL2ZcANvG+MWWS4DU/parDm2R8AiBj/Bz3IQe14DPKeDRho1hNyonFplhgp/mmaNhpH6s0VVToNFxR7TPcVFJVZdgMG4cNBq0LvRQhyA2vLaMyDrFouTL169KzBlGkEofdnScQYMXBI/raiuXC1fs4wz2iXLI+U0y7gd3tewL41IVhLvmM6X2eWycM7nZ9EEAXWgWDWPpjWg7tx8+IbD4llhNTadTn8XcWgVBphprbhbLQkngJK/ymTdoE/IuDPME5jYSYx1HLn3EH6/B77Rq/m+FG2L3d7X1Pe+kx5kCBJp4G0clDWmAJTD0db+NhO398GO4G3cMDJBbPIY9bShfgyb+OXqMwGPV9rrskFsc6t4fck0GRZPQ5GnZBpO4x/wvrAmKfP+FzjjYF9zn5i58s0ET8MX8hnGc+BxOGnFi8innBg7UUBsFaV6Pt1CeBMrKD73qG8CbPnKUHvg/lzG+tr6DlGWufJkEWQp/tjgyMBJPF+fWrhj4XSZeSlwJgaFIhyioY7gHvS3moYyK6TRO6JN0b0mzd6HOgIbEBK/gp7fzsOBGMLUX2Z+bWvvnb1T3sd2fYFbDgoET8/56UTqKEBrizDIeY1463tae1BGObeq9qrlBtXb4aRcmVvCmOjneFq+UFZW9lJ3Q3fee9lSmgAUBwUNd+N9CPjfTfDHO0pO+z1FK081nfpUoUuIuKPPD322Gav5OMjWBCURRBGN4GH0QCGvxSwHhcFguPLnGEip97AKXd5y39dPN5yOy4PaYXGrjKToRsTMIzg4M+38cZz+LNYWe8qZp1Izh0QlEVLfctMmzNb6gCP4GGxFcij5W7usHT++NjaI4uHpadr0KkbpZvAH7DKw9iRi98lsejbFcQWF2LJ/LvOe6Yl14m5eLavhU8gqkQdlWj5YnOSL+sXNWNFNmKT1NQsLkGAez3zcIHmfj44rKAYUd2Jxcek6HCP1cHD+Ig5DzonZnT3WdOyCWFGukRUIwkGTL069kdYz319MmlOf00EhjKpiWKPku7IiDF9X3RHMecvIsjIsPqdh1ewO3SXLOMF5HRQKvS39h5GNOmVlnZP1Mu4W9pZ5/4TDZh0ybHkt3iKOqcm0OaWDQpB52DZTQfQo+Vtl3C08kQGO2OStYtlGz6CuHJxZO3MPYnHYMsDJVSKpW3ghAOXKsxaPoup86q4c7F7cncSyHZANGen0Shl3C+PSPy/L4qmZ97525aAwiMLgQ8Uwp8tl3C2MASff00KJMRW3GXLtIFbwY1kXp/kaGXcL42AoDqHit6p5JxuuHfQwj1IvIhFO9QhyGk/QpskM/C3Gyo0y3YRdOzgnNOcTHJS0qYgVrBIfLE28gF75ToN3bySfrmsHM68tTo7JxuKJ+PUyPhWcqbQ5XarI+TRlZxQeENcOjitS5dMc5/oqu8F8+ODI4FrEoPVpBTfL8akK2YIc9DCiFAkoyTbUdNSU5XPK5Im/MQPeZOKZnpNdCu6AFOTgrJLZO2FDrogrUjyxPbQ/VOxgWyG9Fn71h6hoJkMC8exlvl8qQg6I66rE1A22Vz6PEuwZExe92CrQtmmU72U+fzQ9K/15XV1dsuudrhlc50t0XX8Izq1TdAh5I9rWf69Mc4ILdlCU9kNDn32ICvZS0wySAY2W+shSUdw6OSXTCtpioSgePZrPeydWTUncstF8MPRw1dFvunFO2CnYQaGEk3cSn8iWYyVeBGoImqtG6RHxQsQfEJVskE+34C22GxOfb8fiY40owtaAJ0qnciTxcvSlE7VfBPX3IQ8lb/U2R3dgBRGu7tt/AYJkZEGv/oaXAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.rich_media_global_msg.voice .icon_more{position:absolute;right:15px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAAAXNSR0IArs4c6QAAA49JREFUSA2tVk1IVFEUPveOmhQk1ibfvLFZSJtACqJIIpCIoB+imcFV2Z9ZUVnRomgRGFn2i6mFf5XVotCZMYmgIMhlq6BFENFiwjfPAosgFzXOvNu5o3fmeue98Y16F3PP+c453/fu/xCQmvZSWwwJaC0G6P8WND9IoTmbVFRycpqAdgBWkwRo94V960RsPn1aoPpN9RI6CR0WsDWcjAErtUiqTR/S18+HnNcSTv5zYrwDSatVMgLkH6aciwfj79WYW5+OT4xfsyPnBIgvwt872qBW45ZQzaMlJXCfMPJbDQgfRUoIhduVUW2TwArpaWyX+bnYU9JAAH44FaJIccqCW76Ib7NTjhOOvFPN/8q/IvE3cR+npFJgao9rkiSUXjD2GCNqzMnPbNPYjth3mqINlJAvTsk4kiJmWa3eQe8WpxwVzwjwgFFn/CorL29EkY9qovC5CFDrKq7JVoHl6zNTJCf53/lLk78SN/FcbJRx2cZCixC4ZATGXsu4as8YgQjGamN/q5atOotn4K3A1J4BUMbgsh7Wt6sx2bcV4AkjtSPJxkDjRQL0hVwg21zEglSzN+rdKeOybTtFcgK39ajWZDFWr+IZHxfGQ8mV0YA5nMGmDVcCPNcb8R5gYJ1UCWQfp6PFCI4NyZhrAV6EIiHGrPOAB0ImkW2c0la8u8ICc0wUCWrvC1dsw+3TnN6uanDaJ4zeiIfiA9wtWIAX8XspxeA6iuBlaN88hNzCNXk+JwFOuXJYW5tMQmc+EcqgzXGb2n9XFk1NstX5yKczl89JAF+6vRaBM1m5XAu//qkRGrtb8BThTtqH2/V0LmUWwbvsiREw8X0vcJHxxNbjNm3KUuVaMjmPFuWm2CPesHc/kp+yj06hFMhj/PIOOcfVFLk6xZT0G3vMTpmc27MusityZk/OBfKOwA05MPLIDJn3OJldcxTQotpBYOyEXVEWIw/NoInvuHOznSJfVDs0GzneNw9mI+eyOSPQI9phfCqPO38TFhHaFw/Eu/LliNiMESB5w6zkzD05F8mMYJr8mFC263Fa+vAadvXloj4toEcrjlgMjgrQrseHpBcfkm67WD6M6MN6lTWZeoZjyYxGLcB57MGnsEfF3fjU2G189QBpcUqmBLrnSs4504s8GjLxrwm5qYrg3dKFf6x6VbwQ3yOS/wz8+bS0ruwfELaBY2nyoNkn4gvW65GKRn4WForwP+dONHDaOHeZAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.preview_appmsg .rich_media_title{margin-top:2.3em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin-bottom:32px}.preview_appmsg .rich_media_title.rich_media_title{margin-top:0}}.pages_reset{color:#333;line-height:1.6;font-size:16px;font-weight:400;font-style:normal;text-indent:0;letter-spacing:normal;text-align:left;text-decoration:none;white-space:normal}.weapp_element,.weapp_display_element,.mp-miniprogram{display:block;margin:1em 0}.share_audio_context{margin:16px 0}.weapp_text_link{font-size:17px}.weapp_text_link:before{content:'';display:inline-block;line-height:1;background-size:contain;background-repeat:no-repeat;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAB4RJREFUWAm1WUuMFGUQnn7szL5mdvbh7GwgEQUlS1weiagxxpigiUZeJgY1cMMDcDCGG8GLCWZvxHjh4BWUeDEsejBBEzWYKBBEiHAABBfCMOwsuzvszrvb+v6Zb7amt1ce0Up6qv6q+qq+/rv778dYkUeUqamp5dFodJPv++ts205blpX2PG8I5cTOiLol44zYZ8vl8vFkMnnlUVpZDwPK5/MpIbWrVqttFlLD0jwiBEHIaNbCGKJjQvai+I9Xq9VD8Xg8y9z76QcimM1mu3t6ej4UYh84jtOFxhBNJGxskhp5xIielZ37bHp6+tNUKnWPOYvp+xKcm5t7S4gclKIpFNGzsmjRkBnUOwNbZjQrtfZ2dnZ+vVgd+O1/CVqlUukjIXZYCqZADBuEJIllc4xh61zmaB9s7LDkHkYPwJgX1KEEx8fHO2TmjkjyPgLQmERIAjHajGnyjDGPOfQ3xvvQCz3ZS+sw5hYAsodbWBhNw4SNGCMBnR/MYS60jskhPyaHe7u4W5otmEGZ8v0gx2YsyDE0bc4Wx8glOe2Dn2No2hqPnuiNXC0tM9i4IA5LcksjNm0BNs417aMNAsRom3HoMD8wsu3QF06TIJaSRCJxXrDmamUBrVEYRejDmDY0JEgsLE4f8mkTj6tb1tsRLkEukiBY56Q4rizThI2okaNtjFlUx+Cr1vzIyTMz7uW/ik4mV7Yd24oMDrR5q1Z01Nav6a5yVsLwcvRS4CI1D5ge+MEdQhbgC1yECSQhjMNsYCGMQ2dzFeuLYxOxibuVBec3cpekY7XtWwZK8a75sMajj2yzcsd5BnccM4PCeg/JoQjJwAY4TFgUMeRjXK54kS/H6uR6e1xvw4vJyuNLYh5yrt8s2d//MtV2M1Nyvvo2F9u5LVUSJEJNPPtKrS7XdXdL6GOzG+LYqIJNUiShYyRDjRw2OXnmnntnsmInE663e3u6uHZVZy2ZsH1sa4Y7ant2DBURu3aj6Jz9c9YBVuNRhz6pvwlju1gsPikzaG78CKIxNgh1sAj91MhFztXrRQf2C+vi1Y721tMC/vZYPQb78rWCE8Tr/uCEJyZbrprNAAST4QOAIGj6qBnDGPjZgmeS0gNRc1jD8D1xx+y978/XJh4awl54nHOl8Do6STKoDarxg5gmxpj2yTEwbtZhDvSlKwUzy+lU1NPxFvz8EcSzpnnYXDCD3AtqFtOFGNM+kMBYx+DzPD/y86m8e+7SnBON2v7qlR01ncP6Gg9uriSlGSSAYyTDhl/7bmTK9tXxkj3ydFetL4lTqT5jyIdgTB/0qT9m3R9/zbvT+Yottfw3XuktJxP1Q61rh/QfcuUcHBKmzcIwdCILQE/crVpHj9+JZe7U17hSyau89lJPxYDVD3KJm5qpWWMnJqMIY+nZvKGv/NQT7ebwcicI5RhYiHBLYx30WQxObWNMyQm5Q0cy7ULK6up0/PUj3dWXn48bckEMGrGZkPJ3bhssunLmLR2qXzyIacxitvT2XZm9jABWMEmD6QPJYzILILdyeWf13Y39ZTSEMAeaQpuxZUujHn26fhCPmI6Dmy0OvIE1AyyqfYWiH7n6d9GJxWz/7df7FpBjLjQETag1Me1HPKxXwJfByXeLRViUYGiI3F/NSYr1raPdNoXh594S75nVT1Z/mUz6kAfhGJp2EI887gRy5Bw0M/g7ndQI0gZISJkpyU6WbTm7m8RYELnFkh+ZnK4/qCTiWF4XXtk6X5NkLjX7iz4rh9keAxBODaKNWKrf9Qd627yC3Cm++2m6DbHWYpHI2Im7UfFZqf6oN9DrmAsPWIquH8QjR8dRG2O88JszW56kTwvRYSayOYtD37xdsT8/ejtWq/nWsqXttdXDHdW+RNTHY9Vv5/IuTgPHtfxd7w0V04/V1ziND5IiCeTofsyTw3tRnqyfNY9b8qg1JkktXwo0EKAlg23eO2/2l7/5YaoNTyPYNIFEt6xxr/aVQQ75QTxJkEBYnDFocEKOqYQHVnn+uiCBLji1IBnCBiVZ+U6fv+dmshV7cqpq9fY4/tBg1HtudXe1zeyuRs9fHMRrEvQBQT9smb1Z+YphHljr3cWJF2gB7NOENAhAjrWGP9iIPuZhDOFYa/hD8KOxWOyAweAHEnxpqnvrvyyofbQZg4boZsEcjrUO4mX2Wl6a6jdhQeAtSoJ70YDNoIMFwmJoqImF5Wgf8jHGRhx0Y9vLNzrkNQligPdRuZpHgyDEKIixMPMQow82/dC04YdgzFwdg0+2Uf1OjPzmOYhBQ6xCoYCX9626WDOo9pqNqHUO7IfBy0XxYJ8+UHdiYuJ9AHQT2GGiycHmmLNDkmFY+JCPXrlcbqcMW28/iCNpEcHnt/3SwHzhQiEIG5JAGDYsN8yHGjil5Ir9BKVDa4U5ta/xveagNDCfRBhDQ5JczEaujhHb0FlclMFzLpDTepEEgxijAL6VSCNcPLPw6aa0oSEgTZsx+GFjwyIsenRmZmbkfuQMDj8PKrjjyCHZIw02im7eGokHAQhnFjZ8GAux/+8jOhoFhX9DCIG1EsPfD9jMC5j4/rO/If4BCiyOk7IAfLMAAAAASUVORK5CYII=');vertical-align:middle;font-size:11px;color:#888;margin-right:6px;margin-top:-3px;background-position:center;height:20px;width:20px}.flex_context{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}.flex_bd{-webkit-box-flex:1;-webkit-flex:1;flex:1;word-wrap:break-word;word-break:break-all}.original_page{background-color:#fff;font-size:16px}.account_info{padding:0 0 20px}.account_info .flex_bd{padding-left:.85em}.radius_avatar.account_avatar{width:40px;height:40px;padding:0}.account_nickname{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;line-height:1.2;color:#576b95;font-size:14px}.account_nickname_inner{font-weight:400;vertical-align:top}.account_desc{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;color:#b2b2b2;font-size:13px;line-height:1.2;padding-top:.3em}.account_desc_inner{display:inline;vertical-align:top}.share_notice{margin-bottom:20px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.share_media{padding-bottom:18px}.original_panel{padding:20px;background-color:#fcfcfc;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;overflow:hidden;position:relative}.original_panel:after{content:" ";border:1px solid #d8d8d8;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;position:absolute;top:0;left:0;width:200%;height:200%;-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}.original_panel .original_account{margin-bottom:18px;position:relative;z-index:1}.original_panel .original_account_avatar{width:28px;height:28px;padding:0}.original_panel .original_account_nickname{padding-left:.85em;font-size:15px;color:#576b95}.original_panel_title{font-size:23px;color:#000;margin:0 0 16px}.original_panel_content{color:#333}.original_panel_tool{padding-top:20px;position:relative;z-index:1}.original_cell_nickname{display:inline-block;vertical-align:middle;font-weight:400;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;max-width:8em;color:#000}.original_tool_area{padding:1.17em 0;border-width:0;position:relative}.original_tool_area:before{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #dfdfdf;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dfdfdf;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:20px;height:20px;margin-right:.2em}.original_tool_area .flex_cell{padding:0;font-size:14px}.original_tool_area .icon_access:after{margin-right:4px;top:0}.preview_appmsg .rich_media_title{margin-top:1.5em}.preview_appmsg .account_info{padding-top:3em}.original_page{background-color:transparent}.account_info{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:0;padding-bottom:20px;font-size:14px}.account_info.appmsg_account_info{padding-bottom:32px}.account_info .radius_avatar img{background-color:transparent}.share_notice{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.original_panel{background-color:#fafafa}.original_panel:after{border-color:#e6e6e6}.original_panel .original_account_avatar{width:30px;height:30px}.original_panel_tool{font-size:14px}.original_panel_tool a{color:#576b95}.original_panel_content{font-size:17px}.share_media{padding-bottom:30px}.icon_appmsg_tag{display:inline-block;vertical-align:middle;padding:0 .5em;font-size:12px;line-height:1.5;background-color:#c3c3c3;color:#fff;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;max-width:70%}.icon_appmsg_tag.primary{color:#3bb638;padding:4px .78em;background-color:rgba(9,187,7,0.08);font-size:12px;border-top-left-radius:.95em 50%;-moz-border-radius-topleft:.95em 50%;-webkit-border-top-left-radius:.95em 50%;border-top-right-radius:.95em 50%;-moz-border-radius-topright:.95em 50%;-webkit-border-top-right-radius:.95em 50%;border-bottom-left-radius:.95em 50%;-moz-border-radius-bottomleft:.95em 50%;-webkit-border-bottom-left-radius:.95em 50%;border-bottom-right-radius:.95em 50%;-moz-border-radius-bottomright:.95em 50%;-webkit-border-bottom-right-radius:.95em 50%}.icon_appmsg_tag.default{border:1px solid rgba(0,0,0,0.1);color:rgba(0,0,0,0.3);background-color:transparent;padding:0 .54em;font-size:15px;line-height:1.3;border-top-left-radius:.67em 50%;-moz-border-radius-topleft:.67em 50%;-webkit-border-top-left-radius:.67em 50%;border-top-right-radius:.67em 50%;-moz-border-radius-topright:.67em 50%;-webkit-border-top-right-radius:.67em 50%;border-bottom-left-radius:.67em 50%;-moz-border-radius-bottomleft:.67em 50%;-webkit-border-bottom-left-radius:.67em 50%;border-bottom-right-radius:.67em 50%;-moz-border-radius-bottomright:.67em 50%;-webkit-border-bottom-right-radius:.67em 50%}.rich_media_meta_list .icon_appmsg_tag.default{margin-top:-1px}.icon_appmsg_tag.title_tag{background-color:#d04b4e}.icon_global_tag_wrp{text-align:right;padding-bottom:12px}.icon_global_tag{background-color:rgba(118,118,118,0.16);color:rgba(0,0,0,0.41);line-height:2.2;border-top-left-radius:1em 50%;-moz-border-radius-topleft:1em 50%;-webkit-border-top-left-radius:1em 50%;border-bottom-left-radius:1em 50%;-moz-border-radius-bottomleft:1em 50%;-webkit-border-bottom-left-radius:1em 50%;padding:0 1.8em 0 1.34em;font-size:12px;margin-right:-24px;display:inline-block;vertical-align:top}.global_plain_btn{display:inline-block;vertical-align:middle;padding:0 1em;line-height:2;font-size:14px;-webkit-tap-highlight-color:rgba(0,0,0,0);border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}.global_plain_btn.primary{color:#1aad19;border:1px solid currentColor}.global_plain_btn.primary:active{color:rgba(26,173,25,0.6)}.rich_media_empty_extra{background-color:#fafafa}.appmsg_skin_default.rich_media_empty_extra{background-color:#fff}.appmsg_skin_default .rich_media_area_primary{background-color:#fff}.appmsg_skin_default .rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips{background-color:#fff}.appmsg_style_default .rich_media_tool{padding-top:15px}.rich_media_title_ios{font-weight:700}</style>
+<style>
+        </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/pc3ec991.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN sougou_body  appmsg_skin_default appmsg_style_default">
+        
+<script nonce="1551184023" type="text/javascript">
+    var write_sceen_time = (+new Date());
+</script>
+
+<div id="js_article" class="rich_media">
+    
+    <div id="js_top_ad_area" class="top_banner"></div>
+    
+    <div class="rich_media_inner">
+
+        
+        
+        <div id="page-content" class="rich_media_area_primary">
+          <div class="rich_media_area_primary_inner">
+
+                                    
+                        
+
+            <div id="img-content">
+
+                
+                <h2 class="rich_media_title" id="activity-name">
+                    【乌克兰研究】​杨恕  朱倍德：后苏联时期俄乌关系中的历史、文化因素
+
+                                                                                </h2>
+                <div id="meta_content" class="rich_media_meta_list">
+                                                                                <span class="rich_media_meta rich_media_meta_text">
+                                                杨恕  朱倍德
+                                            </span>
+                                        
+                                        <span class="rich_media_meta rich_media_meta_nickname" id="profileBt">
+                      <a href="javascript:void(0);" id="js_name">
+                        政治学与国际关系论坛                      </a>
+                      <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                          <div class="profile_inner">
+                              <strong class="profile_nickname">政治学与国际关系论坛</strong>
+                              <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                              <p class="profile_meta">
+                              <label class="profile_meta_label">微信号</label>
+                              <span class="profile_meta_value">sinozhuge</span>
+                              </p>
+
+                              <p class="profile_meta">
+                              <label class="profile_meta_label">功能介绍</label>
+                              <span class="profile_meta_value">精彩书摘、文摘，好书推荐，心得分享。用指间的碎片时间，品读政治学、国际关系，中国最大的政治学与国际关系社区，与您一同进步。</span>
+                              </p>
+                              
+                          </div>
+                          <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                              <i class="profile_arrow arrow_out"></i>
+                              <i class="profile_arrow arrow_in"></i>
+                          </span>
+                      </div>
+                    </span>
+
+
+                    <em id="publish_time" class="rich_media_meta rich_media_meta_text"></em>
+
+
+
+
+
+                </div>
+                
+                
+                
+                
+                                                
+                                <div class="rich_media_thumb_wrp" id="media">
+                    
+                                        <script nonce="1551184023">
+                        (function(){
+                            var cover = "http://mmbiz.qpic.cn/mmbiz/X0vxvBM5slFGzD7g4I8jIpFteRTZibXu9KVuBzKInJZdtiavliaRV6JUAA8RJvseDUCib3ibLXQBqg3CSuC8h2Vr8yQ/0";
+                            var tempImg = document.createElement('img');
+                            tempImg.setAttribute('class', 'rich_media_thumb');
+                            tempImg.setAttribute('id', 'js_cover');
+                            tempImg.setAttribute('data-backsrc', cover);
+                            tempImg.setAttribute('data-src', cover);
+                            tempImg.setAttribute('onerror', 'this.parentNode.removeChild(this)');
+                            document.write(tempImg.outerHTML);
+                            
+                        })();
+                    </script>
+                                    </div>
+                                                
+                                
+                
+                <div class="rich_media_content " id="js_content">
+                    
+
+                    
+
+                    
+                    
+                    <p style="line-height:23px;page-break-after:avoid"><span style="font-size:12px;font-family:华文中宋">来源：《俄罗斯研究》</span><span style="font-size:12px">2013</span><span style="font-size:12px;font-family:华文中宋">年第</span><span style="font-size:12px">5</span><span style="font-size:12px;font-family:华文中宋">期</span></p><p style=";margin-bottom:0;line-height:23px"><span style="font-size:24px"> </span></p><p style="text-align:center;line-height:29px"><strong><span style="font-size:24px;font-family:黑体">后苏联时期俄乌关系中的历史、文化因素</span></strong></p><p style="line-height:23px"><br  /></p><p style="margin-bottom: 0px; line-height: 23px; text-align: center;"><span style="font-size: 16px;font-family: 楷体_GB2312">杨 恕  朱倍德</span></p><p style="line-height:23px"><br  /></p><p style="line-height:23px"><strong><span style="font-family:黑体">【内容提要】</span></strong><span style="font-family:仿宋_GB2312">俄罗斯人与乌克兰人同源于东斯拉夫人，双方在宗教、文化上都有很多相同之处，但也有不少差别。西乌克兰由于受波兰长期统治，在文化上与俄罗斯的差别就更大。</span>300<span style="font-family:仿宋_GB2312">多</span><span style="font-family:仿宋_GB2312">年来，乌克兰曾是俄国与苏联的一部分，经历了“俄罗斯化”过程，同时也有苏联时期大清洗、大饥荒等痛苦的经历，卫国战争期间，一些乌克兰人还曾与德国合作反对苏联。这些历史、文化因素使乌克兰东西部在对俄关系上有明显差异</span><span style="font-family:仿宋_GB2312">，</span><span style="font-family:仿宋_GB2312">也在苏联解体后与俄罗斯的关系中引起了一系列争议甚至冲突。</span></p><p style="line-height:23px"><strong><span style=";font-family:黑体">【关键词】</span></strong><span style="font-family:仿宋_GB2312">俄乌关系</span><span style="font-family:仿宋_GB2312"> </span><span style="font-family:仿宋_GB2312">乌克兰东西部</span><span style="font-family:仿宋_GB2312"> </span><span style="font-family:仿宋_GB2312">争议</span></p><p style="line-height:23px"><strong><span style=";font-family:黑体">【中图分类号】</span></strong>D73/77(512)<strong><span style=";font-family:黑体">【文章标识】</span></strong>A<strong><span style=";font-family:黑体">【文章编号】</span></strong>1009-721X(2013) 05-0023-(19)</p><p style="text-indent:28px;line-height:23px"><br  /></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">独立之后，俄罗斯与乌克兰两国之间的摩擦和争议不断，不仅成为两国关系中的重要内容，而且成为地区问题的热点。在一些涉及双方利益的问题上，如克里米亚的归属、塞瓦斯托波尔海军基地的租赁、天然气供应等，两国唇枪舌战，政府、议会、公众、媒体都卷入其间。但这些问题的激化程度有限，持续时间不长。而与此形成鲜明对照的，则是两国之间关于历史文化的争议和冲突。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">俄罗斯人和乌克兰人都是东斯拉夫民族，在文化方面有明显的相似性，而且有</span>300<span style="font-family:宋体">多年同属一个国家的历史。但双方在文化上也有不少差异，在同一个国家的历史经历中又存在着不少分歧和矛盾。这些问题随着两国的独立，一下子爆发出来。客观地讲，争议主要是由乌克兰方面提出的。主要表现是：强调乌克兰文化和俄罗斯文化的差别，以说明它们是不同的，而不是相近的；对历史上的一些重大事件提出质疑和新的解释，认为帝俄、苏联时期所编写的历史叙述没有反映乌克兰真实的历史，乌克兰在帝俄和苏联时期处于不平等地位，中央政权对乌克兰实行了多方面的不平等、甚至是殖民主义的政策，乌克兰的历史必须重新编写，等等。这些观点广泛出现在学术研究成果、媒体乃至官方文件中，形成了一股重新塑造乌克兰历史的社会潮流。为了首先在青少年中建立新的历史</span><span style="font-family:宋体">-</span><span style="font-family:宋体">文化观，乌克兰政府在独立伊始就开始编写新的乌克兰历史教科书，上述观点成为主导思想。应该指出，这一过程及其生产品明显具有反俄罗斯、否定苏联的特征，成为乌克兰相关内外政策的文化支撑，并在乌克兰的对外关系中表现出来，本文就对这一情况做一概要的分析。</span></p><p style="text-indent:28px;line-height:23px"><br  /></p><p style="text-align:center"><span style="font-size:16px;font-family:黑体">一、乌克兰东西部不同的历史</span><span style="font-size:16px;font-family:黑体">—</span><span style="font-size:16px;font-family:黑体">文化进程</span></p><p><br  /></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">公元</span>9<span style="font-family:宋体">世纪由古斯拉夫部落建立的基辅罗斯，是俄罗斯和乌克兰共同的起源。那时的古斯拉夫部落还没有分化，因此可以把基辅罗斯的居民称为俄罗斯人和乌克兰人的共同祖先。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">在弗拉基米尔一世统治时期，基辅罗斯的政治、经济和社会生活繁荣昌盛，由此奠定了今天俄罗斯、乌克兰共同的文化基础。公元</span>988<span style="font-family:宋体">年，弗拉基米尔将基督教正教定为国教，此举确定了俄罗斯人和乌克兰人共同的宗教信仰。宗教对于中世纪的欧洲人来说是生活中的头等大事，是绝大多数人的精神</span><span style="font-family:宋体">归属</span><span style="font-family:宋体">，它甚至决定一个国家的文化发展方向。因此可以说，俄罗斯文明的摇篮是基辅罗斯，而基辅罗斯接受东正教则是俄罗斯文化的第一个历史里程碑。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">东正教对于俄罗斯文明的起源贡献巨大，它所使用的“古教会斯拉夫语”及相应的文字，是俄罗斯人和乌克兰人最早使用的文字。迄今为止最早记载俄罗斯历史的文献《往年纪事》（</span>Повестьвременных лет<span style="font-family:宋体">）</span><span style="font-family:宋体">就是用这种语言的文字写成的。此外，俄罗斯最早的文学、艺术以及法律等等，都是在东正教会的推动下出现的。由于基辅罗斯对于俄罗斯文明的重要作用，俄罗斯人把乌克兰的基辅视为俄罗斯文明的起源，称基辅为“俄罗斯诸城之母”。</span></p><p style="text-indent:28px;line-height:23px">12<span style="font-family:宋体">至</span>13<span style="font-family:宋体">世纪，由于种种原因，基辅罗斯逐渐灭亡，在其地域内兴起了两个中心，一个是罗斯西南的加利西亚</span><span style="font-size: 14px">[</span><span style="font-size:14px;font-family:宋体">①</span><span style="font-size: 14px">]</span><span style="font-family:宋体">-</span><span style="font-family:宋体">沃伦公国，另一个则是罗斯东北的弗拉基米尔</span><span style="font-family:宋体">-</span><span style="font-family:宋体">苏兹达利公国。</span>13<span style="font-family:宋体">世纪</span>20<span style="font-family:宋体">年</span><span style="font-family:宋体">代，蒙古人打进了东欧，使弗拉基米尔</span><span style="font-family:宋体">-</span><span style="font-family:宋体">苏兹达利公国沦为金帐汗国的属国，征服了包括罗斯人在内的斯拉夫人，但罗斯西南部的加利西亚</span><span style="font-family:宋体">-</span><span style="font-family:宋体">沃伦公国</span><span style="font-family:宋体">并没有被征服。“‘在这个强大的公国存在着另一种不同的政治文化’，它在上百年的时间里继续着古罗斯的传统。”</span><span style="font-size:14px;font-family:Calibri,sans-serif">[</span><span style="font-size:14px;font-family:宋体">②</span><span style="font-size:14px;font-family:Calibri,sans-serif">]</span><span style="font-family:宋体">因此，从政治与文化传统延续的意义上讲，加利西亚</span><span style="font-family:宋体">-</span><span style="font-family:宋体">沃伦公国成了基辅罗斯的直接延伸。可以认为，这一时期是乌克兰进入领土</span><span style="font-family:宋体">-</span><span style="font-family:宋体">文化分裂的时期：乌克兰西部（即加利西亚</span><span style="font-family:宋体">-</span><span style="font-family:宋体">沃伦）已和罗斯其他地方（包括东乌克兰）在政治文化上开始有了差别。东部逐渐受到蒙古</span><span style="font-family:宋体">-</span><span style="font-family:宋体">鞑靼人越来越深的影响，而西部则较多地保留了古罗斯的政治文化。</span>1340<span style="font-family:宋体">年，波兰入侵加利西亚，使乌克兰逐渐沦为波兰立陶宛共和国的一部分，此后波兰对乌克兰的统治持续了很长一段时期。</span><span style="font-size:14px;font-family:Calibri,sans-serif">[</span><span style="font-size:14px;font-family:宋体">③</span><span style="font-size:14px;font-family:Calibri,sans-serif">]</span><span style="font-family:宋体">这里需要特别指出的是，在上述过程中，波兰统治下的西乌克兰是天主教的领地，而</span><span style="font-family:宋体">东正教</span><span style="font-family:宋体">与</span><span style="font-family:宋体">天主教之间的对立深化了东西乌克兰之间的文化</span><span style="font-family:宋体">-</span><span style="font-family:宋体">历史差异。</span><span style="font-size:14px;font-family:Calibri,sans-serif">[</span><span style="font-size:14px;font-family:宋体">④</span><span style="font-size:14px;font-family:Calibri,sans-serif">]</span></p><p style="text-indent:28px;line-height:23px">1648<span style="font-family:宋体">年</span><span style="font-family:宋体">春天，乌克兰人首领波格丹·赫梅利尼茨基发动了反对波兰统治的大起义。在经历了数年的战争而无法取得胜利的情况下，以赫梅利尼茨基为首的乌克兰上层，选择了与俄罗斯联合以摆脱波兰人统治的道路。</span>1654<span style="font-family:宋体">年</span>1<span style="font-family:宋体">月，双方签署了著名的《佩列亚斯拉夫协议》，实现了合并。尽管有关《佩列亚斯拉夫协议》的目的、内容、结果等，目前在俄乌双方之间进行着激烈的争论</span><span style="font-size:14px;font-family:Calibri,sans-serif">[</span><span style="font-size:14px;font-family:宋体">⑤</span><span style="font-size:14px;font-family:Calibri,sans-serif">]</span><span style="font-family:宋体">，但是，协议之后乌克兰成为俄罗斯的一部分这一基本事实却无法否定，这成为乌克兰历史和俄乌关系中最重大的转折点。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">《佩列亚斯拉夫协议》签订十多年之后，</span>1667<span style="font-family:宋体">年</span>1<span style="font-family:宋体">月，莫斯科公国和波兰签订了《安德鲁索沃条约》，将第聂伯河以西的乌克兰正式划归波兰统治，而东岸则划给了俄罗斯。两岸乌克兰人各有自己的首领</span>—<span style="font-family:宋体">盖特曼，但分别由波兰和俄罗斯批准。乌克兰的这一次领土</span><span style="font-family:宋体">-</span><span style="font-family:宋体">政治分裂，使乌克兰的文化失去了统一的空间，东西乌克兰在文化上分别受俄罗斯和波兰的影响，表现出越来越多的差异。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">需要指出的是，现今乌克兰南部虽和东部一样有着亲俄情结，但二者的历史却是完全不一样的。从历史上说，今日乌克兰的南部沿海地区从来都不是乌克兰人的“历史活动区域”。</span>18<span style="font-family:宋体">世纪末之前，这一地区一直被克里米亚汗国所占据。</span>18<span style="font-family:宋体">世纪末，</span><span style="font-family:宋体">俄国通过战争兼并了这一区域，占领了包括克里米亚在内的广大黑海沿岸地区，并颁布了一系列优惠措施吸引俄罗斯人、乌克兰人来此地定居<em>。</em>这使南部的敖德萨州、尼古拉耶夫州、赫尔松州、扎波罗热州以及克里米亚共和国的人民在今天仍保持着对俄罗斯的亲近之情，也使他们在</span>2010<span style="font-family:宋体">年乌克兰第二轮总统</span><span style="font-family:宋体">选</span><span style="font-family:宋体">举</span><span style="font-family:宋体">中</span><span style="font-family:宋体">对主张与俄保持友好关系的亚努科维奇的支持率平均高达</span>70%<span style="font-family:宋体">以上</span><span style="font-size:14px;font-family:Calibri,sans-serif">[</span><span style="font-size:14px;font-family:宋体">⑥</span><span style="font-size:14px;font-family:Calibri,sans-serif">]</span><span style="font-family:宋体">。</span></p><p style="text-indent:28px;line-height:23px">1793<span style="font-family:宋体">年，俄国第二次瓜分波兰，第聂伯河西岸乌克兰（波多利、沃伦、布拉茨拉夫和基辅等四个省）被划入俄国。</span>1795<span style="font-family:宋体">年第三次瓜分波兰时，俄国又得到了东部沃伦。此时，俄国已控制了乌克兰土地的</span>80%<span style="font-family:宋体">，但乌克兰最西部（现今乌克兰的利沃夫、捷尔诺波尔、伊万诺</span><span style="font-family:宋体">-</span><span style="font-family:宋体">弗兰科夫斯克、外喀尔巴阡、布科维纳</span>5<span style="font-family:宋体">个州）仍然在俄国的疆土之外。</span>1917<span style="font-family:宋体">年十月革命之后，苏俄境内的乌克兰失去了以前沙俄所领有的沃伦和罗夫诺地区（这些西乌克兰领土被波兰占据），而奥匈帝国以前所占领的乌克兰最西部领土则处于波兰、捷克和罗马尼亚的控制之下。</span>1939<span style="font-family:宋体">年</span>9<span style="font-family:宋体">月</span>1<span style="font-family:宋体">日</span><span style="font-family:宋体">，德国入侵波兰。</span>9<span style="font-family:宋体">月中旬，苏联按照之前与德国的秘密协定，出兵占领了波兰东部，也就是现乌克兰的最西部，包括利沃夫、沃伦等地，建立了苏维埃政权，逮捕了原政权、政党的许多领导人，没收了天主教会的财产，限制其活动。苏联和德国一同瓜分波兰的做法，激起了西乌克兰人的愤怒和反抗。应该指出，苏联对西乌克兰西部（波兰东部）的占领，使乌克兰基本处于了一个国家之内。但是，由于此前历史上领土分裂而造成的东乌克兰、西乌克兰以及西乌克兰西部之间的政治</span><span style="font-family:宋体">-</span><span style="font-family:宋体">文化差异，却不可能因领土合并而消失。苏联时期，它就逐渐有所表现，至苏联解体以及乌克兰独立后，更成为了一个突出的社会现象。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">总之，历史上乌克兰民族的生活地域长期处于分割状态，西部主要受波兰的影响，欧洲文化从波兰、奥地利、匈牙利进入西乌克兰，而东部主要受俄罗斯的影响。这使东西乌克兰不仅在文化上出现差异，而且在价值观、意识形态等方面也表现出不同。这一情况使乌克兰在独立后重建民族国家和民族文化的过程中面临重大挑战，而与俄罗斯的关系则成为问题的核心。下面就对此进行分析。</span></p><p style="text-align:center"><span style="font-size:16px;font-family:黑体"> </span></p><p style="text-align:center"><span style="font-size:16px;font-family:黑体">二、乌克兰东西部对俄罗斯态度的差异</span></p><p><span style="font-family:宋体"> </span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">民族凝聚力是综合国力中更为基础和持久性的构成因素</span><span style="font-family:宋体"><span style="font-size: 14px">[</span><span style="font-size: 14px">⑦]</span></span><span style="font-family:宋体">。但对乌克兰来说，由于其东西部经历了几乎完全不同的历史，因此乌克兰到现在都还没有铸造出较为统一的民族凝聚力，而其间俄罗斯又起了决定作用。这一点也突出地反映在乌东西部对俄所持的不同态度上，西部虽经历了较长时间的波兰统治，但一直对波兰人当年的压迫记忆犹新；而经历了长时间俄国统治的东部却一直有着明显的俄罗斯情结。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">对于乌克兰这样一个刚刚取得独立、在别人的统治下生活了</span>700<span style="font-family:宋体">多年的民族来说，最重要的事情就是尽快确立自己有别于他人的民族认同和精神。对其中相当一部分人来说，这需要重建。而现实是，俄罗斯文化在东乌克兰占据着一定的优势，对于乌克兰这一新独立、且在历史上与俄罗斯有不少恩怨的国家来说，减少或清除俄罗斯的文化影响（主要在东、南部）是可以理解的，这有利于确立乌克兰独立的民族-文化精神。当今世界，文化在国际舞台上的作用越来越重要，以往大国赖以崛起的军事和经济力量等国家硬实力相对而言会越来越受到限制，文化、制度及政策等软实力，越来越成为国家在世界舞台拓展其国家利益的重要手段。因此，对于那些独立时间不长的国家来说，当务之急就是确立自己的文化优势，不要让自己的国民仍被其他的文化所吸引。乌克兰的做法是普遍的，而不是个案。</span></p><p style="text-indent:28px;line-height:23px"><strong> </strong></p><p style="text-indent:28px;line-height:23px"><strong><span style="font-family:宋体">（一）东乌克兰人对俄罗斯的态度</span></strong></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">俄乌自</span>1654<span style="font-family:宋体">年合并以来，俄罗斯人和第聂伯河以东的乌克兰人，已在同一个国家里生活了</span>300<span style="font-family:宋体">多年。</span>300<span style="font-family:宋体">年来，俄罗斯在文化上力图使乌克兰人用俄语，并有大批俄罗斯人移民到乌克兰；苏联时期的中央政府更是在“民族融合”、“创建苏联人民”的口号下在乌克兰推行俄罗斯化。而共同的历史记忆更使东乌克兰人对俄罗斯人怀有深深的“兄弟之情”。总之，这一切都在如今的东乌克兰刻下了浓重的俄罗斯痕迹。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">在乌克兰东部，一些与俄罗斯接壤的乌克兰土地，甚至在历史上就直接由俄罗斯来管辖。乌克兰东北的哈尔科夫就是一个例子：哈尔科夫地区原本就是莫斯科公国的西南边疆。从</span>16<span style="font-family:宋体">世纪末开始，乌克兰人为躲避战乱及波兰地主的压迫开始迁入此地，使之</span><span style="font-family:宋体">在</span>1796<span style="font-family:宋体">年成为斯洛博达乌克兰。也就是说，这一地区虽大部由乌克兰人居住，但原本就不归乌克兰盖特曼管辖，而是受俄国控制。因此该地虽属于乌克兰并且大多居民是乌克兰人，但缺少乌克兰民族主义。农奴制改革后乌克兰不同地区的反应也说明了东部地区对俄罗斯的信任。在</span>1861<span style="font-family:宋体">年的农奴制改革后，俄国普遍发生了农民骚动。单就乌克兰来说，第聂伯河西岸地区冲突较多较广，在东岸和南部则相对较少。这说明，由于俄国在西岸长期依赖原来的波兰贵族进行统治，造成西岸乌克兰人对俄认同程度不高；而东岸和南部的乌克兰人由于长期受俄罗斯的影响，对俄已形成了比较稳定的认同。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">卫国战争初期，红军在乌克兰地区遭受惨败，但东乌克兰人（指</span>1939<span style="font-family:宋体">年之前苏维埃乌克兰版图上的乌克兰人）没有向德国人投降，他们在苏联政府的领导下对德国法西斯进行了英勇卓绝的抵抗，表现出对苏维埃国家的忠诚，这与西乌克兰的情况形成了强烈对比。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">另外，即使到了苏联行将解体时，东乌克兰人也没有表现出积极的独立愿望。到</span>1989<span style="font-family:宋体">年末，大部分乌克兰人也并不支持建立独立的乌克兰国家</span><span style="font-family:宋体"><span style="font-size: 14px">[</span><span style="font-size: 14px">⑧]</span></span><span style="font-family:宋体">。当时在顿巴斯虽然也发生了罢工，但工人的要求是提高工资、改善工作条件等经济方面的，他们对乌克兰人民争取改革运动（即“鲁赫”<span style="font-size: 14px">[⑨]</span>）的一些代表是非常不信任的。</span>1990<span style="font-family:宋体">年</span>1<span style="font-family:宋体">月</span><span style="font-family:宋体">，“鲁赫”号召乌克兰人仿效波罗的海国家，手拉手组成人链进行抗议，结果，</span>45<span style="font-family:宋体">万</span><span style="font-family:宋体">乌克兰人走上街头，汇聚到连接利沃夫和基辅的道路上，<span style="font-size: 14px">[⑩]</span>但链条没有向东继续延伸。这说明东乌克兰人在当时仍倾向于与俄罗斯组成联盟，对独立运动并不支持。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">在现今乌克兰</span><span style="font-family:宋体">的</span>4600<span style="font-family:宋体">多万人口中，俄罗斯族占</span>17.3%<span style="font-family:宋体">，人口约为</span>800<span style="font-family:宋体">多万，他们大都集中在乌克兰东部和南部，并且许多人都在俄罗斯有亲戚。可以说，如果苏联不解体，那持续了</span>300<span style="font-family:宋体">年的</span><span style="font-family:宋体">俄乌一体化还会以更高的水平在乌东、南部发展下去，但苏联的崩溃使得这一进程戛然而止。</span>300<span style="font-family:宋体">年的俄罗斯化使俄语在乌克兰东部尤其是东南一些州的使用率为</span>20%<span style="font-family:宋体">-</span>50%<span style="font-family:宋体;color:#3366FF">。</span><span style="font-family:宋体">在</span>1954<span style="font-family:宋体">年才划归乌克兰的克里米亚，俄罗斯人所占比例高达</span>58.5%<span style="font-family:宋体">（</span>2001<span style="font-family:宋体">年乌克兰人口普查数据），以俄语为母语的居民更是达到</span>77%<span style="font-family:宋体">（</span>2001<span style="font-family:宋体">年乌克兰人口普查数据）</span><span style="font-size:14px;font-family:Calibri,sans-serif">[11]</span><span style="font-family:宋体">。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">独立以后，为了重建民族文化和国家认同，乌政府采取了一系列措施大力推广乌克兰语，同时限制俄语的使用，这无疑削弱了俄罗斯文化的影响。我们看到，在独联体国家中，尽管乌克兰俄罗斯人最多，使用俄语的人口最多，但俄语却没有国家语言的地位。这种状况对于东、南部人，尤其是那些俄罗斯族人来说，是难以接受的，他们在心理上极不愿意用乌克兰语替代俄语。乌克兰政府去俄罗斯化的语言</span><span style="font-family:宋体">-</span><span style="font-family:宋体">文化政策，受到俄罗斯及乌国内相当一部分人的反对</span><span style="font-size:14px;font-family:Calibri,sans-serif">[12]</span><span style="font-family:宋体">。经过讲俄语居民多年的争取，乌克兰议会迟至</span>2012<span style="font-family:宋体">年</span>7<span style="font-family:宋体">月才通过了《国家语言政策基础法》。规定在俄罗斯族人不低于人口</span>10%<span style="font-family:宋体">的地区，俄语具有地区语言（</span>региональныйязык<span style="font-family:宋体">）地位</span><span style="font-family:宋体">，这样的州</span><span style="font-family:宋体">在乌克兰</span>27<span style="font-family:宋体">个州中有</span>13<span style="font-family:宋体">个</span><span style="font-family:宋体">。对于乌克兰这样一个多民族构成的国家，政府应该认识到，“真正完整、和谐的民族国家应当是愿意形成一个统一的国族的所有民族共同缔造、共同拥有的国家，而不是一个民族单独缔造、单独拥有的国家。”</span><sup><sup><span style="font-size:14px;font-family:Calibri,sans-serif">[13]</span></sup></sup><span style="font-family:宋体">现实说明，东乌克兰的文化倾向影响着该地区居民的政治选择。如前文所述，在历次选举中，这些地区的民众多投票支持亲俄的地区党，可以说是地区党稳固的“票仓”。总之，历史</span>-<span style="font-family:宋体">文化差异严重影响着东西部居民的政治选择。表</span>1<span style="font-family:宋体">是一项对乌克兰西、中、南、东四个地区居民地缘政治选择的调查结果，从中可以看出，亲俄倾向自西向东递增，而亲欧倾向递减，明显表现出历史</span>-<span style="font-family:宋体">文化差异的作用。</span></p><p style="text-indent:28px;line-height:23px"><br  /></p><p style="text-align:center;line-height:16px"><span style=";font-family:黑体">表</span>1 <span style=";font-family:黑体">乌克兰居民地缘政治取</span><span style=";font-family:黑体">向</span><span style=";font-family:黑体">的地区差异（</span><span style=";font-family:黑体">%</span><span style=";font-family:黑体">）</span></p><table cellspacing="0" cellpadding="0" width="96"><tbody><tr><td width="57" colspan="2" rowspan="2" style="border-color: windowtext; border-width: 1px; padding: 0px 7px;"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">您对下列观点：</span></p></td><td width="42" colspan="4" valign="top" style="border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-style: none; padding: 0px 7px;"><p style="text-align:center;line-height:15px"><span style="font-size:12px;font-family:宋体">乌克兰各地区</span></p></td></tr><tr><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;"><p style="text-align:center;line-height:15px"><span style="font-size:12px;font-family:宋体">西部</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;"><p style="text-align:center;line-height:15px"><span style="font-size:12px;font-family:宋体">中部</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;"><p style="text-align:center;line-height:15px"><span style="font-size:12px;font-family:宋体">南部</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;"><p style="text-align:center;line-height:15px"><span style="font-size:12px;font-family:宋体">东部</span></p></td></tr><tr style=";height:17px"><td width="42" rowspan="3" style="border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: none; padding: 0px 7px;" height="17"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">乌克兰加入俄罗斯</span><span style="font-size:12px;font-family:  宋体">-</span><span style="font-size:12px;font-family:宋体">白俄罗斯联盟</span></p></td><td width="15" valign="top" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="17"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">强烈反对</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="17"><p style="text-align:center;line-height:15px"><span style="font-size:12px">54.7</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="17"><p style="text-align:center;line-height:15px"><span style="font-size:12px">30.6</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="17"><p style="text-align:center;line-height:15px"><span style="font-size:12px">7.5</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="17"><p style="text-align:center;line-height:15px"><span style="font-size:12px">8.5</span></p></td></tr><tr style=";height:10px"><td width="15" valign="top" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="10"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">难以回答</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="10"><p style="text-align:center;line-height:15px"><span style="font-size:12px">18.3</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="10"><p style="text-align:center;line-height:15px"><span style="font-size:12px">22.0</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="10"><p style="text-align:center;line-height:15px"><span style="font-size:12px">8.6</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="10"><p style="text-align:center;line-height:15px"><span style="font-size:12px">11.0</span></p></td></tr><tr style=";height:14px"><td width="15" valign="top" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="14"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">强烈支持</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="14"><p style="text-align:center;line-height:15px"><span style="font-size:12px">26.9</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="14"><p style="text-align:center;line-height:15px"><span style="font-size:12px">47.5</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="14"><p style="text-align:center;line-height:15px"><span style="font-size:12px">83.6</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="14"><p style="text-align:center;line-height:15px"><span style="font-size:12px">80.6</span></p></td></tr><tr style=";height:15px"><td width="42" rowspan="3" style="border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: none; padding: 0px 7px;" height="15"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">乌克兰加入欧盟</span></p></td><td width="15" valign="top" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">强烈反对</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">11.7</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">13.9</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">24.8</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">24.8</span></p></td></tr><tr style=";height:15px"><td width="15" valign="top" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">难以回答</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">28.1</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">37.7</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">41.8</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">39.0</span></p></td></tr><tr style=";height:15px"><td width="15" valign="top" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="line-height:15px"><span style="font-size:  12px;font-family:宋体">强烈支持</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">60.2</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">48.4</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">33.4</span></p></td><td width="10" style="border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1px; border-right-color: windowtext; border-right-width: 1px; padding: 0px 7px;" height="15"><p style="text-align:center;line-height:15px"><span style="font-size:12px">36.3</span></p></td></tr></tbody></table><p style="text-indent:24px"><span style="font-size:12px;font-family:楷体_GB2312">资料来源：</span><span style="font-size:12px">Шульга</span><span style="font-size:12px">М</span><span style="font-size:12px">.</span><span style="font-size:12px">О</span><span style="font-size:12px">. </span><span style="font-size:12px">Геополитические</span><span style="font-size:12px">ориентации</span><span style="font-size:12px">населения</span><span style="font-size:12px">и</span><span style="font-size:12px">безопосность</span><span style="font-size:12px">Украины</span><span style="font-size:12px">. </span><span style="font-size:12px">Киев</span><span style="font-size:12px">: </span><span style="font-size:12px">ООО</span><span style="font-size:12px"> «</span><span style="font-size:12px">Друкарня</span><span style="font-size:12px"> «</span><span style="font-size:12px">Бізнесполіграф</span><span style="font-size:12px">» , 2009. </span><span style="font-size:12px">С</span><span style="font-size:12px">.57.</span><span style="font-size:12px;font-family:宋体">略有删节。</span></p><p style="text-indent:28px;line-height:23px"><strong> </strong></p><p style="text-indent:28px;line-height:23px"><strong><span style="font-family:宋体">（二）西乌克兰人对俄罗斯的态度</span></strong></p><p style="text-indent:28px;line-height:23px">18<span style="font-family:宋体">世</span><span style="font-family:宋体">纪末俄国合并第聂伯河西岸乌克兰（不包括乌最西部的加利西亚）后，波兰地主仍保留着庄园与地位，在官方机构中仍使用波兰语，甚至许多官员也还是波兰人，帝俄并未在这里实行俄罗斯化。直</span><span style="font-family:宋体">到</span>1830<span style="font-family:宋体">年波兰起义后，俄国政府才意识到波兰民族意识的“危险性”<span style="font-size: 14px">[14]</span>，并开始在第聂伯河西岸的乌克兰推行俄罗斯化，但当时波兰人在西乌克兰的影响力已经根深蒂固。</span>19<span style="font-family:宋体">世纪</span>30<span style="font-family:宋体">年代，西乌克兰有四百多万乌克兰农奴和近十万人的特权阶层，即贵族和神职人员，其中大多数为小地主、大地主庄园的管家、土地承租人等，这些人几乎清一色是波兰人<span style="font-size: 14px">[15]</span>。</span><span style="font-family:宋体">也就是说，尽管西乌克兰在当时已并入俄国</span>50<span style="font-family:宋体">多年，</span><span style="font-family:宋体">但此地的管理阶层几乎仍是波兰人，</span><span style="font-family:宋体">这使得西乌克兰人的俄罗斯化并不明显。由于没有尽快确立俄罗斯文化对于西乌克兰人的优势，第聂伯河西岸的乌克兰人对俄罗斯的认同感至今没有东部强。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">还有一种情况发生</span><span style="font-family:宋体">在</span>19<span style="font-family:宋体">世纪</span>60<span style="font-family:宋体">年代奥地利统治下的西乌克兰西部，即加利西亚地区。当时，这里的知识分子中出现了亲俄派，他们认为，奥地利正持续衰落，加利西亚总有一天会落入俄国之手。因此，和俄国结盟才是上策。</span>19<span style="font-family:宋体">世纪中后期，在东加利西亚、布科维纳和外喀尔巴阡的乌克兰人中，曾经一度出现过一股不强的亲俄力量。例如，在</span>1907<span style="font-family:宋体">年加利西亚地区的选举中，亲俄罗斯派曾获得</span>2<span style="font-family:宋体">个</span><span style="font-family:宋体">席位（乌克兰政党赢得</span><span style="font-family:宋体">了</span>22<span style="font-family:宋体">个席位）,但他们毕竟是少数。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">一战初期，俄军攻入乌克兰最西部，在加利西亚破坏乌克兰人的社会和文化，并将许多民族主义者流放西伯利亚，这使西乌人对俄罗斯的那一点好感完全消失。随着一战后乌克兰最西部归入波兰，波兰的反苏倾向又给予这里的乌克兰人很大影响。</span>1939<span style="font-family:宋体">年，该地区被苏联吞并，由于苏联的错误政策，许多西乌克兰人在</span>1941<span style="font-family:宋体">年欢</span><span style="font-family:宋体">迎德军的到来，希望能获得比苏联统治更好的境遇。</span>1943<span style="font-family:宋体">年，有不少于</span>7<span style="font-family:宋体">万的加利西亚青年进入德国党卫军的</span><span style="font-family:宋体">志愿军团“加利茨亚”</span><span style="font-family:宋体">（</span>Галиция<span style="font-family:宋体">）</span><span style="font-family:宋体">。同时，一支为抗击苏军而组织的队伍——乌克兰起义军</span><span style="font-family:宋体">（</span>UPA<span style="font-family:宋体">）</span><span style="font-family:宋体">也首先在沃伦成立。而在二战即将结束、苏军就要重返乌克兰最西部时，许多西乌克兰人跟随着德国人向西撤退。总之，两次世界大战使最西部的乌克兰人对俄罗斯的恶感急剧增加，再加上西乌克兰本身所处的西方文化环境与俄国完全不同，这些都使得现今许多最西部的乌克兰人对苏联-俄罗斯怀有一种仇恨和蔑视的心理。基辅和西乌克兰的各种民族主义政治家们认为，俄国和俄国人在文化上属于外国，在政治上则属于敌对一方，这种思想在加利西亚尤其明显<span style="font-size: 14px">[16]</span>。在加利西亚，游行示威者常常打出“打倒莫斯科佬（</span>Moskals<span style="font-family:宋体">,</span><span style="font-family:宋体">一种对俄罗斯人的蔑称）”、“从乌克兰的学校里清除俄语！”这类标语。西乌克兰最极端的反俄情绪则集中表现在</span>2011<span style="font-family:宋体">年的二战纪念日上：</span>5<span style="font-family:宋体">月</span>9<span style="font-family:宋体">日</span><span style="font-family:宋体">，在利沃夫的卫国战争纪念碑前，当地民族主义分子撕毁了俄罗斯国旗、国徽以及花圈，并与老战士发生冲突。该市市长甚至称卫国战争老战士是“俄罗斯的法西斯”，这引起了俄罗斯官方的正式抗议。此事说明了该地区相当一部分人的政治情感取向。</span><sup><sup><span style="font-size:14px;font-family:Calibri,sans-serif">[17]</span></sup></sup></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">二战后，加利西亚地区（利沃夫、捷尔诺波尔等州）并入苏联，但</span><span style="font-family:宋体">并没有大量俄罗斯人移民到该地区，这使当地保留了乌克兰语的学校和媒体，并成为苏联境内“苏联色彩最淡”和“俄罗斯人最少和俄罗斯化最低”的地区。</span><span style="font-family:宋体"><span style="font-size: 14px">[18]</span></span><span style="font-family:宋体">总之，</span><span style="font-family:宋体">今天的西乌克兰西部是乌克兰最为欧化、同时也是对俄罗斯最不认同的地区；</span><span style="font-family:宋体">而东部那些与俄国经历了</span><span style="font-family:宋体">三百多年</span><span style="font-family:宋体">共同历史的乌克兰人则与此明显不同</span><span style="font-family:宋体">。</span></p><p><span style="font-size:16px;font-family:黑体"> </span></p><p style="text-align:center"><span style="font-size:16px;font-family:黑体">三、俄乌之间的外交</span><span style="font-size:16px;font-family:黑体">-</span><span style="font-size:16px;font-family:黑体">文化冲突</span></p><p style="text-indent:28px;line-height:23px"><br  /></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">前文我们分析了，在乌克兰东西部之间的文化差异形成过程中，俄罗斯是一个关键因素。而对俄罗斯的认知和态度的差别，又成为乌克兰东西部差异的标志之一。伴随着乌克兰独立，乌克兰民族文化复兴也以各种形式展现出来，其中，俄罗斯在乌克兰历史</span>—<span style="font-family:宋体">文化中的一些被称为“负面”的因素成为乌克兰与俄罗斯国家关系中的重要内容，并引发了双方的一系列争议甚至冲突。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">总体来说，俄乌之间的历史文化争议的内容，大致可以以乌克兰并入俄罗斯为界划分为两部分。对于并入之前，争议主要涉及基辅罗斯在俄罗斯和乌克兰民族起源中的作用和地位；乌克兰语和俄语的关系；《佩列亚斯拉夫协议》等相关文献的内容、作用；乌克兰并入俄罗斯的历史环境、目的、后果等。这些问题的争议主要在学术界，但其民族情绪和表达也在官方、公众和媒体中广泛存在。双方学者还召开学术会议进行讨论。例如，</span>2008<span style="font-family:宋体">年</span>4<span style="font-family:宋体">月</span>3<span style="font-family:宋体">-</span>5<span style="font-family:宋体">日，俄科学院欧洲所召开了俄乌关系史会议，俄乌学者就双方关系中的一些重大问题做了研讨。</span><span style="font-size: 14px">[19]</span><span style="font-family:宋体">以后莫斯科大学等也参与进来</span><span style="font-family:宋体">。虽</span><span style="font-family:宋体">进行了诸多争论，</span><span style="font-family:宋体">但分歧并未减少。对于并入之后，也就是处于帝俄及苏联一个国家内的历史文化过程，争议的内容则广泛得多，而且带有十分明显的政治倾向，官方成为争议的参与主体。客观而论，争议是由乌方主动引发的，俄方主要是应对式的反应。由于双方争议内容相当复杂，笔者无意对它做详细论述，这里以外交领域为主做概略的介绍和分析。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">乌克兰独立后就开始把与俄罗斯之间的历史文化问题纳入到法律、政策范围加以处理，同时使其进入到外交领域。双方为了论证自己观点的正确性，编写、出版了大量的书籍、论文，同时举办各种学术会议，以宣传自己的观点，扩大影响，并确立学术地位。在所有争议中，有关大饥荒的表达最为强烈，乌克兰政府和一些学者多次发表意见，认为它是针对乌克兰人的种族灭绝（</span>геноцид<span style="font-family:宋体">）。</span>2005<span style="font-family:宋体">年尤先科在纽约出席联合国大会</span>60<span style="font-family:宋体">周年纪念活动时，就呼吁国际社会承认</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年的大饥荒是对乌</span><span style="font-family:宋体">克兰人的种族灭绝，并要求俄罗斯为此道歉</span><span style="font-size:14px;font-family:Calibri,sans-serif">[20]</span><span style="font-family:宋体">。</span><span style="font-family:宋体">大饥荒是</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年在全苏范围内发生的一次灾难，因自然灾害和政策失误，数百万人死于饥饿，其中，乌克兰死亡人数是各加盟共和国中最多的。问题是，乌克兰为什么选择大饥荒作为最主要的问题来发起对俄罗斯的责难呢？关于这一点，乌克兰官方甚至学术界都没有给出明确的解释。我们认为，可能的原因是：第一，在大饥荒中，乌克兰死亡人数最多，宣传大饥荒容易引起全民族范围内的共鸣；第二，把大饥荒塑造为“种族灭绝”可以拉开与俄罗斯的距离，进而否定俄乌之间的文化</span><span style="font-family:宋体">-</span><span style="font-family:宋体">精神联系；第三，大饥荒是一次大规模的人道主义灾难，以此制造舆论有利于在国际上赢得同情；第四，由于大饥荒发生在斯大林时期，可以把它作为否定斯大林体制或社会主义制度的实例，更易在西方得到支持，有助于乌克兰融入西方。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">大家知道，苏共二十大之后，在西方掀起了一股反斯大林体制、否定社会主义制度的浪潮。其中，大清洗、大饥饿这类疮疤更成为首选的靶子。此时，美国官方开始关注大饥荒，而在美国和加拿大的乌克兰人散居群体在这方面起到了推动作用</span><span style="font-size: 14px">[21]</span><span style="font-family:宋体">。</span>1958<span style="font-family:宋体">年</span><span style="font-family:宋体">，</span><span style="font-family:宋体">基于参议院司法委</span><span style="font-family:宋体">员会下属的国内安全法案和其他国内安全法执行状况调查分委员会的质询</span><span style="font-family:宋体">，出台了</span><span style="font-family:宋体">题为《苏维埃帝国</span><span style="font-family:宋体">：</span><span style="font-family:宋体">各族人民的监狱</span><span style="font-family:宋体">，</span><span style="font-family:宋体">对种族灭绝的研究</span><span style="font-family:宋体">，</span><span style="font-family:宋体">歧视和越权》的报告</span><span style="font-family:宋体">，</span><span style="font-family:宋体">其中说到在乌克兰人为的饥饿中有</span>480<span style="font-family:宋体">万</span><span style="font-family:宋体">到</span>800<span style="font-family:宋体">万人死亡</span><span style="font-size:14px;font-family:Calibri,sans-serif">[22]</span><span style="font-family:宋体">。</span>1984<span style="font-family:宋体">年</span>9<span style="font-family:宋体">月，参议院开始制定有关乌克兰大饥荒的法案和两个决议，类似的工作也在众议院进行，并建议成立政府委员会，以搞清苏联政府在乌克兰发生的悲剧中的作用，并使舆论界了解情况。初期计划要求委员会</span><span style="font-family:宋体">由</span>21<span style="font-family:宋体">人组成，工作期限</span>3<span style="font-family:宋体">年，从政府预算中拨款</span>300<span style="font-family:宋体">万美元。</span>1984<span style="font-family:宋体">年</span>10<span style="font-family:宋体">月，委员会成立，成员减少为</span>15<span style="font-family:宋体">人，工作期限减为</span>2<span style="font-family:宋体">年，拨款减到</span>40<span style="font-family:宋体">万美元。委员会成员中，参议员</span>2<span style="font-family:宋体">人，众议员</span>4<span style="font-family:宋体">人，政府部门代表</span>3<span style="font-family:宋体">人，以及乌克兰社团代表</span>6<span style="font-family:宋体">人</span><span style="font-family:宋体">，委员会主席为杰姆斯·梅斯（</span>James E. Mace<span style="font-family:宋体">）。该委员会的结论是，大规模死亡是由人为的饥饿造成的，斯大林及其亲信于</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年在乌克兰实施了针对乌克兰人的种族灭绝</span><span style="font-size:14px;font-family:Calibri,sans-serif">[23]</span><span style="font-family:宋体">。</span>1984<span style="font-family:宋体">年，罗纳德</span><span style="font-family:宋体">·</span><span style="font-family:宋体">里根总统根据美国</span>111<span style="font-family:宋体">届国会决议，宣布</span>1984<span style="font-family:宋体">年</span>11<span style="font-family: 宋体">月</span>4<span style="font-family:宋体">日</span><span style="font-family:宋体">为“乌克兰</span>1933<span style="font-family:宋体">年大饥</span><span style="font-family:宋体">荒纪念日”。</span>1986<span style="font-family:宋体">年，出版了罗伯特·康奎斯特</span><span style="font-family:宋体">(</span>RobertConquest<span style="font-family:宋体">)</span><span style="font-family:宋体">的书《痛苦的收获</span><span style="font-family:宋体">—</span><span style="font-family:宋体">苏联的集体化和恐怖的饥饿》（</span>The Harvest of Sorrow.Soviet Collectivization and the Terror-Famine<span style="font-family:宋体">）。书中对大饥荒作了全面介绍，认为它是人为的，目的是打击民族主义和粉碎农民反对集体化的意图</span><span style="font-size:14px;font-family:Calibri,sans-serif">[24]</span><span style="font-family:宋体">。类似美国的做法，在其他西方国家中也有不少。关于这一问题，作者拟另文论述，于此不赘。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">实际上，在乌克兰国内，大饥荒在独立之前就已经成为一个重要问题，独立后更是波及更大的范围。历届乌克兰领导人都把它作为一个重要的社会动员工具，这在尤先科时期表现得最突出。尤先科执政期间，乌克兰外交政策更加西倾，对俄罗斯（苏联）的指责也更加激烈，大饥荒被工具化就更为明显。</span><span style="font-family:宋体">尤先科以大饥荒为起因，在全国举行题为《乌克兰应记住，世界应承认》的活动，其主要内容有：</span></p><p style="text-indent:28px;line-height:23px">1.<span style="font-family:宋体">创作相关记忆（历史）的国家书籍。在乌克兰所有遭受过饥荒的州，在州和区国家机关的领导下成立协调小组，收集</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年由于饥饿受难和死亡的证据。这些协调小组指导着数以万计的地方小组的活动，它们在各地、首先是农村搜集证据。参加人有教师、大学生、中小学生、图书馆和博物馆工作人员、地方志学者、俱乐部主任等。</span></p><p style="text-indent:28px;line-height:23px">2.<span style="font-family:宋体">举办群众纪念活动“点燃蜡烛”、“不灭的蜡烛”等，举办悼念集会和演出，组织造型艺术和文学作品竞赛、学生作文竞赛，献花圈和鲜花，在中小学开办纪念课程，建立纪念地，在博物馆、学校和图书馆办展览，设置十字架、纪念标志、纪念塚，植树、建立综合纪念物等。</span></p><p style="text-indent:28px;line-height:23px">3.<span style="font-family:宋体">用立法手段确定大饥荒为种族灭绝，禁止对它做任何其他的解释。</span></p><p style="text-indent:28px;line-height:23px">4.<span style="font-family:宋体">通过国家出版基金，鼓励出版内容为</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年</span><span style="font-family:宋体">大饥荒的学术研究成果。</span><span style="font-size:14px;font-family:Calibri,sans-serif">[25]</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">此外，尤先科还在美国国会、欧洲议会等国际场所发言，宣传大饥荒是俄罗斯对乌克兰的种族灭绝。乌克兰官方也在国外会议和国际组织中开展承认</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年大饥荒的活动，例如：</span></p><p style="text-indent:28px;line-height:23px">2003<span style="font-family:宋体">年</span>9<span style="font-family:宋体">月，库奇马总统在</span>58<span style="font-family:宋体">届联大发言，呼吁国际社会支持乌克兰的倡议，纪念大饥荒中的受难者。同时乌克兰外交部和政府准</span><span style="font-family:宋体">备了</span>58<span style="font-family:宋体">届联合国大会的决议草案，内容是谴责大饥荒并承认它为种族灭绝行动。后经大会辩论，最后通过了有美国等</span>25<span style="font-family:宋体">国签署的《关于乌克兰</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年大饥荒</span>70<span style="font-family:宋体">周年的联合声明》。声明没有承认大饥荒是种族灭绝，而是“乌克兰人民的悲剧”，同时表达了对伏尔加河沿岸、北高加索、哈萨克斯坦及其他前苏联地区因饥饿而死亡的数百万俄罗斯人、哈萨克人和其他民族的人们的纪念（联大第三委员会文件，俄文版</span>А/С.3/58/9<span style="font-family:宋体">）。之后又</span><span style="font-family:宋体">有</span>11<span style="font-family:宋体">个国</span><span style="font-family:宋体">家在该声明上签字（同前，</span>A/C.3/58/9/Add.1<span style="font-family:宋体">）</span><span style="font-size:14px;font-family:Calibri,sans-serif">[26]</span><span style="font-family:宋体">。</span></p><p style="text-indent:28px;line-height:23px">2006<span style="font-family:宋体">年</span>4<span style="font-family: 宋体">月</span>21<span style="font-family:宋体">日</span><span style="font-family:宋体">，在莫斯科参加独联体外交部长委员会会议的乌克兰外长鲍里斯·塔拉修克（</span><span style="color:windowtext;text-underline:none">Борис Тарасюк</span><span style="font-family:宋体">）提议，把承认</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年大饥荒是对乌克兰人民的种族灭绝列入会议日程，俄外长拉夫罗夫当即提出反对。俄罗斯、白俄罗斯、吉尔吉斯斯坦、塔吉克斯坦、乌兹别克斯坦投了反对票，亚美尼亚、土库曼斯坦和哈萨克斯坦弃权，古阿姆的四个成员乌克兰、格鲁吉亚、摩尔多瓦、阿塞拜疆投了赞成票</span><span style="font-size:14px;font-family:Calibri,sans-serif">[27]</span><span style="font-family:宋体">。</span></p><p style="text-indent:28px;line-height:23px">2007<span style="font-family:宋体">年</span>11<span style="font-family: 宋体">月</span>1<span style="font-family:宋体">日</span><span style="font-family:宋体">，在联合国教科文组织第</span>34<span style="font-family:宋体">届大会上，</span>193<span style="font-family:宋体">个国家通过了《纪念乌克兰大饥荒牺牲者》的决议，但它没有承认大饥荒是对乌克兰人民的种族灭绝</span><span style="font-size: 14px">[28]</span><span style="font-family:宋体">。</span></p><p style="text-indent:28px;line-height:23px">2008<span style="font-family:宋体">年</span>9<span style="font-family: 宋体">月</span>24<span style="font-family:宋体">日</span><span style="font-family:宋体">，由于没有获得支持，乌克兰代表团被迫在联合国人权委员会正式撤消了它此前提出的《纪念</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年乌克兰大饥荒》的决议草案</span><span style="font-size: 14px">[29]</span><span style="font-family:宋体">。</span></p><p style="text-indent:28px;line-height:23px">2008<span style="font-family:宋体">年</span>10<span style="font-family: 宋体">月</span>23<span style="font-family:宋体">日</span><span style="font-family:宋体">，欧洲议会通过非法律性质的决议《以大饥荒周年活动纪念乌克兰</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年人为</span><span style="font-family:宋体">饥荒》（</span>P6_TA-PROV(2008)0523<span style="font-family:宋体">），同时呼吁乌克兰人民和有关国家寻找档案，进行深入研究</span><span style="font-size:14px;font-family:Calibri,sans-serif">[30]</span><span style="font-family:宋体">。该决议同样没有承认种族灭绝。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">以上情况说明，尽管乌克兰政府力图把大饥荒是种族灭绝推向世界范围，但国际社会并没有认可，这对一些乌克兰人的激进的民族主义和反俄情绪无疑是一种否定。在此需要说明的是，乌各地区对大饥荒的态度是有明显差别的，有研究指出，</span><span style="font-family:宋体">在西部、中部和北部，认为大饥荒是种族灭绝的超过</span>80%<span style="font-family:宋体">，东部约</span>50%<span style="font-family:宋体">，而南部和顿巴斯则约为</span>40%<sup><sup><span style="font-size: 14px">[31]</span></sup></sup><span style="font-family:宋体">。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">以上我们介绍了乌克兰官方在大饥荒问题上的一些做法，显然，这是针对俄罗斯的。俄罗斯一直强烈反对大饥荒是种族灭绝的说法。</span>2008<span style="font-family:宋体">年</span>4<span style="font-family:宋体">月，俄国家杜马通过了一项关于纪念苏联境内</span>1930<span style="font-family:宋体">年代大饥荒死亡者的声明，认为大饥荒是全苏联人民的灾难，它</span><span style="font-family:宋体">“没</span><span style="font-family:宋体">有，也不会有国际社会所认为的种</span><span style="font-family:宋体">族灭绝的特征，不应成为当前政治投机的对象”</span><span style="font-size:14px;font-family:Calibri,sans-serif">[32]</span><span style="font-family:宋体">。</span>2009<span style="font-family:宋体">年，俄罗斯联邦档案局、俄罗斯联邦外交部历史文献司以及俄罗斯联邦国家档案馆和其他七个国家级档案馆联合出版了</span><span style="font-family:宋体">《</span>1929<span style="font-family:宋体">-</span>1934<span style="font-family:宋体">年苏联的饥荒：新文献》一书（俄文名：</span>Голодв СССР 1929-1934гг. Новыедокументы<span style="font-family:宋体">，</span><span style="font-family:宋体">英文名</span><span style="font-family:宋体">：</span>Faminein the USSR 1929-1934. New Documentary Evidence<span style="font-family:宋体">）</span><span style="font-family:宋体">。</span><span style="font-family:宋体">该书编者的主要观点是：</span>30<span style="font-family:宋体">年代的大饥荒不是对乌克兰民族的种族灭绝，造成大饥荒的原因有中央和地方当局的政策错误，强制集体化，在出现灾情后仍然大量出口粮食，严格限制灾民外逃等；苏共中央在了解到大饥荒的严重情况后，采取非常措施停止了粮食出口，并向灾区提供大量粮食援助。</span><span style="font-size:14px;font-family:Calibri,sans-serif">[33]</span><span style="font-family:宋体">俄罗斯这种以历史档案来说明事实真相的做法，表现出其态度的客观性。可以和俄罗斯的情况相比的是哈萨克斯坦：</span><span style="font-family:宋体">哈萨克斯坦在大饥荒中死亡了</span>150<span style="font-family:宋体">万人，但哈萨克斯坦政府和民众认为大饥荒是苏维埃政权的错误，没有把罪过归于俄罗斯人。纳扎尔巴耶夫总统在</span>2012<span style="font-family:宋体">年</span>5<span style="font-family:宋体">月</span>31<span style="font-family:宋体">日</span><span style="font-family:宋体">出席</span><span style="font-family:宋体">“</span>1932<span style="font-family:宋体">-</span>1933<span style="font-family:宋体">年大饥荒纪念碑揭幕仪式</span><span style="font-family:宋体">”</span><span style="font-family:宋体">时，要求人们不要把这个问题政治化</span><sup><sup><span style="font-size: 14px">[34]</span></sup></sup><span style="font-family:宋体">。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">综合以上，我们认为，</span><span style="font-family:宋体">虽然乌克兰与俄罗斯在</span><span style="font-family:宋体">外交</span><span style="font-family:宋体">-</span><span style="font-family:宋体">文化领域发生了不少冲突，但这种冲突主要表现在官方和精英层面。在对待俄罗斯及相关问题的态度方面，乌克兰各个地区之间存在着明显的不同，并没有统一的意见。对于一个具体问题来说，有多少人反对或支持，还需要做进一步的研究。在介绍了诸多乌克兰对俄罗斯的负面态度的同时，我们认为也有必要指出，乌克兰人和俄罗斯人在历史上形成的密切联系是不可能被否定掉的，这种联系无论现在还是今后，都还会在俄乌关系中发挥积极作用。</span>2010<span style="font-family:宋体">年</span>4<span style="font-family:宋体">月亚努科维奇总统宣布不能认</span><span style="font-family:宋体">为</span>30<span style="font-family:宋体">年代的大饥荒是对乌克兰人的种族灭绝就是一个证明</span><span style="font-size:16px;font-family:宋体">。</span><span style="font-family:宋体">除此之外，</span><span style="font-family:宋体">乌克兰与俄罗斯在卫国战争、</span>30<span style="font-family:宋体">年代的大清洗等问题上也存在着争议</span><span style="font-size:14px;font-family:Calibri,sans-serif">[35]</span><span style="font-family:宋体">。限于篇幅，此处不再赘述。</span></p><p style="text-align:center"><span style="font-size:16px;font-family:黑体">四、结束语</span></p><p><br  /></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">民族国家在获得独立的一刻，就面临着确立自己民族文化优势地位的任务，乌克兰也是如此。民族文化优势地位的确立，一方面需要以法律形式规定国家语言，确定所信仰宗教的地位，规定有标志意义的国旗、国徽、国歌等等；另一方面，需要制定专门的文化政策，对本民族的历史做出官方描述，对语言、宗教的发展做出规划，确定本民族稳定的文化认同。然而，要完成这一使命，乌克兰面临着巨大的困难。如前文所述，由于乌克兰历史文化存在着明显的东西部差异，又与俄罗斯及俄罗斯文化有着非常紧密的联系，这使得乌克兰在许多问题上必须在两难中做出选择。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">多民族国家内部的民族关系对国家的统一、政局的稳定和社会的发展起着举足轻重的作用。</span><span style="font-family:宋体">乌克兰东西部之间首先应该建立一种非政治化的民族认同，这需要在语言、宗教、历史等方面建立共识，而不是把政治选择当做民族文化的主要内容，这种做法实际上是把历史、文化问题政治化，不仅不利于民族认同的确立，反而会引发新的问题，甚至加重民族的分裂。乌克兰是一个在历史、文化方面被割裂的民族，在如何重建民族认同方面，需要更多的思考。</span></p><p style="text-indent:28px;line-height:23px"><span style="font-family:宋体">乌克兰与俄罗斯在历史上和文化上有着密切的联系，相同的民族起源和几百年的共同历史使俄乌两族在各方面都颇有相似之处。但乌克兰由于西部长期受欧洲影响，又常常表现出反俄情绪。另外，由于选举政治、“回归欧洲”等多重因素影响，近年来乌克兰国内总是有一股“全面否定俄罗斯”的思潮，这已经对乌克兰人民的思想产生了相当影响。但这种思潮带有明显的政治目的。歪曲历史、夸大俄乌关系中的民族因素，已对俄乌关系造成了危害。在国家关系中，经常会发生一些矛盾或冲突，各种国际行为体也都在做出努力通过各种方式解决这些问题。一般来讲，国家关系中的问题可以划分为政治的、经济的和文化的几个层次。比较而言，文化层次的矛盾最难解决，因为它形成的时间久，参与者范围广</span>——<span style="font-family:宋体">从精英到民众，从政府到民间，往往带有“全民”的特点。文化又涉及传统、价值观等多方面的因素，有很强的稳定性。这种稳定性造成了文化冲突的难解性和长期性。从前文的分析可以看出，尽管，乌克兰人，特别是东乌克兰人和俄罗斯人在历史上形成的联系是不会被轻易否定掉的，而且这种联系仍在俄乌关系中发挥着不可忽视的作用。但不容忽视的是，文化因素正在越来越多地以负面形态进入乌俄关系，并不断扩大影响。如果双方对此没有足够的认识，并共同采取措施加以消减，那么可以断言，俄乌关系的良性发展就会变成不可期待的目标，并有可能发展到两国关系中的其他方面，造成更多的麻烦。俄乌关系中的历史、文化因素的变化及其作用值得持续关注。</span></p><p style="text-align:justify;text-justify:inter-ideograph"><span style="font-size: 14px"> </span></p><p style="text-align:justify;text-justify:inter-ideograph"><span style="font-size: 14px"> </span></p><p style="text-align:justify;text-justify:inter-ideograph"><span style="  z-index:251659776;left:-1px;top:12px;width:461px;height:15px "><img width="461" height="3" data-src="/mpres/htmledition/ueditor/themes/default/images/spacer.gif" word_img="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif" style="background:url(/mpres/htmledition/ueditor/themes/default/images/word.gif) no-repeat center center;border:1px solid #ddd" data-ratio="1" data-w="461"  /></span><span style="font-size: 14px"> </span></p><p><br clear="ALL"  /></p><p style="text-indent:28px;line-height:23px"><strong><span style=";font-family:宋体">【</span></strong><strong>Abstract</strong><strong><span style=";font-family:宋体">】</span></strong>Russians andUkrainians both belong to Eastern Slavs. Both share many similarities inreligion and culture in spite of few differences. Dominated by<st1:country-region w:st="on">Poland</st1:country-region>for a long time, however, West Ukrainediffers more in culture from<st1:country-region w:st="on">Russia</st1:country-region>.During the past over 300 years,<st1:country-region w:st="on">Ukraine</st1:country-region>has been part of Tsarist Russia and the Soviet Union,not only experiencing the “Russification” butalso suffering from the Great Purge and Holodomor.As a result, some Ukrainians were accused of collaborating with<st1:country-region w:st="on">Germany</st1:country-region>in fighting against the Soviet Union during the Patriotic War. All these historicand cultural elements have led to different attitudes of East and West Ukrainetowards<st1:country-region w:st="on">Russia</st1:country-region>.Moreover, it also arouses many disputes and conflicts between their relationsafter the collapse of the Soviet Union.</p><p style="text-indent:28px;line-height:23px"><strong><span style=";font-family:宋体">【</span></strong><strong>Key Words</strong><strong><span style=";font-family:宋体">】</span></strong>Russia-UkraineRelationship, East and West Ukraine, disputes</p><p style="text-indent:28px;line-height:23px"><strong><span style="font-family: 宋体">【</span></strong><strong>Аннотация</strong><strong><span style="font-family: 宋体">】</span></strong>Россия иУкраина происходят от восточных славян, у обеих стран много общего в религии икультуре, но есть и много различий. Западная Украина из-за длительного влиянияПольши в культурной сфере сильно отличается от России. На протяжении более 300лет Украина была частью России и Советского Союза, прошла процесс«русификации», испытала советские чистки, голод и другие болезненныепереживания, во время Великой Отечественной войны некоторые украинцы такжесотрудничали с Германией против Советского Союза. Эти исторические и культурныефакторы привели к тому, что в вопросе отношений с Россией на востоке и западеУкраины существуют значительные различия, после распада Советского Союза ввопросе отношений между двумя странами эти явления вызвали серию споров и дажеконфликтов.</p><p style="text-indent:28px;line-height:23px"><strong><span style="font-family: 宋体">【</span></strong><strong>Ключевые слова</strong><strong><span style="font-family: 宋体">】</span></strong>Отношениямежду Россией и Украиной, Восточная и Западная Украина, споры</p><p style="text-align:right;line-height:23px"><span style="  z-index:251658752 "><span style=" left:0px; left:2px;top:-1px;width:462px;height:2px "><img width="462" height="2" data-src="/mpres/htmledition/ueditor/themes/default/images/spacer.gif" word_img="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" style="background:url(/mpres/htmledition/ueditor/themes/default/images/word.gif) no-repeat center center;border:1px solid #ddd" data-ratio="1" data-w="462"  /></span></span> <span style="font-family:宋体">（</span><span style="font-family:黑体">责任编辑 </span><span style="font-family:楷体_GB2312">肖辉忠</span><span style="font-family:宋体">）</span></p><p><br clear="all"  /></p><hr size="1" width="33%"  /><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-family:Symbol">*</span><span style="font-family:宋体">杨恕，兰州大学中亚研究所所长、教授；朱倍德，兰州大学中亚研究所</span>2011<span style="font-family:宋体">级硕士研究生。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[</span><span style="font-size:12px;font-family:宋体">①</span><span style="font-size:12px">]</span><span style="font-family:宋体">加利西亚地区，包括现在乌克兰西南部的利沃夫、捷尔诺波尔、伊万诺</span><span style="font-family:宋体">-</span><span style="font-family:宋体">弗兰科夫斯克</span>3<span style="font-family:宋体">个州，其首府为利沃夫市。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[</span><span style="font-size:12px;font-family:宋体">②</span><span style="font-size:12px">]</span> Mikhail Molchanov. Political Culture andNational Identity in Russian-Ukrainian Relations, College Station<span style="font-family:宋体">：</span>Texas A&amp;M University Press, 2002,pp.62-63.</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-family:宋体"><span style="font-size: 12px">[</span><span style="font-size: 12px">③]</span></span><span style="font-family:宋体">赵云中：《乌克兰：沉重的历史脚步》，上海：华东师范大学出版社，</span>2005<span style="font-family:宋体">年，第</span>55<span style="font-family:宋体">-</span>66<span style="font-family:宋体">页。</span></p><p style=";page-break-after:avoid"><span style="font-size:12px"><span style="font-size:12px;font-family:Calibri,sans-serif">[</span><span style="font-size:12px;font-family:宋体">④</span><span style="font-size:12px;font-family:Calibri,sans-serif">]</span></span><span style="font-size:12px">Геополитическиеориентации Восточной и Западной Украины. http://rozvalua. livejournal.com/248796.html</span><span style="font-size:12px;font-family:宋体">（上网时间</span><span style="font-size:12px">2013-08-25</span><span style="font-size:12px;font-family:宋体">）</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[</span><span style="font-size:12px;font-family:宋体">⑤</span><span style="font-size:12px">]</span><span style="font-family:宋体">沈莉华：“俄罗斯与乌克兰历史恩怨解读”，《俄罗斯东欧中亚研究》，</span>2013<span style="font-family:宋体">年第</span>1<span style="font-family:宋体">期。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[</span><span style="font-size:12px;font-family:宋体">⑥</span><span style="font-size:12px">]</span><span style="font-family:宋体">数据来源：</span>http://en.wikipedia.org/wiki/Ukrainian_presidential_election,_2010</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[</span><span style="font-size:12px;font-family:宋体">⑦</span><span style="font-size:12px">]</span><span style="font-family:宋体">骆郁廷等著：《文化软实力：战略、结构与路径》，北京：中国社会科学出版社，</span>2012<span style="font-family:宋体">年，第</span>24<span style="font-family:宋体">页。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-family:宋体"><span style="font-size: 12px">[</span><span style="font-size: 12px">⑧]</span></span><span style="font-family:宋体"> [</span><span style="font-family:宋体">美]保罗·库比塞克著：《乌克兰史》，颜震译，北京：中国大百科全书出版社，</span>2009<span style="font-family:宋体">年，第</span>143<span style="font-family:宋体">-</span>144<span style="font-family:宋体">页。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[</span><span style="font-size:12px;font-family:宋体">⑨</span><span style="font-size:12px">]</span><span style="font-family:宋体">鲁赫（</span>Народный РухУкраины<span style="font-family:宋体">）：乌克兰人民争取改革运动，</span>1989<span style="font-family:宋体">年成立。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-family:宋体"><span style="font-size: 12px">[⑩]</span></span><span style="font-family:宋体"> [</span><span style="font-family:宋体">美]保罗·库比塞克著：《乌克兰史》，第</span>146<span style="font-family:宋体">页。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-family:宋体"><span style="font-size: 12px">[11]</span></span><span style="font-family:宋体">数据来源：</span>About number and composition population ofAUTONOMOUS REPUBLIC OF CRIMEA. http://2001.ukrcensus.gov.ua/eng/results/general/language/Crimea/</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[12]</span><span style="font-family:宋体">例如在九十年代中期，乌克兰政府的语言政策使得西乌克兰俄语族群的父母不可能让自己的孩子接受俄语教育。于是，加利西亚的这些俄语族群就建立了一个地区性的“家长委员会”，他们要求政府兑现少数族裔可用自己的母语教育孩子的权利。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[13]</span><span style="font-family:宋体">宁骚：《民族与国家</span><span style="font-family:宋体">——</span><span style="font-family:宋体">民族关系与民族政策的国际比较》，北京：北京大学出版社，</span>1995<span style="font-family:宋体">年，第</span>351<span style="font-family:宋体">页。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[14]</span><span style="font-family:宋体">这种“危险性”更多地体现在宗教上。由于长期受波兰统治，许多第聂伯河西岸乌克兰人转而信奉具有浓厚东正教色彩的天主教——东仪天主教。但</span>1830<span style="font-family:宋体">年，该教派上层领导了波兰民族大起义。在起义被镇压后，俄查封了东仪天主教会，并将其教区转交给俄罗斯东正教会。资料来源：</span>Анисимов В, Данилевский А, ДятловВ. Православие и католицизм вУкраине (Краткая хроника событий). УкраїнаПравославна. 25.06.2004.</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[15]</span><span style="font-family:宋体">赵云中：《乌克兰：沉重的历史脚步》，第</span>228<span style="font-family:宋体">页。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[16]</span> Mikhail Molchanov, PoliticalCulture and National Identity in Russian-Ukrainian Relations, pp.207-208.</p><p style=";page-break-after:avoid"><span style="font-size:12px"><span style="font-size:12px;font-family:Calibri,sans-serif">[17]</span></span><span style="font-size:12px">Беспорядки</span><span style="font-size:12px">во</span><span style="font-size:12px">Львове</span><span style="font-size:12px">в</span><span style="font-size:12px">День</span><span style="font-size:12px">Победы</span><span style="font-size:12px">: </span><span style="font-size:12px">реакция</span><span style="font-size:12px">, </span><span style="font-size:12px">комментарии</span><span style="font-size:12px">. http://ria.ru/trend/lvov_vandalism_20110510/?ria= qdt06u5a4oa62pb423cgddsop3n8tacr</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-family:宋体"><span style="font-size: 12px">[18]</span></span><span style="font-family:宋体"> [</span><span style="font-family:宋体">美]保罗·库比塞克著：《乌克兰史》，第</span>127<span style="font-family:宋体">页。</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[19]</span>Российско-украинская конференция Украина и Россия: история и образ истории.http://ru.znatock.com/docs/index-4578.html<span style="font-family:宋体">（</span><span style="font-family:宋体">上网时间</span>2013-9-28<span style="font-family:宋体">）</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[20]</span>Ющенко требует от России извинений за&quot;голодомор&quot; и геноцид украинцев в 1932-33 гг. А почему не у Грузии?http://www.centrasia.ru/newsA.php?st=1126888380<span style="font-family:宋体">（</span><span style="font-family:宋体">上网时间</span>2013-10-03<span style="font-family:宋体">）</span></p><p style=";page-break-after:avoid"><span style="font-size:12px">[21]</span><span style="font-size:12px">Украинаотмечает День памяти жертв Голодомора. http://www.rbc.ua/rus/top/show/ ukraina-otmechaet-den-pamyati-zhertv-golodomora-24112012080000(</span><span style="font-size:12px;font-family:宋体">上网时间</span><span style="font-size:12px"> 2013-11-17)</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[22]</span> “The Soviet empire: prison house of nations and races; a study ingenocide, discrimination, and abuse of power”, Prepared, at the request of theSubcommittee to Investigate the Administration of the Internal Security Act andOther Internal Security Laws of the Committee on the Judiciary, United StatesSenate, Eighty-fifth Congress, second session [by Joseph G. Whelan, analyst inEastern European affairs]. Washington: Govt. Print. Off., 1958.</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[23]</span> Commissionon the<st1:country-region w:st="on">Ukraine</st1:country-region>famine: Reportto United States Congress “Investigation of the Ukrainian Famine 1932-1933”,Washington:United States Government Printing Office,<em> </em>1988, pp.<span style="font-family:GungsuhChe">ⅵ</span>-<span style="font-family:GungsuhChe">ⅷ</span>.</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[24]</span>РобертКонквест. Жатва скорби.Советская коллективизация и террор голодом. Киев: Издательство Лыбидь, 1991.С.476-478.</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[25]</span> ГеоргийКасьянов. Национализация истории в Украине. Из книги «Национальные истории на постсоветскомпространстве–II», под редакцией Фалька Бомсдорфа и Геннадия Бордюгова. Москва: ФондФридриха Науманна. 2009. С.121-122.</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[26]</span>Сигизмунд С.Миронин. Сталинский порядок (разоблачая антисталинские мифы). 2007. С.85.http://www.greatstalin.ru/files/books/StalinKniga_Miron.pdf <span style="font-family:宋体">(</span><span style="font-family:宋体">上网时间</span>2013-11 -10<span style="font-family:宋体">)</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[27]</span>Дмитрийъ-Бондаренко, Ольга ъ-Березинцев. Бориса Тарасюка расстроил правопреемник// КоммерсантъУкраина. №.70 (189). 25.04.2006.</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[28]</span>ЮНЕСКО отказалась признать голодомор геноцидом// РИА «Новости».<strong> </strong>01.11.2007.</p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[29]</span>Український МЗСне коментує «провал затії України щодо голодомору». 25.09.2008. http://human-rights.unian.net/ukr/detail/188441<span style="font-family:宋体">(</span><span style="font-family:宋体">上网时间</span>2013-11-10<span style="font-family:宋体">)</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[30]</span>EuropeanParliamentresolutionof 23 October 2008 onthecommemorationoftheHolodomor, the<st1:country-region w:st="on">Ukraine</st1:country-region>artificialfamine (1932-1933). http://www.europarl.europa.eu/meetdocs/2009_2014/documents/ta/23/10/2008-%200523/p6_ta-prov(2008)0523_en.pdf<span style="font-family:宋体">(</span><span style="font-family:宋体">上网时间</span>2013-11-10<span style="font-family:宋体">)</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[31]</span>Голодомор1932-33 гг был геноцидом украинского народа. Армянский Вестник. 11.11.2013.</p><p style=";page-break-after:avoid"><span style="font-size:12px">[32]</span><span style="font-size:12px">ГосдумаРоссии: Голодомор-не геноцид. </span><span style="font-size:12px">http</span><span style="font-size:12px">://</span><span style="font-size:12px">www</span><span style="font-size:12px">.</span><span style="font-size:12px">delfi</span><span style="font-size:12px">.</span><span style="font-size:12px">ua</span><span style="font-size:12px">/</span><span style="font-size:12px">news</span><span style="font-size:12px">/</span><span style="font-size:12px">daily</span><span style="font-size:12px">/</span><span style="font-size:12px">society</span><span style="font-size:12px">/</span><span style="font-size:12px">gos</span><span style="font-size:12px">duma</span><span style="font-size:12px">-</span><span style="font-size:12px">rossii</span><span style="font-size:12px">-</span><span style="font-size:12px">golodomor</span><span style="font-size:12px">-</span><span style="font-size:12px">ne</span><span style="font-size:12px">-</span><span style="font-size:12px">genocid</span><span style="font-size:12px">.</span><span style="font-size:12px">d</span><span style="font-size:12px">?</span><span style="font-size:12px">id</span><span style="font-size:12px">=149931 </span><span style="font-size:12px;font-family:宋体">（上网时间</span><span style="font-size:12px">2013-10-07</span><span style="font-size:12px;font-family:宋体">）</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[33]</span>Голод в СССР 1929-1934гг. Новые документы. Федеральнoe архивноеагенство и др. – М., 2009 [Компакт-диск], pp.15-18.http://www.rusarchives.ru/publication/famine/famine-ussr.pdf<span style="font-family:宋体">（上网时间</span>2013-8-12<span style="font-family:宋体">）</span></p><p style=";page-break-after:avoid"><span style="font-size:12px"><span style="font-size:12px;font-family:Calibri,sans-serif">[34]</span></span><span style="font-size:12px">Выступление Президента Республики Казахстан Нурсултана Назарбаева наоткрытии Монумента памяти жертв голода 1932-1933 гг.http://www.akorda.kz/pda.php?r=page/ view&amp;sefname=vystuplenie-prezidenta-respubliki-kazakhstan-nursultana-nazarbaeva-na-otkrytii-monumenta-pamyati-zhertv-golo&amp;language=ru</span><span style="font-size:12px;font-family:宋体">（上网时间</span><span style="font-size:12px">2013-7-13</span><span style="font-size:12px;font-family:宋体">）</span></p><p style="text-align:justify;text-justify:inter-ideograph;page-break-after:avoid"><span style="font-size:12px">[35]</span><span style="font-family:宋体">以卫国战争为例，乌克兰人有两种的观点：一派是以东部的苏军老兵及其后代为主力，他们的说法接近于苏联对战争的正统解释；另一派则以西乌克兰和基辅的一些民族主义人士（他们至少曾短暂地协助过德国国防军）为代表，他们持反对苏联的观点，把卫国战争中民族主义者抗击苏联的行为看作是“英雄般的斗争”，并无条件地将这当作真正的民族解放运动。乌克兰前总统尤先科就曾将“乌克兰英雄”奖章，颁给了卫国战争时与纳粹合作的乌克兰民族主义分子班杰拉。在</span>2011<span style="font-family:宋体">年</span>5<span style="font-family:宋体">月利沃夫发生了“胜利日风波”后，俄罗斯对上述事件表示强烈谴责。</span><span style="font-family:宋体">详见</span>Mark Von Hagen, “Does Ukraine have a history?”, <em>Slavic Review</em>,<em> </em>Vol.54, Autumn 1995, p.672; MikhailMolchanov, <em>Political Culture and National Identity in Russian-UkrainianRelations</em>,pp. 84<span style="font-family:宋体">；</span><span style="font-family:宋体">沈莉华：“俄罗斯与乌克兰历史恩怨解读”，《俄罗斯东欧中亚研究》，</span>2013<span style="font-family:宋体">年第</span>1<span style="font-family:宋体">期，等。</span></p><p><br  /></p>
+                </div>
+                <script nonce="1551184023" type="text/javascript">
+                    var first_sceen__time = (+new Date());
+
+                    if ("" == 1 && document.getElementById('js_content')) {
+                        document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+                    }
+
+                    
+                    (function(){
+                        if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                            var link = document.createElement('link');
+                            var head = document.getElementsByTagName('head')[0];
+                            link.rel = 'stylesheet';
+                            link.type = 'text/css';
+                            link.href = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/winwx3ec991.css";
+                            head.appendChild(link);
+                        }
+                    })();
+                </script>
+
+                
+                <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;"></div>
+
+                
+                                <div class="reward_area tc reward_area_primary" id="js_preview_reward_author" style="display:none;">
+                    <div class="reward-avatar" style="display: none;" id="js_preview_reward_author_avatar">
+                        <img src="" alt="" id="js_preview_reward_author_head">
+                    </div>
+                    
+                                        <div class="reward-author" id="js_preview_reward_author_name">杨恕  朱倍德</div>
+                                        <p class="reward_tips" id="js_preview_reward_author_wording" style="display:none;"></p>
+                    <p>
+                        <a class="reward_button" id='js_preview_reward_author_link' href="##"><span id="js_preview_reward_link_text">赞赏</span></a>
+                    </p>
+                </div>
+
+                <div class="reward_qrcode_area reward_area tc" id="js_preview_reward_qrcode" style="display:none;">
+                    <p class="tips_global">长按二维码向我转账</p>
+                    <p id="js_preview_reward_ios_wording" class="reward_tips" style="display:none;"></p>
+                    <span class="reward_qrcode_img_wrp"><img class="reward_qrcode_img" src="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_reward_qrcode.2x3534dd.png"></span>
+                    <p class="tips_global">受苹果公司新规定影响，微信 iOS 版的赞赏功能被关闭，可通过二维码转账支持公众号。</p>
+                </div>
+                                
+                
+                            </div>
+                                    
+                        
+
+
+                        
+            <ul id="js_hotspot_area" class="article_extend_area"></ul>
+
+
+            
+                        <div class="rich_media_tool" id="js_toobar3">
+
+                                            <div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                <span style="display:none;" class="media_tool_meta meta_extra meta_praise" id="like3">
+                    <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                </span>
+
+                
+
+            </div>
+
+
+                        <div class="rich_media_tool" id="js_sg_bar">
+
+                                
+            </div>
+                      </div>
+        </div>
+
+        <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none"></div>
+
+
+        
+        <div class="rich_media_area_extra">
+          <div class="rich_media_area_extra_inner">
+              
+              <div id="js_share_appmsg">
+              </div>
+
+              
+                            <div class="mpda_bottom_container" id="js_bottom_ad_area"></div>
+                            
+              <div id="js_iframetest" style="display:none;"></div>
+                            
+                            
+              <div class="rich_media_extra rich_media_extra_discuss" id="js_cmt_container" style="display:none">
+                
+
+                
+                <div class="discuss_mod" id="js_friend_cmt_area" style="display:none">
+                  
+                  
+                  
+                </div>
+
+                                <div class="discuss_mod" id="js_preview_cmt" style="display:none">
+                  <div class="discuss_container">
+                    <div class="mod_title_context">
+                        <p class="discuss_icon_tips tc">
+                            <a href="javascript:;" id="js_preview_cmt_write">留言</a>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                              </div>
+          </div>
+        </div>
+
+        
+        <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+            <div class="qr_code_pc_inner">
+                <div class="qr_code_pc">
+                    <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                    <p>微信扫一扫<br>关注该公众号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="js_pc_weapp_code" class="weui-desktop-popover weui-desktop-popover_pos-up-center weui-desktop-popover_img-text" style="display: none;">
+    <div class="weui-desktop-popover__content">
+        <div class="weui-desktop-popover__desc">
+            <img id="js_pc_weapp_code_img">
+            微信扫一扫<br>使用小程序<span id="js_pc_weapp_code_des"></span>        </div>
+    </div>
+</div>
+<div id="js_minipro_dialog" style="display:none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__bd">即将打开"<span id="js_minipro_dialog_name"></span>"小程序</div>
+        <div class="weui-dialog__ft">
+            <a id="js_minipro_dialog_cancel" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+            <a id="js_minipro_dialog_ok" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_primary">打开</a>
+        </div>
+    </div>
+</div>
+
+        
+        <script nonce="1551184023">
+    var __DEBUGINFO = {
+        debug_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console34c264.js",
+        safe_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe34c264.js",
+        res_list: []
+    };
+</script>
+
+<script nonce="1551184023" type="text/javascript">
+(function() {
+	var totalCount = 0,
+			finishCount = 0;
+
+	function _loadVConsolePlugin() {
+		window.vConsole = new window.VConsole();
+		while (window.vConsolePlugins.length > 0) {
+			var p = window.vConsolePlugins.shift();
+			window.vConsole.addPlugin(p);
+		}
+	}
+	
+	function _addVConsole(uri, cb) {
+		totalCount++;
+		var url = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/' + uri;
+		var node = document.createElement('SCRIPT');
+		node.type = 'text/javascript';
+		node.src = url;
+		node.setAttribute('nonce', '1551184023');
+		if (cb) {
+			node.onload = cb;
+		}
+		document.getElementsByTagName('head')[0].appendChild(node);
+	}
+	if (
+		(document.cookie && document.cookie.indexOf('vconsole_open=1') > -1)
+		|| location.href.indexOf('vconsole=1') > -1
+	) {
+		window.vConsolePlugins = [];
+		_addVConsole('3.0.0/vconsole.min.js', function() {
+			
+			_addVConsole('plugin/vconsole-mpopt/1.0.1/vconsole-mpopt.js', _loadVConsolePlugin);
+		});
+	}
+})();
+</script>
+        
+<script nonce="1551184023" type="text/javascript">
+if (location.href.match(/fontScale=\d+/) && /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+
+    var m=location.href.match(/fontScale=(\d*)/);
+    var map={
+        "94":1,
+        "100":2,
+        "109":3,
+        "119":4,
+        "131":5,
+    }
+    if(m&&m[1]&&map[m[1]]){
+        document.getElementsByTagName("body")[0].className+=" appmsg_skin_fontscale_"+map[m[1]];
+        console.log("appmsg_skin_fontscale_:"+map[m[1]])
+    }
+}
+
+
+(function(){
+    
+
+    var first_js_time = +new Date();
+    console&&console.log("first js excute:"+(first_js_time-write_sceen_time));
+    var showDate="";
+    var svrDate=new Date("1533631953"*1000);
+    var createDate=new Date("1419867106"*1000);
+    var ct="1419867106"*1;
+    var publish_time = "2014-12-29" || "";
+    var cD={
+      year:createDate.getYear(),
+      month:createDate.getMonth()+1,
+      date:createDate.getDate()
+    };
+    
+    svrDate.setHours(0);
+    svrDate.setMinutes(0);
+    svrDate.setSeconds(0);
+    var todayDate=svrDate.getTime()/1000;
+    svrDate.setDate(1);
+    svrDate.setMonth(0);
+    var yearDate=svrDate.getTime()/1000;
+    
+    if(ct>=todayDate){
+      showDate="今天";
+    
+    }else if(ct>=todayDate-60*60*24){
+       showDate="昨天";
+    
+    }else if(ct>=todayDate-2*60*60*24){
+      showDate="前天";
+    }else if(ct>=todayDate-3*60*60*24){
+      showDate="3天前";
+    }else if(ct>=todayDate-4*60*60*24){
+      showDate="4天前";
+    }else if(ct>=todayDate-5*60*60*24){
+      showDate="5天前";
+    }else if(ct>=todayDate-6*60*60*24){
+      showDate="6天前";
+    }else if(ct>=todayDate-2*7*60*60*24){
+      showDate="1周前";
+    }else if(ct>=yearDate){
+      var tmp = publish_time.split('-');
+      showDate = parseInt(tmp[1]) + '月' + parseInt(tmp[2]) + '日';
+      
+      
+      
+    }else{
+      showDate=publish_time;
+    };
+    if(document.getElementById("publish_time")){
+      document.getElementById("publish_time").innerText=showDate;
+    }
+})();
+</script>
+<script nonce="1551184023" type="text/javascript">
+
+if (!window.console) window.console = { log: function() {} };
+
+if (typeof getComputedStyle == 'undefined') {
+    if (document.body.currentStyle) {
+        window.getComputedStyle = function(el) {
+            return el.currentStyle;
+        }
+    } else {
+        window.getComputedStyle = {};
+    }
+}
+(function(){
+    window.__zoom = 1;
+    
+    (function(){
+        var validArr = ","+([0.875, 1, 1.125, 1.25, 1.375]).join(",")+",";
+        var match = window.location.href.match(/winzoom=(\d+(?:\.\d+)?)/);
+        if (match && match[1]) {
+            var winzoom = parseFloat(match[1]);
+            if (validArr.indexOf(","+winzoom+",")>=0) {
+                window.__zoom = winzoom;
+            }
+        }
+    })();
+
+    var isIE = false;
+    if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+        isIE = true;
+    }
+    var getMaxWith=function(){
+        var container = document.getElementById('img-content');
+        var max_width = container.offsetWidth;
+        var container_padding = 0;
+        var container_style = getComputedStyle(container);
+        container_padding = parseFloat(container_style.paddingLeft) + parseFloat(container_style.paddingRight);
+        max_width -= container_padding;
+        var ua = navigator.userAgent.toLowerCase();
+        var re = new RegExp("msie ([0-9]+[\.0-9]*)");
+        var version;
+        if (re.exec(ua) != null) {
+            version = parseInt(RegExp.$1);
+        }
+        var isIE = false;
+        if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+            isIE = true;
+        }
+        if (!max_width) {
+            max_width = window.innerWidth - 30;      
+        }
+        return max_width;
+    };
+    var getParentWidth = function(dom){
+        var parent_width = 0;
+        var parent = dom.parentNode;
+        var outerWidth = 0;
+        while (true) {
+            if(!parent||parent.nodeType!=1) break;
+            var parent_style = getComputedStyle(parent);
+            if (!parent_style) break;
+            parent_width = parent.clientWidth - parseFloat(parent_style.paddingLeft) - parseFloat(parent_style.paddingRight) - outerWidth;
+            if (parent_width > 0) break;
+            outerWidth += parseFloat(parent_style.paddingLeft) + parseFloat(parent_style.paddingRight) + parseFloat(parent_style.marginLeft) + parseFloat(parent_style.marginRight) + parseFloat(parent_style.borderLeftWidth) + parseFloat(parent_style.borderRightWidth);
+            parent = parent.parentNode;
+        }
+        return parent_width;
+    }
+    var getOuterW=function(dom){
+        var style=getComputedStyle(dom),
+            w=0;
+        if(!!style){
+            w = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight) + parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
+        }
+        return w;
+    };
+    var getOuterH =function(dom){
+        var style=getComputedStyle(dom),
+            h=0;
+        if(!!style){
+            h = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
+        }
+        return h;
+    };
+    var insertAfter = function(dom,afterDom){
+        var _p = afterDom.parentNode;
+        if(!_p){
+            return;
+        }
+        if(_p.lastChild === afterDom){
+            _p.appendChild(dom);
+        }else{
+            _p.insertBefore(dom,afterDom.nextSibling);
+        }
+    };
+    var getQuery = function(name,url){
+        
+        var u  = arguments[1] || window.location.search,
+            reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"),
+            r = u.substr(u.indexOf("\?")+1).match(reg);
+        return r!=null?r[2]:"";
+    };
+
+    
+    function setImgSize(item, widthNum, widthUnit, ratio, breakParentWidth) {
+        setTimeout(function () {
+            console.log(getParentWidth(item))
+            var img_padding_border = getOuterW(item) || 0;
+            var img_padding_border_top_bottom = getOuterH(item) || 0;
+            
+            if (widthNum > getParentWidth(item) && !breakParentWidth) {
+                widthNum = getParentWidth(item);
+            }
+
+            height = (widthNum - img_padding_border) * ratio + img_padding_border_top_bottom;
+            if (isIE) {
+                var url = item.getAttribute('data-src');
+                item.src = url;
+            } else {
+                if(parseFloat(widthNum, 10) > 40 && height > 40 && breakParentWidth) {
+                    item.className += ' img_loading';
+                }
+                item.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+            }
+            item.style.cssText += ";width: " + widthNum + widthUnit + " !important;";
+            item.style.cssText += ";height: " + height + widthUnit + " !important;";
+        }, 50);
+    }
+
+    (function(){
+        var images = document.getElementsByTagName('img');
+        var length = images.length;
+        var max_width = getMaxWith();
+        for (var i = 0; i < length; ++i) {
+            var imageItem = images[i];
+            var src_ = imageItem.getAttribute('data-src');
+            var realSrc = imageItem.getAttribute('src');
+            if (!src_ || realSrc) continue;
+            
+            var originWidth = imageItem.getAttribute('data-w');
+            var ratio_ = 1 * imageItem.getAttribute('data-ratio');
+            var height = 100;
+            if (ratio_ && ratio_ > 0) {
+                var parent_width = getParentWidth(imageItem) || max_width;
+                var initWidth = imageItem.style.width || imageItem.getAttribute('width') || originWidth || parent_width;
+                initWidth = parseFloat(initWidth, 10) > max_width ? max_width : initWidth;
+                
+                if (initWidth) {
+                    imageItem.setAttribute('_width', !isNaN(initWidth * 1) ? initWidth + 'px' : initWidth);
+                }
+                
+                if (typeof initWidth === 'string' && initWidth.indexOf('%') !== -1) {
+                    initWidth = parseFloat(initWidth.replace('%', ''), 10) / 100 * parent_width;
+                }
+                
+                if (initWidth === 'auto') {
+                    initWidth = originWidth;
+                }
+
+                var res = /^(\d+(?:\.\d+)?)([a-zA-Z%]+)?$/.exec(initWidth);
+                var widthNum = res && res.length >= 2 ? res[1] : 0;
+                var widthUnit = res && res.length >= 3 && res[2] ? res[2] : 'px';
+
+                
+                setImgSize(imageItem, widthNum, widthUnit, ratio_, true);
+                
+                (function (item, widthNumber, unit, ratio) {
+                    setTimeout(function () {
+                        setImgSize(item, widthNumber, unit, ratio, false);
+                    });
+                })(imageItem, widthNum, widthUnit, ratio_);
+            } else {
+                imageItem.style.cssText += ";visibility: hidden !important;";
+            }
+
+        }
+    })();
+    window.__videoDefaultRatio=16/9;
+    window.__getVideoWh = function(dom){
+        var max_width = getMaxWith(),
+            width = max_width,
+            ratio_ = dom.getAttribute('data-ratio')*1||(4/3),
+            arr = [4/3, 16/9],
+            ret = arr[0],
+            abs = Math.abs(ret - ratio_);
+        for(var j=1,jl=arr.length;j<jl;j++){
+            var _abs = Math.abs(arr[j] - ratio_);
+            if(_abs<abs){
+                abs = _abs;
+                ret = arr[j];
+            }
+        }
+        ratio_ = ret;
+        var parent_width = getParentWidth(dom)||max_width,
+            width = width > parent_width ? parent_width : width,
+            outerW = getOuterW(dom)||0,
+            outerH = getOuterH(dom)||0,
+            videoW = width - outerW,
+            videoH = videoW/ratio_,
+            height = videoH + outerH;
+        return {w:width,h:height,vh:videoH,vw:videoW,ratio:ratio_};
+    };
+
+    (function(){
+        var iframe = document.getElementsByTagName('iframe');
+        for (var i=0,il=iframe.length;i<il;i++) {
+            var a = iframe[i];
+            var src_ = a.getAttribute('src')||a.getAttribute('data-src')||"";
+            if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                continue;
+            }
+            var vid = getQuery("vid",src_);
+            if(!vid){
+                continue;
+            }
+            vid=vid.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"");
+            a.removeAttribute('src');
+            a.style.display = "none";
+            var obj = window.__getVideoWh(a),
+                mydiv = document.createElement('img');
+            mydiv.className = "img_loading";
+            mydiv.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+            mydiv.setAttribute("data-vid",vid);
+            mydiv.style.cssText = "width: " + obj.w + "px !important;";
+            insertAfter(mydiv,a);
+            a.style.cssText += ";width: " + obj.w + "px !important;";
+            a.setAttribute("width",obj.w);
+            if(window.__zoom!=1){
+                a.style.display = "block";
+                mydiv.style.display = "none";
+                a.setAttribute("_ratio",obj.ratio);
+                a.setAttribute("_vid",vid);
+            }else{
+                mydiv.style.cssText += "height: " + obj.h + "px !important;";
+                a.style.cssText += "height: " + obj.h + "px !important;";
+                a.setAttribute("height",obj.h);
+            }
+            a.setAttribute("data-vh",obj.vh);
+            a.setAttribute("data-vw",obj.vw);
+            a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+obj.vw+"&height="+obj.vh+"&auto=0");
+        }
+    })();
+
+    (function(){
+        if(window.__zoom!=1){
+            document.getElementById('page-content').style.zoom = window.__zoom;
+            var a = document.getElementById('activity-name');
+            var b = document.getElementById('meta_content');
+            if(!!a){
+                a.style.zoom = 1/window.__zoom;
+            }
+            if(!!b){
+                b.style.zoom = 1/window.__zoom;
+            }
+            var images = document.getElementsByTagName('img');
+            for (var i = 0,il=images.length;i<il;i++) {
+                images[i].style.zoom = 1/window.__zoom;
+            }
+            var iframe = document.getElementsByTagName('iframe');
+            for (var i = 0,il=iframe.length;i<il;i++) {
+                var a = iframe[i];
+                a.style.zoom = 1/window.__zoom;
+                var src_ = a.getAttribute('data-src')||"";
+                if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                    continue;
+                }
+                var ratio = a.getAttribute("_ratio");
+                var vid = a.getAttribute("_vid");
+                a.removeAttribute("_ratio");
+                a.removeAttribute("_vid");
+                var vw = a.offsetWidth - (getOuterW(a)||0);
+                var vh = vw/ratio;
+                var h = vh + (getOuterH(a)||0)
+                a.style.cssText += "height: " + h + "px !important;"
+                a.setAttribute("height",h);
+                a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+vw+"&height="+vh+"&auto=0");
+                a.style.display = "none";
+                var parent = a.parentNode;
+                if(!parent){
+                    continue;
+                }
+                for(var j=0,jl=parent.children.length;j<jl;j++){
+                    var child = parent.children[j];
+                    if(child.className.indexOf("img_loading")>=0 && child.getAttribute("data-vid")==vid){
+                        child.style.cssText += "height: " + h + "px !important;";
+                        child.style.display = "";
+                    }
+                }
+            }
+        }
+    })();
+})();
+</script>
+<script nonce="1551184023" type="text/javascript">
+    var new_appmsg = 1;
+    var item_show_type = "0";
+    var can_see_complaint = "0";
+    var not_in_mm_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/not_in_mm3ec991.css";
+    var windowwx_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/winwx3ec991.css";
+    var article_improve_combo_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/combo3f87f1.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = ""||"MjM5NDMzNTk2MA==";
+
+    var source = "";
+    var ascene = "";
+    var subscene = "";
+    var abtest_cookie = "";
+
+    var scene = 75;
+
+    var itemidx = "";
+    var appmsg_token   = "";
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var is_follow = "";
+    var nickname = "政治学与国际关系论坛";
+    var appmsg_type = "9";
+    var ct = "1419867106";
+    var publish_time = "2014-12-29" || "";
+    var user_name = "gh_f0f4b7f5abc1";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmsns.qpic.cn/mmsns/X0vxvBM5slGnKu8odXCwQRLUY36ictDW81uUIh5T9icPWthgxWshOhhQ/0";
+    var ori_head_img_url = "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7tazow5iae8mQ36PcC9iaPmeaKNN49rVZf1ey6pFjphSYA/132";
+    var msg_title = "【乌克兰研究】​杨恕  朱倍德：后苏联时期俄乌关系中的历史、文化因素";
+    var msg_desc = "来源：《俄罗斯研究》2013年第5期 后苏联时期俄乌关系中的历史、文化因素杨 恕  朱倍德【内容提要】俄罗斯";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/X0vxvBM5slFGzD7g4I8jIpFteRTZibXu9KVuBzKInJZdtiavliaRV6JUAA8RJvseDUCib3ibLXQBqg3CSuC8h2Vr8yQ/0";
+    var msg_link = "";
+    var user_uin = "0"*1;
+    var msg_source_url = '';
+    var img_format = '';
+    var srcid = '';
+    var req_id = '0716nLZ1C0iI8zlI62grMU46';
+    var networkType;
+    var appmsgid = '' || ''|| "202263331";
+    var comment_id = "0" || "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+    var msg_daily_idx = "0" || "";
+    var profileReportInfo = "" || "";
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    var source_username = "";
+    
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+    var source_biz = "";
+    var author_id = "";
+
+    
+    var optimizing_flag = "0" * 1;
+    var ad_abtest_padding = "0" * 1;
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        wxa_product : ""*1,
+        wxa_cps : ""*1,
+        show_msg_voice: "0"*1,
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7tazow5iae8mQ36PcC9iaPmeaKNN49rVZf1ey6pFjphSYA/0"||(window.location.protocol+"//"+window.location.host + "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+    var appmsg_fe_filter = "contenteditable";
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "" * 1;
+    var like_num = "" * 1;
+    var liked = "" == 'true' ? true : false;
+    var is_temp_url = "" ? 1 : 0;
+    var send_time = "";
+    var icon_emotion_switch = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+    var icon_emotion_switch_active = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+    var icon_loading_white = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+    var icon_audio_unread = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+    var icon_qqmusic_default = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+    var icon_qqmusic_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source393e3a.png";
+    var icon_kugou_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/kugou/icon_kugou_source393e3a.png";
+
+    var topic_default_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+    var comment_edit_icon = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg_new/icon_edit36906d.png';
+    var comment_loading_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif';
+
+    var voice_in_appmsg = {
+        "1":"1"
+            };
+
+    var reprint_style = ''*1;
+    var wxa_img_alert = "" != 'false';
+
+    
+    
+    
+    
+
+    
+    var weapp_sn_arr_json = "" || "";
+
+    
+    var ban_scene = "0" * 1;
+
+    var svr_time = "1533631953" * 1;
+    
+    var is_transfer_msg = ""*1||0;
+
+    var malicious_title_reason_id = "0" * 1; 
+    var malicious_content_type = "0" * 1; 
+
+    
+    var modify_time = "";
+
+    
+    var hotspotInfoList = [
+                    ];
+
+        window.wxtoken = "777";
+        
+    
+    
+    
+    
+    window.is_login = '0' * 1; 
+
+    window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27611+2,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01,    
+                    badjs_rate: 0.1 
+                }
+            });
+        }
+    }
+            window.isSg=true;
+        window.sg_qr_code="/rr?timestamp=1533631953\x26amp;src=3\x26amp;ver=1\x26amp;signature=bT1fNko76FzSgmdvP*YRy-RQ4gMPZK2NKP-G1W-Pk*ILcleAXXnCQ*Qa60UDjWoHlvjzyPgX2a8Rkp*V-kYgK5xkOFkW668m22yPB4nk9U8=";
+        window.sg_data={
+            src:"3",
+            ver:"1",
+            timestamp:"1533631894",
+            signature:"Vht*4jS-y0E6tkZF2FBT5KlpHy5v3N9c6oo7SobwujNCcJPrUYzy1t12xcGbc1gBk9B5X*bZLH0SUdwynOiYMxonXazHX8FUyUYa8jYM8EeCIWBsL0C4Oh2QsUzD5ZdqV0pHUsqpt-GQHBCPH1XkNg=="
+        }
+        window.__moon_initcallback = function(){
+            if(!!window.__initCatch){
+                window.__initCatch({
+                    idkey : 29711,
+                    startKey : 120,
+                    badjsId: 63,
+                    reportOpt : {
+                        uin : uin,
+                        biz : biz,
+                        mid : mid,
+                        idx : idx,
+                        sn  : sn
+                    },
+                    extInfo : {
+                        network_rate : 0.01    
+                    }
+                });
+            }
+        }
+
+        
+    var title ="政治学与国际关系论坛";
+
+
+    var is_new_msg=true;
+</script>
+
+        <script nonce="1551184023">window.__moon_host = 'res.wx.qq.com';window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"new_video/player.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player.html3dd294.js","biz_wap/zepto/touch.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch34c264.js","biz_wap/zepto/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event34c264.js","biz_wap/zepto/zepto.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto34c264.js","page/pages/video.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/pages/video.css3de35e.js","a/appdialog_confirm.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm.html34f0d8.js","widget/wx_profile_dialog_primary.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/widget/wx_profile_dialog_primary.css3de35e.js","a/tpl/new_cpc_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/tpl/new_cpc_tpl.html3f87f1.js","appmsg/emotion/caret.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","new_video/player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player3f44c2.js","a/appdialog_confirm.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm34c32a.js","a/tpl/crt_size_map.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/tpl/crt_size_map3f87f1.js","biz_wap/jsapi/cardticket.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket34c264.js","biz_common/jquery.md5.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/jquery.md53518c6.js","biz_wap/utils/localstorage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage36c4f2.js","appmsg/friend_comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/friend_comment_tpl.html3de35e.js","appmsg/comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_tpl.html3de35e.js","biz_wap/utils/fakehash.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/fakehash38c7af.js","appmsg/comment_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_report3d5603.js","biz_common/utils/emoji_panel_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_panel_data3518c6.js","biz_common/utils/emoji_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_data3518c6.js","appmsg/emotion/textarea.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea3d171e.js","appmsg/emotion/nav.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common3518c6.js","appmsg/emotion/slide.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","appmsg/emotion/dom.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom31ff31.js","biz_common/utils/wxgspeedsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/wxgspeedsdk3518c6.js","pages/music_report_conf.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_report_conf3c6d6e.js","pages/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report3d3b85.js","pages/player_adaptor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/player_adaptor39d6ee.js","pages/music_player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player3d3b85.js","a/video.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/video3ebd5e.js","a/sponsor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor3ec2ed.js","a/ios.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios393966.js","a/android.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android393966.js","a/profile.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile3f3f8a.js","a/app_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/app_card3f87f1.js","a/tpl/cpc_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/tpl/cpc_tpl.html3f87f1.js","a/tpl/crt_tpl_manager.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/tpl/crt_tpl_manager3f87f1.js","a/cpc_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/cpc_a_tpl.html3e57e7.js","a/sponsor_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor_a_tpl.html3ec2ed.js","a/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_tpl.html3ec2ed.js","a/mpshop.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop311179.js","a/wxopen_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/wxopen_card3e0b1d.js","a/card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card311179.js","biz_wap/utils/position.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position34c264.js","a/a_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_report3eeb33.js","a/a_sign.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_sign3f87f1.js","pages/loadscript.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript3d3b85.js","biz_wap/utils/ajax_load_js.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax_load_js3d3b85.js","appmsg/comment.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment3e3c6f.js","appmsg/my_comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html3ec991.js","appmsg/cmt_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html3de35e.js","sougou/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion3f5bf4.js","biz_wap/utils/wapsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/wapsdk34c264.js","biz_common/utils/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report3518c6.js","appmsg/open_url_with_webview.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/open_url_with_webview3d3b85.js","appmsg/articleReport.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/articleReport3de35e.js","biz_wap/utils/hand_up_state.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hand_up_state3e72f4.js","biz_common/utils/http.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/http3518c6.js","biz_common/utils/cookie.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie3518c6.js","appmsg/topic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html31ff31.js","pages/weapp_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/weapp_tpl.html36906d.js","biz_common/utils/monitor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor3518c6.js","pages/voice_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html38518d.js","pages/kugoumusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/kugoumusic_ctrl3d171e.js","pages/qqmusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_ctrl3d171e.js","pages/voice_component.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component3d3efa.js","pages/qqmusic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html393e3a.js","new_video/ctl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl3f44c2.js","a/testdata.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/testdata3bb523.js","appmsg/reward_entry.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry3ebded.js","appmsg/like.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like3d171e.js","pages/version4video.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video3de208.js","a/a.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a3f8915.js","rt/appmsg/getappmsgext.rt.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage34c264.js","appmsg/share_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share_tpl.html36906d.js","appmsg/appmsgext.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/appmsgext3f170d.js","appmsg/img_copyright_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","pages/video_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl3d3b85.js","pages/create_txv.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/create_txv3d43f7.js","appmsg/comment_utils.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_utils3d171e.js","biz_common/ui/imgonepx.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx3518c6.js","appmsg/malicious_wording.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/malicious_wording3dd66a.js","biz_common/utils/respTypes.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes3518c6.js","biz_wap/utils/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/log34c264.js","sougou/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index36913b.js","biz_wap/safe/mutation_observer_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report34c264.js","appmsg/fereport.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport3df46f.js","appmsg/fereport_without_localstorage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport_without_localstorage3df46f.js","appmsg/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report3d6a60.js","appmsg/report_and_source.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source3f3254.js","appmsg/page_pos.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos3ecdbc.js","appmsg/cdn_speed_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report3d6a60.js","appmsg/wxtopic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic31a3be.js","appmsg/weapp.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp3f1801.js","appmsg/weproduct.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weproduct3f868a.js","appmsg/voicemsg.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voicemsg3b1748.js","appmsg/autoread.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/autoread3af14e.js","appmsg/voice.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice38518d.js","appmsg/qqmusic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic3d171e.js","appmsg/iframe.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe3d43f7.js","appmsg/product.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/product393966.js","appmsg/review_image.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image3f813c.js","appmsg/outer_link.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link3e0906.js","appmsg/copyright_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/async.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async3ec3b0.js","biz_wap/ui/lazyload_img.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img3af55a.js","biz_common/log/jserr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr3518c6.js","appmsg/share.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share3e25cd.js","appmsg/cdn_img_lib.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib3de0e0.js","page/appmsg/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm.css3ec991.js","page/appmsg_new/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/not_in_mm.css3ec991.js","page/appmsg_new/combo.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/combo.css3f87f1.js","biz_common/utils/url/parse.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse36ebcf.js","appmsg/appmsg_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/appmsg_report3dae33.js","biz_common/moment.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/moment3518c6.js","biz_wap/jsapi/core.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core3d3b85.js","biz_common/dom/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event3a25e9.js","appmsg/test.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/test3d3b85.js","biz_wap/utils/mmversion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion3de208.js","appmsg/max_age.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/max_age3d3b85.js","biz_common/dom/attr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr3518c6.js","biz_wap/utils/ajax.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax3d3b85.js","appmsg/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/log300330.js","biz_common/dom/class.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class3518c6.js","biz_wap/utils/device.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device3e2bd7.js","appmsg/weapp_common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp_common3f868a.js","biz_common/utils/string/html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html3518c6.js","cps/tpl/list_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/cps/tpl/list_tpl.html3f868a.js","cps/tpl/card_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/cps/tpl/card_tpl.html3f868a.js","cps/tpl/banner_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/cps/tpl/banner_tpl.html3f868a.js","biz_common/tmpl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl3518c6.js","appmsg/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index3fa44d.js"};</script><script nonce="1551184023" type="text/javascript" id="moon_inline" > window.__mooninline=1; window.setTimeout(function() {  function __moonf__(){
+if(!window.__moonhasinit){
+window.__moonhasinit=!0,window.__moonclientlog=[],window.__wxgspeeds&&(window.__wxgspeeds.moonloadedtime=+new Date),
+"object"!=typeof JSON&&(window.JSON={
+stringify:function(){
+return"";
+},
+parse:function(){
+return{};
+}
+});
+var e=function(){
+function e(e){
+try{
+var o;
+/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)?o="writeLog":/(Android)/i.test(navigator.userAgent)&&(o="log"),
+o&&t(o,e);
+}catch(n){
+throw console.error(n),n;
+}
+}
+function t(e,o){
+var n,r,i={};
+n=top!=window?top.window:window;
+try{
+r=n.WeixinJSBridge,i=n.document;
+}catch(a){}
+e&&r&&r.invoke?r.invoke(e,{
+level:"info",
+msg:"[WechatFe][moon]"+o
+}):setTimeout(function(){
+i.addEventListener?i.addEventListener("WeixinJSBridgeReady",function(){
+t(e,o);
+},!1):i.attachEvent&&(i.attachEvent("WeixinJSBridgeReady",function(){
+t(e,o);
+}),i.attachEvent("onWeixinJSBridgeReady",function(){
+t(e,o);
+}));
+},0);
+}
+var n;
+localStorage&&JSON.parse(localStorage.getItem("__WXLS__moonarg"))&&"fromls"==JSON.parse(localStorage.getItem("__WXLS__moonarg")).method&&(n=!0),
+e(" moon init, moon_inline:"+window.__mooninline+", moonls:"+n),function(){
+var e={},o={},t={};
+e.COMBO_UNLOAD=0,e.COMBO_LOADING=1,e.COMBO_LOADED=2;
+var n=function(e,t,n){
+if(!o[e]){
+o[e]=n;
+for(var r=3;r--;)try{
+moon.setItem(moon.prefix+e,n.toString()),moon.setItem(moon.prefix+e+"_ver",moon_map[e]);
+break;
+}catch(i){
+moon.clear();
+}
+}
+},r=window.alert;
+window.__alertList=[],window.alert=function(e){
+r(e),window.__alertList.push(e);
+};
+var i=function(e){
+if(!e||!o[e])return null;
+var n=o[e];
+if("function"==typeof n&&!t[e]){
+var a={},s={
+exports:a
+},c=n(i,a,s,r);
+n=o[e]=c||s.exports,t[e]=!0;
+}
+if(".css"===e.substr(-4)){
+var d=document.getElementById(e);
+if(!d){
+d=document.createElement("style"),d.id=e;
+var _=/url\s*\(\s*\/(\"(?:[^\\\"\r\n\f]|\\[\s\S])*\"|'(?:[^\\'\n\r\f]|\\[\s\S])*'|[^)}]+)\s*\)/g,m=window.testenv_reshost||window.__moon_host||"res.wx.qq.com";
+n=n.replace(_,"url(//"+m+"/$1)"),d.innerHTML=n,document.getElementsByTagName("head")[0].appendChild(d);
+}
+}
+return n;
+};
+e.combo_status=e.COMBO_UNLOAD,e.run=function(){
+var o=e.run.info,t=o&&o[0],n=o&&o[1];
+if(t&&e.combo_status==e.COMBO_LOADED){
+var r=i(t);
+n&&n(r);
+}
+},e.use=function(o,t){
+window.__wxgspeeds&&(window.__wxgspeeds.seajs_use_time=+new Date),e.run.info=[o,t],
+e.run();
+},window.define=n,window.seajs=e;
+}(),function(){
+if(window.__nonce_str){
+var e=document.createElement;
+document.createElement=function(o){
+var t=e.apply(this,arguments);
+return"object"==typeof o&&(o=o.toString()),"string"==typeof o&&"script"==o.toLowerCase()&&t.setAttribute("nonce",window.__nonce_str),
+t;
+};
+}
+window.addEventListener&&window.__DEBUGINFO&&Math.random()<.01&&window.addEventListener("load",function(){
+var e=document.createElement("script");
+e.src=__DEBUGINFO.safe_js,e.type="text/javascript",e.async=!0;
+var o=document.head||document.getElementsByTagName("head")[0];
+o.appendChild(e);
+});
+}(),function(){
+function t(e){
+return"[object Array]"===Object.prototype.toString.call(e);
+}
+function n(e){
+return"[object Object]"===Object.prototype.toString.call(e);
+}
+function r(e){
+var t=e.stack+" "+e.toString()||"";
+try{
+if(window.testenv_reshost){
+var n="http(s)?://"+window.testenv_reshost,r=new RegExp(n,"g");
+t=t.replace(r,"");
+}else t=t.replace(/http(s)?:\/\/res\.wx\.qq\.com/g,"");
+for(var r=/\/([^.]+)\/js\/(\S+?)\.js(\,|:)?/g;r.test(t);)t=t.replace(r,function(e,o,t,n){
+return t+n;
+});
+}catch(e){
+t=e.stack?e.stack:"";
+}
+var i=[];
+for(o in u)u.hasOwnProperty(o)&&i.push(o+":"+u[o]);
+return i.push("STK:"+t.replace(/\n/g,"")),i.join("|");
+}
+function i(e){
+if(!e){
+var o=window.onerror;
+window.onerror=function(){},f=setTimeout(function(){
+window.onerror=o,f=null;
+},50);
+}
+}
+function a(e,o,t){
+if(!/^mp\.weixin\.qq\.com$/.test(location.hostname)){
+var n=[];
+t=t.replace(location.href,(location.origin||"")+(location.pathname||"")).replace("#wechat_redirect","").replace("#rd","").split("&");
+for(var r=0,i=t.length;i>r;r++){
+var a=t[r].split("=");
+a[0]&&a[1]&&n.push(a[0]+"="+encodeURIComponent(a[1]));
+}
+var s=new window.Image;
+return void(s.src=(o+n.join("&")).substr(0,1024));
+}
+var c;
+if(window.ActiveXObject)try{
+c=new ActiveXObject("Msxml2.XMLHTTP");
+}catch(d){
+try{
+c=new ActiveXObject("Microsoft.XMLHTTP");
+}catch(_){
+c=!1;
+}
+}else window.XMLHttpRequest&&(c=new XMLHttpRequest);
+c&&(c.open(e,o,!0),c.setRequestHeader("cache-control","no-cache"),c.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),
+c.setRequestHeader("X-Requested-With","XMLHttpRequest"),c.send(t));
+}
+function s(e){
+return function(o,t){
+if("string"==typeof o)try{
+o=new Function(o);
+}catch(n){
+throw n;
+}
+var r=[].slice.call(arguments,2),a=o;
+return o=function(){
+try{
+return a.apply(this,r.length&&r||arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),_&&window.__moon_report&&(window.__moon_report([{
+offset:O,
+log:"timeout_error;host:"+location.host,
+e:e
+}]),i(f)),e;
+}
+},e(o,t);
+};
+}
+function c(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this,a=t||function(){};
+return t=function(){
+try{
+return a.apply(r,arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),_&&window.__moon_report&&(window.__moon_report([{
+offset:y,
+log:"listener_error;type:"+o+";host:"+location.host,
+e:e
+}]),i(f)),e;
+}
+},a.moon_lid=b,D[b]=t,b++,e.call(r,o,t,n);
+};
+}
+function d(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this;
+return t=D[t.moon_lid],e.call(r,o,t,n);
+};
+}
+var _,m,l,w,u,p,f,h=/MicroMessenger/i.test(navigator.userAgent),g=window.define,v=0,y=2,x=4,O=9,j=10;
+if(window.__initCatch=function(e){
+_=e.idkey,m=e.startKey||0,l=e.limit,w=e.badjsId,u=e.reportOpt||"",p=e.extInfo||{},
+p.rate=p.rate||.5;
+},window.__moon_report=function(e,o){
+var i=!1,s="";
+try{
+s=top.location.href;
+}catch(c){
+i=!0;
+}
+var d=.5;
+if(p&&p.rate&&(d=p.rate),o&&"number"==typeof o&&(d=o),!(!/mp\.weixin\.qq\.com/.test(location.href)&&!/payapp\.weixin\.qq\.com/.test(location.href)||Math.random()>d)&&h&&(top==window||i||/mp\.weixin\.qq\.com/.test(s))&&(n(e)&&(e=[e]),
+t(e)&&""!=_)){
+var u="",f=[],g=[],v=[],y=[];
+"number"!=typeof l&&(l=1/0);
+for(var O=0;O<e.length;O++){
+var j=e[O]||{};
+if(!(j.offset>l||"number"!=typeof j.offset||j.offset==x&&p&&p.network_rate&&Math.random()>=p.network_rate)){
+var D=1/0==l?m:m+j.offset;
+f[O]="[moon]"+_+"_"+D+";"+j.log+";"+r(j.e||{})||"",g[O]=D,v[O]=1;
+}
+}
+for(var b=0;b<g.length;b++)y[b]=_+"_"+g[b]+"_"+v[b],u=u+"&log"+b+"="+f[b];
+if(y.length>0){
+a("POST",location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?","idkey="+y.join(";")+"&r="+Math.random()+"&lc="+f.length+u);
+var d=1;
+if(p&&p.badjs_rate&&(d=p.badjs_rate),w&&Math.random()<d){
+u=u.replace(/uin\:(.)*\|biz\:(.)*\|mid\:(.)*\|idx\:(.)*\|sn\:(.)*\|/,"");
+var E=new Image,S="https://badjs.weixinbridge.com/badjs?id="+w+"&level=4&from="+encodeURIComponent(location.host)+"&msg="+encodeURIComponent(u);
+E.src=S.slice(0,1024);
+}
+}
+}
+},window.setTimeout=s(window.setTimeout),window.setInterval=s(window.setInterval),
+Math.random()<.01&&window.Document&&window.HTMLElement){
+var D={},b=0;
+Document.prototype.addEventListener=c(Document.prototype.addEventListener),Document.prototype.removeEventListener=d(Document.prototype.removeEventListener),
+HTMLElement.prototype.addEventListener=c(HTMLElement.prototype.addEventListener),
+HTMLElement.prototype.removeEventListener=d(HTMLElement.prototype.removeEventListener);
+}
+var E=window.navigator.userAgent;
+if((/ip(hone|ad|od)/i.test(E)||/android/i.test(E))&&!/windows phone/i.test(E)&&window.localStorage&&window.localStorage.setItem){
+var S=window.localStorage.setItem,I=0;
+window.localStorage.setItem=function(e,o){
+if(!(I>=10))try{
+S.call(window.localStorage,e,o);
+}catch(t){
+t.stack&&console&&console.error&&console.error("[TryCatch]"+t.stack),window.__moon_report([{
+offset:j,
+log:"localstorage_error;"+t.toString(),
+e:t
+}]),I++,I>=3&&window.moon&&window.moon.clear&&moon.clear();
+}
+};
+}
+window.seajs&&g&&(window.define=function(){
+for(var o,t=[],n=arguments&&arguments[0],a=0,s=arguments.length;s>a;a++){
+var c=o=arguments[a];
+"function"==typeof o&&(o=function(){
+try{
+return c.apply(this,arguments);
+}catch(o){
+throw"string"==typeof n&&console.error("[TryCatch][DefineeErr]id:"+n),o.stack&&console&&console.error&&console.error("[TryCatch]"+o.stack),
+_&&window.__moon_report&&(window.__moon_report([{
+offset:v,
+log:"define_error;id:"+n+";",
+e:o
+}]),i(f)),e(" [define_error]"+JSON.stringify(r(o))),o;
+}
+},o.toString=function(e){
+return function(){
+return e.toString();
+};
+}(arguments[a])),t.push(o);
+}
+return g.apply(this,t);
+});
+}(),function(o){
+function t(e,o,t){
+return window.__DEBUGINFO?(window.__DEBUGINFO.res_list||(window.__DEBUGINFO.res_list=[]),
+window.__DEBUGINFO.res_list[e]?(window.__DEBUGINFO.res_list[e][o]=t,!0):!1):!1;
+}
+function n(e){
+var o=new TextEncoder("utf-8").encode(e),t=crypto.subtle||crypto.webkitSubtle;
+return t.digest("SHA-256",o).then(function(e){
+return r(e);
+});
+}
+function r(e){
+for(var o=[],t=new DataView(e),n=0;n<t.byteLength;n+=4){
+var r=t.getUint32(n),i=r.toString(16),a="00000000",s=(a+i).slice(-a.length);
+o.push(s);
+}
+return o.join("");
+}
+function i(e,o,t){
+if("object"==typeof e){
+var n=Object.prototype.toString.call(e).replace(/^\[object (.+)\]$/,function(e,o){
+return o;
+});
+if(t=t||e,"Array"==n){
+for(var r=0,i=e.length;i>r;++r)if(o.call(t,e[r],r,e)===!1)return;
+}else{
+if("Object"!==n&&a!=e)throw"unsupport type";
+if(a==e){
+for(var r=e.length-1;r>=0;r--){
+var s=a.key(r),c=a.getItem(s);
+if(o.call(t,c,s,e)===!1)return;
+}
+return;
+}
+for(var r in e)if(e.hasOwnProperty(r)&&o.call(t,e[r],r,e)===!1)return;
+}
+}
+}
+var a=o.localStorage,s=document.head||document.getElementsByTagName("head")[0],c=1,d=11,_=12,m=13,l=window.__allowLoadResFromMp?1:2,w=window.__allowLoadResFromMp?1:0,u=l+w,p=window.testenv_reshost||window.__moon_host||"res.wx.qq.com",f=new RegExp("^(http(s)?:)?//"+p);
+window.__loadAllResFromMp&&(p="mp.weixin.qq.com",l=0,u=l+w);
+var h={
+prefix:"__MOON__",
+loaded:[],
+unload:[],
+clearSample:!1,
+hit_num:0,
+mod_num:0,
+version:1003,
+cacheData:{
+js_mod_num:0,
+js_hit_num:0,
+js_not_hit_num:0,
+js_expired_num:0,
+css_mod_num:0,
+css_hit_num:0,
+css_not_hit_num:0,
+css_expired_num:0
+},
+init:function(){
+h.loaded=[],h.unload=[];
+var e,t,r;
+if(window.no_moon_ls&&(h.clearSample=!1),a){
+var s="_moon_ver_key_",c=a.getItem(s);
+c!=h.version&&(h.clear(),a.setItem(s,h.version));
+}
+if((-1!=location.search.indexOf("no_moon1=1")||-1!=location.search.indexOf("no_lshttps=1"))&&h.clear(),
+a){
+var d=1*a.getItem(h.prefix+"clean_time"),_=+new Date;
+if(_-d>=1296e6){
+h.clear();
+try{
+!!a&&a.setItem(h.prefix+"clean_time",+new Date);
+}catch(m){}
+}
+}
+i(moon_map,function(i,s){
+if(t=h.prefix+s,r=!!i&&i.replace(f,""),e=!!a&&a.getItem(t),version=!!a&&(a.getItem(t+"_ver")||"").replace(f,""),
+h.mod_num++,r&&-1!=r.indexOf(".css")?h.cacheData.css_mod_num++:r&&-1!=r.indexOf(".js")&&h.cacheData.js_mod_num++,
+h.clearSample||!e||r!=version)h.unload.push(r.replace(f,"")),r&&-1!=r.indexOf(".css")?e?r!=version&&h.cacheData.css_expired_num++:h.cacheData.css_not_hit_num++:r&&-1!=r.indexOf(".js")&&(e?r!=version&&h.cacheData.js_expired_num++:h.cacheData.js_not_hit_num++);else{
+if("https:"==location.protocol&&window.moon_hash_map&&window.moon_hash_map[s]&&window.crypto)try{
+n(e).then(function(e){
+window.moon_hash_map[s]!=e&&console.log(s);
+});
+}catch(c){}
+try{
+var d="//# sourceURL="+s+"\n//@ sourceURL="+s;
+o.eval.call(o,'define("'+s+'",[],'+e+")"+d),h.hit_num++,r&&-1!=r.indexOf(".css")?h.cacheData.css_hit_num++:r&&-1!=r.indexOf(".js")&&h.cacheData.js_hit_num++;
+}catch(c){
+h.unload.push(r.replace(f,""));
+}
+}
+}),h.load(h.genUrl());
+},
+genUrl:function(){
+var e=h.unload;
+if(!e||e.length<=0)return[];
+var o,t,n="",r=[],i={},a=-1!=location.search.indexOf("no_moon2=1"),s="//"+p;
+-1!=location.href.indexOf("moon_debug2=1")&&(s="//mp.weixin.qq.com");
+for(var c=0,d=e.length;d>c;++c){
+/^\/(.*?)\//.test(e[c]);
+var _=/^\/(.*?)\//.exec(e[c]);
+_.length<2||!_[1]||(t=_[1],n=i[t],n?(o=n+","+e[c],o.length>1e3||a?(r.push(n+"?v="+h.version),
+n=location.protocol+s+e[c],i[t]=n):(n=o,i[t]=n)):(n=location.protocol+s+e[c],i[t]=n));
+}
+for(var m in i)i.hasOwnProperty(m)&&r.push(i[m]);
+return r;
+},
+load:function(e){
+if(window.__wxgspeeds&&(window.__wxgspeeds.mod_num=h.mod_num,window.__wxgspeeds.hit_num=h.hit_num),
+!e||e.length<=0)return seajs.combo_status=seajs.COMBO_LOADED,seajs.run(),console.debug&&console.debug("[moon] load js complete, all in cache, cost time : 0ms, total count : "+h.mod_num+", hit num: "+h.hit_num),
+void window.__moonclientlog.push("[moon] load js complete, all in cache, cost time : 0ms, total count : "+h.mod_num+", hit num: "+h.hit_num);
+seajs.combo_status=seajs.COMBO_LOADING;
+var o=0,t=+new Date;
+window.__wxgspeeds&&(window.__wxgspeeds.combo_times=[],window.__wxgspeeds.combo_times.push(t)),
+i(e,function(n){
+h.request(n,u,function(){
+if(window.__wxgspeeds&&window.__wxgspeeds.combo_times.push(+new Date),o++,o==e.length){
+var n=+new Date-t;
+window.__wxgspeeds&&(window.__wxgspeeds.mod_downloadtime=n),seajs.combo_status=seajs.COMBO_LOADED,
+seajs.run(),console.debug&&console.debug("[moon] load js complete, url num : "+e.length+", total mod count : "+h.mod_num+", hit num: "+h.hit_num+", use time : "+n+"ms"),
+window.__moonclientlog.push("[moon] load js complete, url num : "+e.length+", total mod count : "+h.mod_num+", hit num: "+h.hit_num+", use time : "+n+"ms");
+}
+});
+});
+},
+request:function(o,n,r){
+if(o){
+n=n||0,o.indexOf("mp.weixin.qq.com")>-1&&((new Image).src=location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?idkey=27613_32_1&r="+Math.random(),
+window.__moon_report([{
+offset:_,
+log:"load_script_from_mp: "+o
+}],1));
+var i=-1;
+window.__DEBUGINFO&&(__DEBUGINFO.res_list||(__DEBUGINFO.res_list=[]),__DEBUGINFO.res_list.push({
+type:"js",
+status:"pendding",
+start:+new Date,
+end:0,
+url:o
+}),i=__DEBUGINFO.res_list.length-1),-1!=location.search.indexOf("no_lshttps=1")&&(o=o.replace("http://","https://"));
+var a=document.createElement("script");
+a.src=o,a.type="text/javascript",a.async=!0,a.down_time=+new Date,a.onerror=function(s){
+t(i,"status","error"),t(i,"end",+new Date);
+var _=new Error(s);
+if(n>=0)if(w>n){
+var l=o.replace("res.wx.qq.com","mp.weixin.qq.com");
+h.request(l,n,r);
+}else h.request(o,n,r);else window.__moon_report&&window.__moon_report([{
+offset:c,
+log:"load_script_error: "+o,
+e:_
+}],1);
+if(n==w-1&&window.__moon_report([{
+offset:d,
+log:"load_script_error: "+o,
+e:_
+}],1),-1==n){
+var u="ua: "+window.navigator.userAgent+", time="+(+new Date-a.down_time)+", load_script_error -1 : "+o;
+window.__moon_report([{
+offset:m,
+log:u
+}],1);
+}
+window.__moonclientlog.push("moon load js error : "+o+", error -> "+_.toString()),
+e("moon_request_error url:"+o);
+},"undefined"!=typeof moon_crossorigin&&moon_crossorigin&&a.setAttribute("crossorigin",!0),
+a.onload=a.onreadystatechange=function(){
+t(i,"status","loaded"),t(i,"end",+new Date),!a||a.readyState&&!/loaded|complete/.test(a.readyState)||(t(i,"status","200"),
+a.onload=a.onreadystatechange=null,"function"==typeof r&&r());
+},n--,s.appendChild(a),e("moon_request url:"+o+" retry:"+n);
+}
+},
+setItem:function(e,o){
+!!a&&a.setItem(e,o);
+},
+clear:function(){
+a&&(i(a,function(e,o){
+~o.indexOf(h.prefix)&&a.removeItem(o);
+}),console.debug&&console.debug("[moon] clear"));
+},
+idkeyReport:function(e,o,t){
+t=t||1;
+var n=e+"_"+o+"_"+t;
+(new Image).src="/mp/jsmonitor?idkey="+n+"&r="+Math.random();
+}
+};
+seajs&&seajs.use&&"string"==typeof window.__moon_mainjs&&seajs.use(window.__moon_mainjs),
+window.moon=h;
+}(window),function(){
+try{
+Math.random()<1;
+}catch(e){}
+}(),window.moon.init();
+};
+e(),!!window.__moon_initcallback&&window.__moon_initcallback(),window.__wxgspeeds&&(window.__wxgspeeds.moonendtime=+new Date);
+}
+}
+__moonf__(); }, 25);</script><script nonce="1551184023" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+
+    
+    if(typeof seajs != 'undefined' && seajs.config){
+        try{
+            seajs.config({
+              'map': [
+                [ '.js', '.js?v='+new Date().getTime() ]
+              ]
+            });
+        }catch(e){
+            console.info('not support seajs config');
+        }
+    }
+
+    
+</script>
+
+    </body>
+    <script nonce="1551184023" type="text/javascript">document.addEventListener("touchstart", function() {},false);</script>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
+
