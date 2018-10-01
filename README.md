@@ -50,6 +50,8 @@ Scrapy框架爬虫: scrapy.Spider, XMLFeedSpider, CSVFeedSpider
 6. Scrapy架构中的调度器(Scheduler)是一个存储待爬取网址的优先队列，存在URL的出队(dequeued)和入队(enqueued);   
    
 7. Scrapy提供一个内建的重复请求过滤器(duplicate-request filter)，它基于URL过滤重复的请求;
+   Scrapy内建的去重机制，只能基于本次爬虫运行对重复URL进行过滤，即本次执行期间不会重复请求、爬取，
+   但是多次执行依旧可能重复请求某个URL或重复爬取某个页面，从而导致数据库中的内容重复冗余;
 
 8. scrapy-deltafetch去重
 
@@ -59,7 +61,7 @@ Scrapy框架爬虫: scrapy.Spider, XMLFeedSpider, CSVFeedSpider
 
 ### Issues
 
-1. 使用 wiki 爬虫爬取 糗事百科 内容时出现以下异常
+1. 使用wiki爬虫爬取糗事百科时出现以下异常
    - `UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 81654: invalid continuation byte`
    - 触发该异常的原因是：出现了无法进行转换的二进制数据;
    - 解决方法: `decode('utf-8', 'ignore')`
@@ -67,11 +69,12 @@ Scrapy框架爬虫: scrapy.Spider, XMLFeedSpider, CSVFeedSpider
    - 触发该异常的原因是：在windows下面, 新文件的默认编码是 gbk , 而写入数据的编码则是 utf-8 , 因此导致无法解析;
    - 解决方法: `open('wiki.txt', 'w', encoding='utf-8')`
 
-2. 搜狗防爬机制较为严格，国内的免费代理IP一般均无效;
+2. 搜狗防爬机制较为严格，国内的免费代理IP均无效;
 
-3. 评论爬虫存在的问题:
-   - 正则表达式不能够准确匹配(因为评论内容中也可能出现 " 和 , )，需要设计更优的正则表达式;
-   - 无法确定起始评论ID，不容易确定评论ID的有效性;
+3. 腾讯视频评论爬虫存在的问题:
+   - 正则表达式不能够准确匹配，因为评论内容中也可能出现 " 和 , ;
+   - 无法确定起始评论ID，同时也不容易确定评论ID的有效性;
    - 匹配精度越高，匹配容错率越低; 
    - 匹配容错率越高，匹配精度越低;
+   
    

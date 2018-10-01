@@ -5,9 +5,9 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
 
-class NewsspiderSpider(CrawlSpider):
-	name = 'newsspider'
-	allowed_domains = ['sina.com.cn']
+class SinaspiderSpider(CrawlSpider):
+	name = 'sinaspider'
+	allowed_domains = ['sina.com.cn']  # 通常一个蜘蛛负责爬取一个站点
 	start_urls = ['http://news.sina.com.cn/']
 
 	rules = (

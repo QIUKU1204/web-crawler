@@ -20,7 +20,7 @@ MYSQL_USER = 'root'
 MYSQL_PASSWD = '120401'
 MYSQL_PORT = 3306
 
-LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'DEBUG'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'mysqlautospider (+http://www.yourdomain.com)'
 
