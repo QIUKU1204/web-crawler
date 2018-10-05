@@ -30,6 +30,8 @@ Scrapy框架爬虫: scrapy.Spider, XMLFeedSpider, CSVFeedSpider
 
 10. 博客爬虫
 
+11. 图片爬虫(基于Scrapy框架实现，非手写)
+
 ### Note
 
 1. 关于`findall`函数返回结果列表中每个元素包含的信息:
